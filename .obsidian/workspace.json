@@ -11,14 +11,13 @@
             "id": "01c180902cba32e2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "diff-view",
               "state": {
-                "file": "THM Notes/3. Cyber Security 101/2. Command Line.md",
-                "mode": "source",
-                "source": false
+                "file": ".obsidian/workspace.json",
+                "staged": false
               },
-              "icon": "lucide-file",
-              "title": "2. Command Line"
+              "icon": "git-pull-request",
+              "title": "Diff View (workspace.json)"
             }
           }
         ]
@@ -88,39 +87,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1855e46c846c73e3",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "THM Notes/Security Engineer/Threats and Risks.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks for Threats and Risks"
-            }
-          },
-          {
-            "id": "c05f28b4d403e7ed",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "THM Notes/3. Cyber Security 101/2. Command Line.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "Outgoing links from 2. Command Line"
-            }
-          },
-          {
             "id": "ecf70807dd6b2c61",
             "type": "leaf",
             "state": {
@@ -138,11 +104,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "THM Notes/3. Cyber Security 101/2. Command Line.md"
-              },
+              "state": {},
               "icon": "lucide-list",
-              "title": "Outline of 2. Command Line"
+              "title": "Outline"
             }
           },
           {
@@ -156,7 +120,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -176,6 +140,7 @@
   },
   "active": "01c180902cba32e2",
   "lastOpenFiles": [
+    "THM Notes/3. Cyber Security 101/2. Command Line.md",
     "Home Lab/Notes.md",
     "Home Lab/Projects.md",
     "Home Lab",
@@ -185,7 +150,6 @@
     "CyberSecurity_Notes",
     "THM Notes/3. Cyber Security 101/4. Cryptography.md",
     "THM Notes/3. Cyber Security 101/3. Networking.md",
-    "THM Notes/3. Cyber Security 101/2. Command Line.md",
     "THM Notes/3. Cyber Security 101/1. Start Your Cyber Security Journey.md",
     "THM Notes/2. Complete Beginner/7. Basic Computer Exploitation.md",
     "THM Notes/2. Complete Beginner/6. Shell and Privilege Escalation.md",

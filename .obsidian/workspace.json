@@ -1,0 +1,227 @@
+{
+  "main": {
+    "id": "eeb762c8b88debfa",
+    "type": "split",
+    "children": [
+      {
+        "id": "5b11ebcc64ff530a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "01c180902cba32e2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "THM Notes/3. Cyber Security 101/2. Command Line.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2. Command Line"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "98d580518180e943",
+    "type": "split",
+    "children": [
+      {
+        "id": "f1bc8bcf574a93b3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "42e5c341715af5ac",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "c568cb46bada4a5b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "85d080a0c9b7af77",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 273.5
+  },
+  "right": {
+    "id": "f90488d5441e502d",
+    "type": "split",
+    "children": [
+      {
+        "id": "0f7b92bd225af794",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1855e46c846c73e3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "THM Notes/Security Engineer/Threats and Risks.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Threats and Risks"
+            }
+          },
+          {
+            "id": "c05f28b4d403e7ed",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "THM Notes/3. Cyber Security 101/2. Command Line.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 2. Command Line"
+            }
+          },
+          {
+            "id": "ecf70807dd6b2c61",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "b15bf0c5a3a68968",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "THM Notes/3. Cyber Security 101/2. Command Line.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 2. Command Line"
+            }
+          },
+          {
+            "id": "76821b1a1c626bc0",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-spaced-repetition:Review flashcards": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "01c180902cba32e2",
+  "lastOpenFiles": [
+    "Home Lab/Notes.md",
+    "Home Lab/Projects.md",
+    "Home Lab",
+    "New folder",
+    "CyberSecurity_Notes/Test.md",
+    "THM Notes/2. Complete Beginner/5. Windows Exploitation Basics.md",
+    "CyberSecurity_Notes",
+    "THM Notes/3. Cyber Security 101/4. Cryptography.md",
+    "THM Notes/3. Cyber Security 101/3. Networking.md",
+    "THM Notes/3. Cyber Security 101/2. Command Line.md",
+    "THM Notes/3. Cyber Security 101/1. Start Your Cyber Security Journey.md",
+    "THM Notes/2. Complete Beginner/7. Basic Computer Exploitation.md",
+    "THM Notes/2. Complete Beginner/6. Shell and Privilege Escalation.md",
+    "THM Notes/2. Complete Beginner/4. Crytography.md",
+    "THM Notes/2. Complete Beginner/3. Web Hacking Fundamentals.md",
+    "THM Notes/2. Complete Beginner/2. Network Exploitation Basics.md",
+    "Python/1. Objects and Data Structure Basics.md",
+    "Python/3. Methods and Functions.md",
+    "Python/2. Statements.md",
+    "THM Notes/2. Complete Beginner/1. Linux Fundamentals.md",
+    "THM Notes/Security Engineer/3. Network and System Security.md",
+    "THM Notes/Jr Penetration Tester/5. Network Security.md",
+    "THM Notes/Jr Penetration Tester/10. Nmap The Basics.md",
+    "THM Notes/Security Engineer/1. Introduction to Security Engineering.md",
+    "THM Notes/Security Engineer/2. Threats and Risks.md",
+    "THM Notes/1. Pre Security/4. Windows Fundamentals.md",
+    "THM Notes/1. Pre Security/3. Linux Fundamentals.md",
+    "THM Notes/1. Pre Security/2. How The Web Works.md",
+    "THM Notes/1. Pre Security/1. Network Fundamentals.md",
+    "THM Notes/3. Cyber Security 101/4. Cryptography",
+    "Untitled.canvas",
+    "Pasted image 20240814113540.png",
+    "NIST Framework.png",
+    "Diffie Hellman.png",
+    "Pasted image 20241107162718.png",
+    "Pasted image 20241101121252.png",
+    "Pasted image 20241022144904.png",
+    "Pasted image 20241009193437.png",
+    "Pasted image 20241008144611.png",
+    "Pasted image 20240814215054.png",
+    "THM Notes/1. Pre Security",
+    "Google Dorks.png",
+    "THM Notes/3. Cyber Security 101",
+    "THM Notes/Jr Penetration Tester",
+    "CEH",
+    "THM Notes",
+    "Security Engineer/Introduction to Security Engineering"
+  ]
+}

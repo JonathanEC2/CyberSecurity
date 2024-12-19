@@ -11,10 +11,12 @@
             "id": "01c180902cba32e2",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "image",
+              "state": {
+                "file": "Pasted image 20241101121252.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20241101121252"
             }
           }
         ]
@@ -101,9 +103,11 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {},
+              "state": {
+                "file": "Pasted image 20241101121252.png"
+              },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Pasted image 20241101121252"
             }
           },
           {
@@ -138,6 +142,13 @@
   },
   "active": "01c180902cba32e2",
   "lastOpenFiles": [
+    "Pasted image 20241107162718.png",
+    "Pasted image 20241101121252.png",
+    "Pasted image 20241022144904.png",
+    "Pasted image 20241009193437.png",
+    "Pasted image 20241008144611.png",
+    "Pasted image 20240814113540.png",
+    "Untitled",
     "Python/3. Methods and Functions.md",
     "Python/Notes/3. Methods and Functions.md",
     "Python/Notes/2. Statements.md",
@@ -167,23 +178,15 @@
     "THM Notes/2. Complete Beginner/2. Network Exploitation Basics.md",
     "THM Notes/2. Complete Beginner/1. Linux Fundamentals.md",
     "THM Notes/Security Engineer/3. Network and System Security.md",
-    "THM Notes/Jr Penetration Tester/5. Network Security.md",
     "THM Notes/3. Cyber Security 101/4. Cryptography",
     "Untitled.canvas",
-    "Pasted image 20240814113540.png",
     "NIST Framework.png",
     "Diffie Hellman.png",
-    "Pasted image 20241107162718.png",
-    "Pasted image 20241101121252.png",
-    "Pasted image 20241022144904.png",
-    "Pasted image 20241009193437.png",
-    "Pasted image 20241008144611.png",
     "Pasted image 20240814215054.png",
     "THM Notes/1. Pre Security",
     "Google Dorks.png",
     "THM Notes/3. Cyber Security 101",
     "THM Notes/Jr Penetration Tester",
-    "CEH",
-    "THM Notes"
+    "CEH"
   ]
 }

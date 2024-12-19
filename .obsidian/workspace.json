@@ -11,12 +11,14 @@
             "id": "01c180902cba32e2",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Pasted image 20241101121252.png"
+                "file": "Home Lab/Projects.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20241101121252"
+              "icon": "lucide-file",
+              "title": "Projects"
             }
           }
         ]
@@ -104,10 +106,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Pasted image 20241101121252.png"
+                "file": "Home Lab/Projects.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Pasted image 20241101121252"
+              "title": "Outline of Projects"
             }
           },
           {
@@ -140,15 +142,23 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "01c180902cba32e2",
+  "active": "42e5c341715af5ac",
   "lastOpenFiles": [
-    "Pasted image 20241107162718.png",
+    "attachments/Diffie Hellman.png",
+    "attachments/NIST Framework.png",
+    "attachments/Google Dorks.png",
+    "attachments/Pasted image 20241107162718.png",
+    "attachments/Pasted image 20241101121252.png",
+    "attachments/Pasted image 20241022144904.png",
+    "attachments/Pasted image 20241009193437.png",
+    "attachments/Pasted image 20241008144611.png",
+    "attachments/Pasted image 20240814113540.png",
+    "attachments",
+    "Home Lab/Notes.md",
+    "THM Notes/1. Pre Security/2. How The Web Works.md",
+    "THM Notes/1. Pre Security/1. Network Fundamentals.md",
     "Pasted image 20241101121252.png",
-    "Pasted image 20241022144904.png",
-    "Pasted image 20241009193437.png",
-    "Pasted image 20241008144611.png",
-    "Pasted image 20240814113540.png",
-    "Untitled",
+    "Pasted image 20241107162718.png",
     "Python/3. Methods and Functions.md",
     "Python/Notes/3. Methods and Functions.md",
     "Python/Notes/2. Statements.md",
@@ -156,12 +166,9 @@
     "Python/Notes",
     "Python/2. Statements.md",
     "Python/1. Objects and Data Structure Basics.md",
-    "Home Lab/Notes.md",
     "Home Lab/Projects.md",
     "THM Notes/1. Pre Security/4. Windows Fundamentals.md",
     "THM Notes/1. Pre Security/3. Linux Fundamentals.md",
-    "THM Notes/1. Pre Security/2. How The Web Works.md",
-    "THM Notes/1. Pre Security/1. Network Fundamentals.md",
     "THM Notes/3. Cyber Security 101/2. Command Line.md",
     "Home Lab",
     "New folder",
@@ -180,11 +187,7 @@
     "THM Notes/Security Engineer/3. Network and System Security.md",
     "THM Notes/3. Cyber Security 101/4. Cryptography",
     "Untitled.canvas",
-    "NIST Framework.png",
-    "Diffie Hellman.png",
-    "Pasted image 20240814215054.png",
     "THM Notes/1. Pre Security",
-    "Google Dorks.png",
     "THM Notes/3. Cyber Security 101",
     "THM Notes/Jr Penetration Tester",
     "CEH"

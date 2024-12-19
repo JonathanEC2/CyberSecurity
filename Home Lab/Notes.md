@@ -1,4 +1,3 @@
-
 ## Network Settings
 
 - NAT - Creates separate network using the host adapter and will assign it to each VM; each VM will have its own network

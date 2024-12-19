@@ -4,4 +4,4 @@ Learn AD
 ## SSH
 
 sudo apt install ssh
-sudo systemctl enable ssh:
+sudo systemctl enable ssh

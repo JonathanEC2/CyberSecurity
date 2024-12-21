@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "4. Cryptography"
             }
+          },
+          {
+            "id": "ea08e0bc87037d9e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Python/Projects/Test.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Test"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -187,9 +202,10 @@
   },
   "active": "42e5c341715af5ac",
   "lastOpenFiles": [
+    "THM Notes/3. Cyber Security 101/4. Cryptography.md",
+    "Python/Projects/Test.md",
     "Python/Projects",
     "THM Notes/3. Cyber Security 101/3. Networking.md",
-    "THM Notes/3. Cyber Security 101/4. Cryptography.md",
     "Home Lab/Notes.md",
     "Python/Notes/3. Methods and Functions.md",
     "Python/Notes/2. Statements.md",
@@ -232,7 +248,6 @@
     "Untitled.canvas",
     "THM Notes/1. Pre Security",
     "THM Notes/3. Cyber Security 101",
-    "THM Notes/Jr Penetration Tester",
-    "CEH"
+    "THM Notes/Jr Penetration Tester"
   ]
 }

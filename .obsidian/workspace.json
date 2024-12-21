@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "01c180902cba32e2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Home Lab/Notes.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Notes"
-            }
-          },
-          {
             "id": "4559a139e5ebc7d6",
             "type": "leaf",
             "state": {
@@ -35,8 +21,7 @@
               "title": "4. Cryptography"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -143,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "THM Notes/3. Cyber Security 101/4. Cryptography.md",
+                "file": "Python/Notes/3. Methods and Functions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -153,7 +138,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 4. Cryptography"
+              "title": "Backlinks for 3. Methods and Functions"
             }
           },
           {
@@ -162,12 +147,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "THM Notes/3. Cyber Security 101/4. Cryptography.md",
+                "file": "Python/Notes/3. Methods and Functions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 4. Cryptography"
+              "title": "Outgoing links from 3. Methods and Functions"
             }
           },
           {
@@ -202,6 +187,12 @@
   },
   "active": "4559a139e5ebc7d6",
   "lastOpenFiles": [
+    "THM Notes/3. Cyber Security 101/3. Networking.md",
+    "THM Notes/3. Cyber Security 101/4. Cryptography.md",
+    "Home Lab/Notes.md",
+    "Python/Notes/3. Methods and Functions.md",
+    "Python/Notes/2. Statements.md",
+    "Python/Notes/1. Objects and Data Structure Basics.md",
     "THM Notes/2. Complete Beginner/4. Crytography.md",
     "THM Notes/2. Complete Beginner/3. Web Hacking Fundamentals.md",
     "THM Notes/2. Complete Beginner/2. Network Exploitation Basics.md",
@@ -216,7 +207,6 @@
     "attachments/Pasted image 20241022144904.png",
     "attachments/Pasted image 20241101121252.png",
     "attachments/Pasted image 20241107162718.png",
-    "Home Lab/Notes.md",
     "THM Notes/1. Pre Security/1. Network Fundamentals.md",
     "Home Lab/Projects.md",
     "attachments/Diffie Hellman.png",
@@ -224,9 +214,6 @@
     "attachments",
     "Pasted image 20241101121252.png",
     "Python/3. Methods and Functions.md",
-    "Python/Notes/3. Methods and Functions.md",
-    "Python/Notes/2. Statements.md",
-    "Python/Notes/1. Objects and Data Structure Basics.md",
     "Python/Notes",
     "Python/2. Statements.md",
     "Python/1. Objects and Data Structure Basics.md",
@@ -236,8 +223,6 @@
     "CyberSecurity_Notes/Test.md",
     "THM Notes/2. Complete Beginner/5. Windows Exploitation Basics.md",
     "CyberSecurity_Notes",
-    "THM Notes/3. Cyber Security 101/4. Cryptography.md",
-    "THM Notes/3. Cyber Security 101/3. Networking.md",
     "THM Notes/3. Cyber Security 101/1. Start Your Cyber Security Journey.md",
     "THM Notes/2. Complete Beginner/7. Basic Computer Exploitation.md",
     "THM Notes/2. Complete Beginner/6. Shell and Privilege Escalation.md",

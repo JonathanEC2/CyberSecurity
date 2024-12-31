@@ -34,7 +34,7 @@
       "**/*.excalidraw.md"
     ],
     "openRandomNote": false,
-    "autoNextNote": false,
+    "autoNextNote": true,
     "disableFileMenuReviewOptions": false,
     "maxNDaysNotesReviewQueue": 365,
     "showRibbonIcon": true,

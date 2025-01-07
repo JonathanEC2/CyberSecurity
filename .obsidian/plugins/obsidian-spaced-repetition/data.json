@@ -8,7 +8,8 @@
       "#tcp_dump",
       "#routing",
       "#dns",
-      "#network_services"
+      "#network_services",
+      "#web"
     ],
     "convertFoldersToDecks": false,
     "burySiblingCards": false,

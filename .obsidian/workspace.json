@@ -13,26 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "THM Notes/3. Cyber Security 101/4. Exploitation Basics.md",
+                "file": "THM Notes/3. Complete Beginner/2. Network Exploitation Basics.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4. Exploitation Basics"
+              "title": "2. Network Exploitation Basics"
             }
           },
           {
-            "id": "bf2447a16143752b",
+            "id": "3c371a63cec96b4e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "THM Notes/2. Complete Beginner/5. Windows Exploitation Basics.md",
+                "file": "THM Notes/1. Pre Security/2. How The Web Works.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5. Windows Exploitation Basics"
+              "title": "2. How The Web Works"
+            }
+          },
+          {
+            "id": "68d684fe8d7e2e9d",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "attachments/Pasted image 20241107162718.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20241107162718"
             }
           }
         ],
@@ -199,54 +211,53 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "bf2447a16143752b",
+  "active": "3c371a63cec96b4e",
   "lastOpenFiles": [
-    "THM Notes/3. Cyber Security 101/4. Exploitation Basics.md",
-    "THM Notes/2. Complete Beginner/2. Network Exploitation Basics.md",
-    "THM Notes/2. Complete Beginner/5. Windows Exploitation Basics.md",
-    "THM Notes/3. Cyber Security 101/3. Networking.md",
-    "THM Notes/2. Complete Beginner/1. Linux Fundamentals.md",
     "THM Notes/1. Pre Security/1. Network Fundamentals.md",
     "THM Notes/1. Pre Security/2. How The Web Works.md",
-    "THM Notes/1. Pre Security/3. Linux Fundamentals.md",
+    "THM Notes/11. DevSecOps",
+    "THM Notes/10. Cyber Defense",
+    "THM Notes/9. Offensive Pentesting",
+    "THM Notes/8. Web Application Pentesting/9. Web Application Pentesting",
+    "THM Notes/6. SOC Level 1",
+    "THM Notes/8. Web Application Pentesting",
+    "THM Notes/4. Web Fundamentals",
     "THM Notes/1. Pre Security/4. Windows Fundamentals.md",
-    "THM Notes/2. Complete Beginner/7. Basic Computer Exploitation.md",
-    "THM Notes/2. Complete Beginner/6. Shell and Privilege Escalation.md",
-    "Anthem.md",
-    "Write Ups",
-    "THM Notes/2. Complete Beginner/3. Web Hacking Fundamentals.md",
-    "CEH/5. Web App Hacking.md",
-    "THM Notes/2. Complete Beginner/4. Crytography.md",
-    "THM Notes/3. Cyber Security 101/4. Cryptography.md",
-    "THM Notes/3. Cyber Security 101/2. Command Line.md",
-    "THM Notes/3. Cyber Security 101/1. Start Your Cyber Security Journey.md",
-    "Untitled.canvas",
-    "2024-12-30.md",
-    "CEH/2. Reconnaisance.md",
-    "2024-12-26.md",
-    "THM Notes/Jr Penetration Tester/5. Network Security.md",
-    "THM Notes/Jr Penetration Tester/10. Nmap The Basics.md",
-    "2024-12-23.md",
-    "Python/Projects/Test.md",
-    "Python/Projects",
-    "Home Lab/Notes.md",
-    "attachments/Pasted image 20240814113540.png",
+    "THM Notes/5. Security Engineer/3. Network and System Security.md",
+    "attachments/Pasted image 20241107162718.png",
     "attachments/NIST Framework.png",
+    "attachments/Pasted image 20240814113540.png",
     "attachments/Pasted image 20241008144611.png",
     "attachments/Pasted image 20241009193437.png",
     "attachments/Pasted image 20241022144904.png",
     "attachments/Pasted image 20241101121252.png",
-    "attachments/Pasted image 20241107162718.png",
+    "THM Notes/3. Complete Beginner/2. Network Exploitation Basics.md",
+    "THM Notes/2. Cyber Security 101/3. Networking.md",
+    "THM Notes/2. Cyber Security 101/2. Command Line.md",
+    "THM Notes/2. Cyber Security 101/1. Start Your Cyber Security Journey.md",
+    "THM Notes/3. Complete Beginner/5. Windows Exploitation Basics.md",
+    "THM Notes/3. Complete Beginner/3. Web Hacking Fundamentals.md",
+    "THM Notes/3. Complete Beginner/1. Linux Fundamentals.md",
+    "THM Notes/1. Pre Security/3. Linux Fundamentals.md",
+    "Write Ups/Anthem.md",
+    "THM Notes/2. Cyber Security 101/5. Exploitation Basics.md",
+    "THM Notes/2. Cyber Security 101/6. Web Hacking.md",
+    "THM Notes/3. Complete Beginner/4. Crytography.md",
+    "THM Notes/2. Cyber Security 101/4. Cryptography.md",
+    "THM Notes/3. Complete Beginner/7. Basic Computer Exploitation.md",
+    "THM Notes/3. Complete Beginner/6. Shell and Privilege Escalation.md",
+    "Write Ups",
+    "CEH/5. Web App Hacking.md",
+    "Untitled.canvas",
+    "2024-12-30.md",
+    "CEH/2. Reconnaisance.md",
+    "2024-12-26.md",
+    "THM Notes/7. Jr Penetration Tester/5. Network Security.md",
+    "THM Notes/7. Jr Penetration Tester/10. Nmap The Basics.md",
+    "Python/Projects",
     "attachments/Diffie Hellman.png",
     "attachments/Google Dorks.png",
     "attachments",
-    "Pasted image 20241101121252.png",
-    "Python/Notes",
-    "Home Lab",
-    "New folder",
-    "CyberSecurity_Notes",
-    "THM Notes/3. Cyber Security 101/4. Cryptography",
-    "THM Notes/1. Pre Security",
-    "THM Notes/3. Cyber Security 101"
+    "Pasted image 20241101121252.png"
   ]
 }

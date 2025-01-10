@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b45e70eed84ac885",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "THM Notes/3. Complete Beginner/2. Network Exploitation Basics.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2. Network Exploitation Basics"
-            }
-          },
-          {
             "id": "3c371a63cec96b4e",
             "type": "leaf",
             "state": {
@@ -36,19 +22,20 @@
             }
           },
           {
-            "id": "68d684fe8d7e2e9d",
+            "id": "8198a7df5de78172",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "attachments/Pasted image 20241107162718.png"
+                "file": "THM Notes/1. Pre Security/2. How The Web Works.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20241107162718"
+              "icon": "lucide-file",
+              "title": "2. How The Web Works"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -197,7 +184,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -213,8 +201,21 @@
   },
   "active": "3c371a63cec96b4e",
   "lastOpenFiles": [
-    "THM Notes/1. Pre Security/1. Network Fundamentals.md",
+    "THM Notes/2. Cyber Security 101/6. Web Hacking.md",
     "THM Notes/1. Pre Security/2. How The Web Works.md",
+    "THM Notes/3. Complete Beginner/4. Cryptography.md",
+    "THM Notes/1. Pre Security/1. Network Fundamentals.md",
+    "THM Notes/2. Cyber Security 101/5. Exploitation Basics.md",
+    "THM Notes/2. Cyber Security 101/4. Cryptography.md",
+    "THM Notes/2. Cyber Security 101/3. Networking.md",
+    "THM Notes/2. Cyber Security 101/2. Command Line.md",
+    "THM Notes/2. Cyber Security 101/1. Start Your Cyber Security Journey.md",
+    "THM Notes/1. Pre Security/4. Windows Fundamentals.md",
+    "THM Notes/3. Complete Beginner/5. Windows Exploitation Basics.md",
+    "THM Notes/1. Pre Security/3. Linux Fundamentals.md",
+    "THM Notes/3. Complete Beginner/1. Linux Fundamentals.md",
+    "THM Notes/3. Complete Beginner/3. Web Hacking Fundamentals.md",
+    "THM Notes/3. Complete Beginner/2. Network Exploitation Basics.md",
     "THM Notes/11. DevSecOps",
     "THM Notes/10. Cyber Defense",
     "THM Notes/9. Offensive Pentesting",
@@ -222,7 +223,6 @@
     "THM Notes/6. SOC Level 1",
     "THM Notes/8. Web Application Pentesting",
     "THM Notes/4. Web Fundamentals",
-    "THM Notes/1. Pre Security/4. Windows Fundamentals.md",
     "THM Notes/5. Security Engineer/3. Network and System Security.md",
     "attachments/Pasted image 20241107162718.png",
     "attachments/NIST Framework.png",
@@ -231,19 +231,7 @@
     "attachments/Pasted image 20241009193437.png",
     "attachments/Pasted image 20241022144904.png",
     "attachments/Pasted image 20241101121252.png",
-    "THM Notes/3. Complete Beginner/2. Network Exploitation Basics.md",
-    "THM Notes/2. Cyber Security 101/3. Networking.md",
-    "THM Notes/2. Cyber Security 101/2. Command Line.md",
-    "THM Notes/2. Cyber Security 101/1. Start Your Cyber Security Journey.md",
-    "THM Notes/3. Complete Beginner/5. Windows Exploitation Basics.md",
-    "THM Notes/3. Complete Beginner/3. Web Hacking Fundamentals.md",
-    "THM Notes/3. Complete Beginner/1. Linux Fundamentals.md",
-    "THM Notes/1. Pre Security/3. Linux Fundamentals.md",
     "Write Ups/Anthem.md",
-    "THM Notes/2. Cyber Security 101/5. Exploitation Basics.md",
-    "THM Notes/2. Cyber Security 101/6. Web Hacking.md",
-    "THM Notes/3. Complete Beginner/4. Crytography.md",
-    "THM Notes/2. Cyber Security 101/4. Cryptography.md",
     "THM Notes/3. Complete Beginner/7. Basic Computer Exploitation.md",
     "THM Notes/3. Complete Beginner/6. Shell and Privilege Escalation.md",
     "Write Ups",

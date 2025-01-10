@@ -7,9 +7,9 @@
       "#windows_CL",
       "#tcp_dump",
       "#routing",
-      "#dns",
       "#network_services",
-      "#web"
+      "#web",
+      "#metasploit"
     ],
     "convertFoldersToDecks": false,
     "burySiblingCards": false,

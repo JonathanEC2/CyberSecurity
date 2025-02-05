@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "THM Notes/2. Cyber Security 101/7. Offensive Security Tooling.md",
+                "file": "THM Notes/2. Cyber Security 101/4. Cryptography.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "7. Offensive Security Tooling"
+              "title": "4. Cryptography"
             }
           },
           {
@@ -123,43 +123,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "THM Notes/2. Cyber Security 101/4. Cryptography.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
-            }
-          },
-          {
-            "id": "ac2967c7b5f5565f",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks"
-            }
-          },
-          {
-            "id": "5efe5058a8b60d64",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outline of 4. Cryptography"
             }
           },
           {
@@ -173,7 +143,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -194,7 +164,10 @@
   "active": "591fb4dfadd0e22b",
   "lastOpenFiles": [
     "THM Notes/2. Cyber Security 101/6. Web Hacking.md",
+    "THM Notes/2. Cyber Security 101/8. Defensive Security.md",
     "THM Notes/2. Cyber Security 101/7. Offensive Security Tooling.md",
+    "CEH/5. Web App Hacking.md",
+    "Write Ups/Anthem.md",
     "THM Notes/2. Cyber Security 101/5. Exploitation Basics.md",
     "THM Notes/1. Pre Security/2. How The Web Works.md",
     "THM Notes/2. Cyber Security 101/4. Cryptography.md",
@@ -203,7 +176,6 @@
     "Untitled.md",
     "THM Notes/2. Cyber Security 101/10. Defensive Security.md",
     "THM Notes/2. Cyber Security 101/9. Security Solutions.md",
-    "THM Notes/2. Cyber Security 101/8. Defensive Security.md",
     "THM Notes/1. Pre Security/3. Linux Fundamentals.md",
     "THM Notes/2. Cyber Security 101/1. Start Your Cyber Security Journey.md",
     "THM Notes/1. Pre Security/4. Windows Fundamentals.md",
@@ -212,7 +184,6 @@
     "attachments/DB Table Example.png",
     "THM Notes/7. Jr Penetration Tester/5. Network Security.md",
     "THM Notes/7. Jr Penetration Tester/10. Nmap The Basics.md",
-    "Write Ups/Anthem.md",
     "THM Notes/3. Complete Beginner/4. Cryptography.md",
     "THM Notes/3. Complete Beginner/5. Windows Exploitation Basics.md",
     "THM Notes/3. Complete Beginner/1. Linux Fundamentals.md",
@@ -234,7 +205,6 @@
     "attachments/Pasted image 20241022144904.png",
     "attachments/Pasted image 20241101121252.png",
     "THM Notes/3. Complete Beginner/7. Basic Computer Exploitation.md",
-    "THM Notes/3. Complete Beginner/6. Shell and Privilege Escalation.md",
     "Write Ups",
     "Untitled.canvas",
     "Python/Projects",

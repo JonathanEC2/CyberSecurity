@@ -4,35 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "2ee28270bf951518",
+        "id": "dcf8a6edfcdfac38",
         "type": "tabs",
         "children": [
           {
-            "id": "e1840d4edd0eece1",
+            "id": "9a4cf9c3a6c4b93f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "THM Notes/2. Cyber Security 101/8. Defensive Security.md",
+                "file": "THM Notes/2. Cyber Security 101/9. Security Solutions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "8. Defensive Security"
-            }
-          },
-          {
-            "id": "26e83f1d59969bce",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "THM Notes/1. Pre Security/2. How The Web Works.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2. How The Web Works"
+              "title": "9. Security Solutions"
             }
           }
         ]
@@ -123,13 +109,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "THM Notes/2. Cyber Security 101/8. Defensive Security.md",
+                "file": "THM Notes/2. Cyber Security 101/9. Security Solutions.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 8. Defensive Security"
+              "title": "Outline of 9. Security Solutions"
             }
           },
           {
@@ -140,39 +126,6 @@
               "state": {},
               "icon": "SpacedRepIcon",
               "title": "Notes Review Queue"
-            }
-          },
-          {
-            "id": "f27965d3d737720e",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "THM Notes/2. Cyber Security 101/8. Defensive Security.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks for 8. Defensive Security"
-            }
-          },
-          {
-            "id": "d88ba325adec3f2c",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "THM Notes/2. Cyber Security 101/8. Defensive Security.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "Outgoing links from 8. Defensive Security"
             }
           }
         ],
@@ -194,34 +147,38 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b15bf0c5a3a68968",
+  "active": "9a4cf9c3a6c4b93f",
   "lastOpenFiles": [
+    "THM Notes/2. Cyber Security 101/10. Defensive Security Tooling.md",
+    "THM Notes/2. Cyber Security 101/9. Security Solutions.md",
+    "THM Notes/2. Cyber Security 101/8. Defensive Security.md",
+    "THM Notes/3. Complete Beginner/7. Basic Computer Exploitation.md",
+    "attachments/NIST Incident Response.png",
+    "attachments/SANS PICERL.png",
+    "THM Notes/2. Cyber Security 101/7. Offensive Security Tooling.md",
+    "THM Notes/3. Complete Beginner/3. Web Hacking Fundamentals.md",
+    "THM Notes/3. Complete Beginner/4. Cryptography.md",
+    "THM Notes/3. Complete Beginner/6. Shell and Privilege Escalation.md",
+    "CEH/2. Reconnaisance.md",
+    "CEH/1. Ethical Hacking Overview.md",
+    "CEH/9. Cryptography.md",
+    "CEH/8. Cloud Computing.md",
+    "CEH/7. Mobile Platform, IoT, and OT Hacking.md",
+    "CEH/6. Wireless Network Hacking.md",
+    "CEH/5. Web App Hacking.md",
+    "CEH/4. Network and Perimeter Hacking.md",
+    "CEH/3. System Hacking Phases and Attack Techniques.md",
+    "THM Notes/2. Cyber Security 101/6. Web Hacking.md",
+    "THM Notes/2. Cyber Security 101/2. Command Line.md",
+    "THM Notes/2. Cyber Security 101/3. Networking.md",
+    "THM Notes/2. Cyber Security 101/5. Exploitation Basics.md",
+    "THM Notes/2. Cyber Security 101/4. Cryptography.md",
     "THM Notes/1. Pre Security/4. Windows Fundamentals.md",
     "THM Notes/1. Pre Security/3. Linux Fundamentals.md",
     "THM Notes/1. Pre Security/2. How The Web Works.md",
     "THM Notes/1. Pre Security/1. Network Fundamentals.md",
-    "THM Notes/2. Cyber Security 101/8. Defensive Security.md",
-    "THM Notes/2. Cyber Security 101/7. Offensive Security Tooling.md",
-    "THM Notes/2. Cyber Security 101/1. Start Your Cyber Security Journey.md",
-    "THM Notes/2. Cyber Security 101/2. Command Line.md",
-    "THM Notes/2. Cyber Security 101/3. Networking.md",
-    "THM Notes/2. Cyber Security 101/4. Cryptography.md",
-    "THM Notes/2. Cyber Security 101/5. Exploitation Basics.md",
-    "THM Notes/2. Cyber Security 101/6. Web Hacking.md",
-    "THM Notes/2. Cyber Security 101/10. Defensive Security.md",
-    "THM Notes/2. Cyber Security 101/9. Security Solutions.md",
-    "CEH/5. Web App Hacking.md",
-    "Write Ups/Anthem.md",
-    "Untitled.md",
     "attachments/Primary and Foreign Keys.png",
     "attachments/DB Table Example.png",
-    "THM Notes/7. Jr Penetration Tester/5. Network Security.md",
-    "THM Notes/7. Jr Penetration Tester/10. Nmap The Basics.md",
-    "THM Notes/3. Complete Beginner/4. Cryptography.md",
-    "THM Notes/3. Complete Beginner/5. Windows Exploitation Basics.md",
-    "THM Notes/3. Complete Beginner/1. Linux Fundamentals.md",
-    "THM Notes/3. Complete Beginner/3. Web Hacking Fundamentals.md",
-    "THM Notes/3. Complete Beginner/2. Network Exploitation Basics.md",
     "THM Notes/11. DevSecOps",
     "THM Notes/10. Cyber Defense",
     "THM Notes/9. Offensive Pentesting",
@@ -229,19 +186,15 @@
     "THM Notes/6. SOC Level 1",
     "THM Notes/8. Web Application Pentesting",
     "THM Notes/4. Web Fundamentals",
-    "THM Notes/5. Security Engineer/3. Network and System Security.md",
     "attachments/Pasted image 20241107162718.png",
     "attachments/NIST Framework.png",
     "attachments/Pasted image 20240814113540.png",
     "attachments/Pasted image 20241008144611.png",
     "attachments/Pasted image 20241009193437.png",
     "attachments/Pasted image 20241022144904.png",
-    "attachments/Pasted image 20241101121252.png",
-    "THM Notes/3. Complete Beginner/7. Basic Computer Exploitation.md",
     "Write Ups",
     "Untitled.canvas",
     "Python/Projects",
-    "attachments/Diffie Hellman.png",
     "attachments"
   ]
 }

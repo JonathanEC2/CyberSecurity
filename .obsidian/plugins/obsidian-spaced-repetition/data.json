@@ -9,7 +9,8 @@
       "#routing",
       "#network_services",
       "#web",
-      "#metasploit"
+      "#metasploit",
+      "#defensive_security"
     ],
     "convertFoldersToDecks": false,
     "burySiblingCards": false,

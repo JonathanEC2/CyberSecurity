@@ -147,15 +147,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9a4cf9c3a6c4b93f",
+  "active": "b15bf0c5a3a68968",
   "lastOpenFiles": [
-    "THM Notes/2. Cyber Security 101/10. Defensive Security Tooling.md",
-    "THM Notes/2. Cyber Security 101/9. Security Solutions.md",
     "THM Notes/2. Cyber Security 101/8. Defensive Security.md",
+    "THM Notes/2. Cyber Security 101/7. Offensive Security Tooling.md",
+    "THM Notes/2. Cyber Security 101/9. Security Solutions.md",
+    "THM Notes/5. Security Engineer/3. Network and System Security.md",
+    "THM Notes/7. Jr Penetration Tester/10. Nmap The Basics.md",
+    "THM Notes/7. Jr Penetration Tester/5. Network Security.md",
+    "CCNA",
+    "THM Notes/2. Cyber Security 101/10. Defensive Security Tooling.md",
     "THM Notes/3. Complete Beginner/7. Basic Computer Exploitation.md",
     "attachments/NIST Incident Response.png",
     "attachments/SANS PICERL.png",
-    "THM Notes/2. Cyber Security 101/7. Offensive Security Tooling.md",
     "THM Notes/3. Complete Beginner/3. Web Hacking Fundamentals.md",
     "THM Notes/3. Complete Beginner/4. Cryptography.md",
     "THM Notes/3. Complete Beginner/6. Shell and Privilege Escalation.md",
@@ -174,9 +178,6 @@
     "THM Notes/2. Cyber Security 101/5. Exploitation Basics.md",
     "THM Notes/2. Cyber Security 101/4. Cryptography.md",
     "THM Notes/1. Pre Security/4. Windows Fundamentals.md",
-    "THM Notes/1. Pre Security/3. Linux Fundamentals.md",
-    "THM Notes/1. Pre Security/2. How The Web Works.md",
-    "THM Notes/1. Pre Security/1. Network Fundamentals.md",
     "attachments/Primary and Foreign Keys.png",
     "attachments/DB Table Example.png",
     "THM Notes/11. DevSecOps",
@@ -194,7 +195,6 @@
     "attachments/Pasted image 20241022144904.png",
     "Write Ups",
     "Untitled.canvas",
-    "Python/Projects",
-    "attachments"
+    "Python/Projects"
   ]
 }

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "THM Notes/2. Cyber Security 101/9. Security Solutions.md",
+                "file": "THM Notes/2. Cyber Security 101/10. Defensive Security Tooling.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "9. Security Solutions"
+              "title": "10. Defensive Security Tooling"
             }
           }
         ]
@@ -89,7 +89,65 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ecf70807dd6b2c61",
+            "id": "b15bf0c5a3a68968",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "THM Notes/2. Cyber Security 101/10. Defensive Security Tooling.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 10. Defensive Security Tooling"
+            }
+          },
+          {
+            "id": "591fb4dfadd0e22b",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "SpacedRepIcon",
+              "title": "Notes Review Queue"
+            }
+          },
+          {
+            "id": "be0c9764f29b2d3b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "THM Notes/2. Cyber Security 101/10. Defensive Security Tooling.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 10. Defensive Security Tooling"
+            }
+          },
+          {
+            "id": "04fe9b8c645e45c0",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "THM Notes/2. Cyber Security 101/10. Defensive Security Tooling.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 10. Defensive Security Tooling"
+            }
+          },
+          {
+            "id": "49425c103f81bb61",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -102,34 +160,8 @@
               "icon": "lucide-tags",
               "title": "Tags"
             }
-          },
-          {
-            "id": "b15bf0c5a3a68968",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "THM Notes/2. Cyber Security 101/9. Security Solutions.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Outline of 9. Security Solutions"
-            }
-          },
-          {
-            "id": "591fb4dfadd0e22b",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "SpacedRepIcon",
-              "title": "Notes Review Queue"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -147,16 +179,26 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b15bf0c5a3a68968",
+  "active": "9a4cf9c3a6c4b93f",
   "lastOpenFiles": [
+    "THM Notes/1. Pre Security/2. How The Web Works.md",
+    "THM Notes/2. Cyber Security 101/6. Web Hacking.md",
+    "THM Notes/2. Cyber Security 101/1. Start Your Cyber Security Journey.md",
+    "THM Notes/1. Pre Security/4. Windows Fundamentals.md",
+    "THM Notes/1. Pre Security/3. Linux Fundamentals.md",
+    "THM Notes/1. Pre Security/1. Network Fundamentals.md",
+    "THM Notes/2. Cyber Security 101/3. Networking.md",
+    "THM Notes/2. Cyber Security 101/2. Command Line.md",
+    "THM Notes/2. Cyber Security 101/10. Defensive Security Tooling.md",
     "THM Notes/2. Cyber Security 101/8. Defensive Security.md",
-    "THM Notes/2. Cyber Security 101/7. Offensive Security Tooling.md",
     "THM Notes/2. Cyber Security 101/9. Security Solutions.md",
+    "attachments/Pasted image 20250311192938.png",
+    "attachments/Pasted image 20250311192929.png",
+    "THM Notes/2. Cyber Security 101/7. Offensive Security Tooling.md",
     "THM Notes/5. Security Engineer/3. Network and System Security.md",
     "THM Notes/7. Jr Penetration Tester/10. Nmap The Basics.md",
     "THM Notes/7. Jr Penetration Tester/5. Network Security.md",
     "CCNA",
-    "THM Notes/2. Cyber Security 101/10. Defensive Security Tooling.md",
     "THM Notes/3. Complete Beginner/7. Basic Computer Exploitation.md",
     "attachments/NIST Incident Response.png",
     "attachments/SANS PICERL.png",
@@ -170,14 +212,6 @@
     "CEH/7. Mobile Platform, IoT, and OT Hacking.md",
     "CEH/6. Wireless Network Hacking.md",
     "CEH/5. Web App Hacking.md",
-    "CEH/4. Network and Perimeter Hacking.md",
-    "CEH/3. System Hacking Phases and Attack Techniques.md",
-    "THM Notes/2. Cyber Security 101/6. Web Hacking.md",
-    "THM Notes/2. Cyber Security 101/2. Command Line.md",
-    "THM Notes/2. Cyber Security 101/3. Networking.md",
-    "THM Notes/2. Cyber Security 101/5. Exploitation Basics.md",
-    "THM Notes/2. Cyber Security 101/4. Cryptography.md",
-    "THM Notes/1. Pre Security/4. Windows Fundamentals.md",
     "attachments/Primary and Foreign Keys.png",
     "attachments/DB Table Example.png",
     "THM Notes/11. DevSecOps",
@@ -191,8 +225,6 @@
     "attachments/NIST Framework.png",
     "attachments/Pasted image 20240814113540.png",
     "attachments/Pasted image 20241008144611.png",
-    "attachments/Pasted image 20241009193437.png",
-    "attachments/Pasted image 20241022144904.png",
     "Write Ups",
     "Untitled.canvas",
     "Python/Projects"

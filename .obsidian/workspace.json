@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "dcf8a6edfcdfac38",
+        "id": "df8347735b64d1d7",
         "type": "tabs",
         "children": [
           {
-            "id": "9a4cf9c3a6c4b93f",
+            "id": "f0f96b3d79935978",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "THM Notes/2. Cyber Security 101/10. Defensive Security Tooling.md",
+                "file": "THM Notes/2. Cyber Security 101/6. Web Hacking.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "10. Defensive Security Tooling"
+              "title": "6. Web Hacking"
             }
           }
         ]
@@ -94,13 +94,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "THM Notes/2. Cyber Security 101/10. Defensive Security Tooling.md",
+                "file": "THM Notes/2. Cyber Security 101/6. Web Hacking.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 10. Defensive Security Tooling"
+              "title": "Outline of 6. Web Hacking"
             }
           },
           {
@@ -127,42 +127,8 @@
               "icon": "lucide-tags",
               "title": "Tags"
             }
-          },
-          {
-            "id": "0396d34396f9e3a6",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "THM Notes/2. Cyber Security 101/10. Defensive Security Tooling.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks for 10. Defensive Security Tooling"
-            }
-          },
-          {
-            "id": "8bbffc554a9d6885",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "THM Notes/2. Cyber Security 101/10. Defensive Security Tooling.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "Outgoing links from 10. Defensive Security Tooling"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -180,25 +146,28 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "591fb4dfadd0e22b",
+  "active": "f0f96b3d79935978",
   "lastOpenFiles": [
-    "THM Notes/2. Cyber Security 101/3. Networking.md",
+    "THM Notes/1. Pre Security/2. How The Web Works.md",
+    "THM Notes/2. Cyber Security 101/6. Web Hacking.md",
+    "THM Notes/2. Cyber Security 101/7. Offensive Security Tooling.md",
+    "THM Notes/1. Pre Security/3. Linux Fundamentals.md",
+    "THM Notes/2. Cyber Security 101/10. Defensive Security Tooling.md",
+    "THM Notes/1. Pre Security/1. Network Fundamentals.md",
+    "THM Notes/5. Security Engineer/1. Introduction to Security Engineering.md",
+    "CEH/1. Ethical Hacking Overview.md",
     "THM Notes/2. Cyber Security 101/2. Command Line.md",
     "THM Notes/2. Cyber Security 101/1. Start Your Cyber Security Journey.md",
-    "THM Notes/1. Pre Security/3. Linux Fundamentals.md",
-    "THM Notes/1. Pre Security/2. How The Web Works.md",
-    "THM Notes/1. Pre Security/1. Network Fundamentals.md",
-    "THM Notes/2. Cyber Security 101/8. Defensive Security.md",
-    "THM Notes/2. Cyber Security 101/10. Defensive Security Tooling.md",
-    "THM Notes/2. Cyber Security 101/9. Security Solutions.md",
+    "THM Notes/5. Security Engineer/3. Network and System Security.md",
+    "CEH/2. Reconnaisance.md",
+    "THM Notes/2. Cyber Security 101/3. Networking.md",
     "THM Notes/1. Pre Security/4. Windows Fundamentals.md",
-    "THM Notes/2. Cyber Security 101/7. Offensive Security Tooling.md",
+    "THM Notes/2. Cyber Security 101/9. Security Solutions.md",
     "THM Notes/2. Cyber Security 101/4. Cryptography.md",
-    "THM Notes/2. Cyber Security 101/6. Web Hacking.md",
+    "THM Notes/2. Cyber Security 101/8. Defensive Security.md",
     "THM Notes/2. Cyber Security 101/5. Exploitation Basics.md",
     "attachments/Pasted image 20250311192938.png",
     "attachments/Pasted image 20250311192929.png",
-    "THM Notes/5. Security Engineer/3. Network and System Security.md",
     "THM Notes/7. Jr Penetration Tester/10. Nmap The Basics.md",
     "THM Notes/7. Jr Penetration Tester/5. Network Security.md",
     "CCNA",
@@ -208,11 +177,8 @@
     "THM Notes/3. Complete Beginner/3. Web Hacking Fundamentals.md",
     "THM Notes/3. Complete Beginner/4. Cryptography.md",
     "THM Notes/3. Complete Beginner/6. Shell and Privilege Escalation.md",
-    "CEH/2. Reconnaisance.md",
-    "CEH/1. Ethical Hacking Overview.md",
     "CEH/9. Cryptography.md",
     "CEH/8. Cloud Computing.md",
-    "CEH/7. Mobile Platform, IoT, and OT Hacking.md",
     "attachments/Primary and Foreign Keys.png",
     "attachments/DB Table Example.png",
     "THM Notes/11. DevSecOps",

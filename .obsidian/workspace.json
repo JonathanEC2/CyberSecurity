@@ -4,39 +4,44 @@
     "type": "split",
     "children": [
       {
-        "id": "0382c93609f69cba",
+        "id": "eb6da61bf43329ef",
         "type": "tabs",
         "children": [
           {
-            "id": "196d436c43f94c60",
+            "id": "233eebf368e36b5f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "THM Notes/2. Cyber Security 101/6. Web Hacking.md",
+                "file": "THM Notes/2. Cyber Security 101/5. Exploitation Basics/2. Metasploit Exploitatiom.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "6. Web Hacking"
-            }
-          },
-          {
-            "id": "3b4770a43e6cc2d5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "THM Notes/2. Cyber Security 101/9. Security Solutions.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "9. Security Solutions"
+              "title": "2. Metasploit Exploitatiom"
             }
           }
-        ],
-        "currentTab": 1
+        ]
+      },
+      {
+        "id": "89c1769c0bee6f28",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c7bf972a1b343a4d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "THM Notes/2. Cyber Security 101/5. Exploitation Basics/1. Metasploit Introduction.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "1. Metasploit Introduction"
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -109,13 +114,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "THM Notes/2. Cyber Security 101/9. Security Solutions.md",
+                "file": "THM Notes/2. Cyber Security 101/5. Exploitation Basics/1. Metasploit Introduction.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 9. Security Solutions"
+              "title": "Outline of 1. Metasploit Introduction"
             }
           },
           {
@@ -142,6 +147,39 @@
               "icon": "lucide-tags",
               "title": "Tags"
             }
+          },
+          {
+            "id": "486d3fcc7366006c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "THM Notes/2. Cyber Security 101/5. Exploitation Basics/1. Metasploit Introduction.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 1. Metasploit Introduction"
+            }
+          },
+          {
+            "id": "b3304b270fcc6200",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "THM Notes/2. Cyber Security 101/5. Exploitation Basics/1. Metasploit Introduction.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 1. Metasploit Introduction"
+            }
           }
         ]
       }
@@ -161,38 +199,44 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3b4770a43e6cc2d5",
+  "active": "c7bf972a1b343a4d",
   "lastOpenFiles": [
-    "THM Notes/2. Cyber Security 101/8. Defensive Security.md",
-    "THM Notes/2. Cyber Security 101/7. Offensive Security Tooling.md",
-    "THM Notes/2. Cyber Security 101/6. Web Hacking.md",
-    "THM Notes/2. Cyber Security 101/5. Exploitation Basics.md",
-    "THM Notes/2. Cyber Security 101/4. Cryptography.md",
-    "THM Notes/2. Cyber Security 101/3. Networking.md",
-    "THM Notes/2. Cyber Security 101/2. Command Line.md",
-    "THM Notes/2. Cyber Security 101/1. Start Your Cyber Security Journey.md",
-    "THM Notes/1. Pre Security/Linux Fundamentals/Linux Fundamentals 3.md",
-    "THM Notes/1. Pre Security/Linux Fundamentals/Linux Fundamentals 2.md",
-    "THM Notes/1. Pre Security/Linux Fundamentals/Linux Fundamentals 1.md",
-    "THM Notes/3. Complete Beginner/5. Windows Exploitation Basics.md",
-    "THM Notes/1. Pre Security/Windows Fundamentals/Windows Fundamentals 2.md",
-    "THM Notes/1. Pre Security/Windows Fundamentals/Windows Fundamentals 1.md",
-    "4. Windows Fundamentals.md",
-    "THM Notes/3. Complete Beginner/1. Linux Fundamentals.md",
-    "THM Notes/1. Pre Security/4. Windows Fundamentals.md",
-    "THM Notes/3. Complete Beginner/4. Cryptography.md",
-    "THM Notes/3. Complete Beginner/3. Web Hacking Fundamentals.md",
-    "THM Notes/3. Complete Beginner/2. Network Exploitation Basics.md",
-    "THM Notes/4. Web Fundamentals/1. How The Web Works.md",
-    "THM Notes/1. Pre Security/3. Linux Fundamentals.md",
-    "THM Notes/1. Pre Security/2. How The Web Works.md",
-    "THM Notes/3. Complete Beginner/7. Basic Computer Exploitation.md",
-    "THM Notes/3. Complete Beginner/6. Shell and Privilege Escalation.md",
-    "THM Notes/2. Cyber Security 101/10. Defensive Security Tooling.md",
-    "THM Notes/1. Pre Security/Windows Fundamentals",
-    "THM Notes/1. Pre Security/Linux Fundamentals",
-    "THM Notes/1. Pre Security/How The Web Works",
-    "THM Notes/1. Pre Security/1. Network Fundamentals",
+    "THM Notes/2. Cyber Security 101/5. Exploitation Basics/2. Metasploit Exploitatiom.md",
+    "THM Notes/2. Cyber Security 101/5. Exploitation Basics/5. Exploitation Basics.md",
+    "THM Notes/2. Cyber Security 101/5. Exploitation Basics/1. Metasploit Introduction.md",
+    "THM Notes/2. Cyber Security 101/5. Exploitation Basics/3. Metasploit Meterpreter.md",
+    "THM Notes/2. Cyber Security 101/5. Exploitation Basics/Untitled 3.md",
+    "THM Notes/2. Cyber Security 101/4. Cryptography/3. Hashing Basics.md",
+    "THM Notes/3. Complete Beginner/7. Basic Computer Exploitation/7. Basic Computer Exploitation.md",
+    "THM Notes/3. Complete Beginner/6. Shell and Privilege Escalation/6. Shell and Privilege Escalation.md",
+    "THM Notes/3. Complete Beginner/5. Windows Exploitation Basics/5. Windows Exploitation Basics.md",
+    "THM Notes/3. Complete Beginner/4. Cryptography/4. Cryptography.md",
+    "THM Notes/3. Complete Beginner/3. Web Hacking Fundamentals/3. Web Hacking Fundamentals.md",
+    "THM Notes/3. Complete Beginner/2. Network Exploitation Basics/2. Network Exploitation Basics.md",
+    "THM Notes/2. Cyber Security 101/4. Cryptography/4. John the Ripper The Basics.md",
+    "THM Notes/2. Cyber Security 101/4. Cryptography/4. Cryptography.md",
+    "THM Notes/2. Cyber Security 101/4. Cryptography/2. Public Key Cryptography Basics.md",
+    "THM Notes/2. Cyber Security 101/4. Cryptography/1. Cryptography Basics.md",
+    "THM Notes/2. Cyber Security 101/10. Defensive Security Tooling/10. Defensive Security Tooling.md",
+    "THM Notes/2. Cyber Security 101/9. Security Solutions/9. Security Solutions.md",
+    "THM Notes/2. Cyber Security 101/8. Defensive Security/8. Defensive Security.md",
+    "THM Notes/2. Cyber Security 101/7. Offensive Security Tooling/7. Offensive Security Tooling.md",
+    "THM Notes/2. Cyber Security 101/6. Web Hacking/6. Web Hacking.md",
+    "THM Notes/2. Cyber Security 101/3. Networking/3. Networking.md",
+    "THM Notes/2. Cyber Security 101/3. Networking/1. Networking Concepts.md",
+    "THM Notes/2. Cyber Security 101/3. Networking/2. Networking Essentials.md",
+    "THM Notes/2. Cyber Security 101/3. Networking/3. Networking Core Protocols.md",
+    "THM Notes/2. Cyber Security 101/3. Networking/4. Networking Secure Protocols.md",
+    "THM Notes/4. Web Fundamentals/Untitled 1",
+    "THM Notes/4. Web Fundamentals/Untitled",
+    "THM Notes/3. Complete Beginner/7. Basic Computer Exploitation",
+    "THM Notes/3. Complete Beginner/6. Shell and Privilege Escalation",
+    "THM Notes/3. Complete Beginner/5. Windows Exploitation Basics",
+    "THM Notes/3. Complete Beginner/4. Cryptography",
+    "THM Notes/3. Complete Beginner/3. Web Hacking Fundamentals",
+    "THM Notes/3. Complete Beginner/2. Network Exploitation Basics",
+    "THM Notes/3. Complete Beginner/1. Linux Fundamentals",
+    "THM Notes/2. Cyber Security 101/10. Defensive Security Tooling",
     "attachments/URL.png",
     "attachments/DB Table Example.png",
     "attachments/NIST Incident Response.png",
@@ -203,12 +247,6 @@
     "attachments/Pasted image 20241101121252.png",
     "attachments/Pasted image 20241107162718.png",
     "attachments/Pasted image 20250311192929.png",
-    "CCNA",
-    "THM Notes/11. DevSecOps",
-    "THM Notes/10. Cyber Defense",
-    "THM Notes/9. Offensive Pentesting",
-    "THM Notes/8. Web Application Pentesting/9. Web Application Pentesting",
-    "THM Notes/6. SOC Level 1",
     "Untitled.canvas"
   ]
 }

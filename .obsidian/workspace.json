@@ -13,22 +13,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "THM Notes/4. Web Fundamentals/2. Web Fundamentals/2. Content Discovery.md",
+                "file": "THM Notes/4. Web Fundamentals/2. Web Fundamentals/8. Intro to XXS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2. Content Discovery"
+              "title": "8. Intro to XXS"
             }
-          }
-        ]
-      },
-      {
-        "id": "b10066c1ad19d429",
-        "type": "tabs",
-        "children": [
+          },
           {
-            "id": "f5b5412e6cd29e8e",
+            "id": "0338664a58454922",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -114,13 +108,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "THM Notes/4. Web Fundamentals/2. Web Fundamentals/6. File Inclusion.md",
+                "file": "THM Notes/3. Complete Beginner/3. Web Hacking Fundamentals/3. Web Hacking Fundamentals.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 6. File Inclusion"
+              "title": "Outline of 3. Web Hacking Fundamentals"
             }
           },
           {
@@ -181,7 +175,8 @@
               "title": "Outgoing links from 1. Metasploit Introduction"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -199,14 +194,37 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f5b5412e6cd29e8e",
+  "active": "233eebf368e36b5f",
   "lastOpenFiles": [
-    "THM Notes/4. Web Fundamentals/2. Web Fundamentals/2. Content Discovery.md",
-    "THM Notes/4. Web Fundamentals/2. Web Fundamentals/2. Web Fundamentals.md",
+    "attachments/Pasted image 20250430195055.png",
+    "attachments/Pasted image 20250430194629.png",
+    "attachments/Pasted image 20250430194004.png",
+    "attachments/Pasted image 20250430193937.png",
+    "THM Notes/4. Web Fundamentals/2. Web Fundamentals/8. Intro to XXS.md",
+    "attachments/Pasted image 20250430193851.png",
     "THM Notes/4. Web Fundamentals/2. Web Fundamentals/6. File Inclusion.md",
     "THM Notes/4. Web Fundamentals/2. Web Fundamentals/5. IDOR.md",
-    "THM Notes/4. Web Fundamentals/2. Web Fundamentals/4. Authentication Bypass.md",
     "THM Notes/4. Web Fundamentals/2. Web Fundamentals/3. Subdomain Enumeration.md",
+    "THM Notes/4. Web Fundamentals/2. Web Fundamentals/4. Authentication Bypass.md",
+    "THM Notes/4. Web Fundamentals/2. Web Fundamentals/7. Intro to SSRF.md",
+    "THM Notes/4. Web Fundamentals/2. Web Fundamentals/2. Content Discovery.md",
+    "attachments/Pasted image 20241107162718.png",
+    "attachments/Pasted image 20250311192929.png",
+    "attachments/Pasted image 20250311192938.png",
+    "attachments/Pasted image 20250428215622.png",
+    "attachments/Pasted image 20250428220149.png",
+    "attachments/Pasted image 20250430181417.png",
+    "THM Notes/3. Complete Beginner/3. Web Hacking Fundamentals/3. Web Hacking Fundamentals.md",
+    "THM Notes/2. Cyber Security 101/3. Networking/2. Networking Essentials.md",
+    "THM Notes/2. Cyber Security 101/3. Networking/4. Networking Secure Protocols.md",
+    "THM Notes/2. Cyber Security 101/7. Offensive Security Tooling/4. SQLMap The Basics.md",
+    "THM Notes/2. Cyber Security 101/3. Networking/1. Networking Concepts.md",
+    "THM Notes/1. Pre Security/How The Web Works/3. How Websites Work.md",
+    "THM Notes/2. Cyber Security 101/4. Cryptography/2. Public Key Cryptography Basics.md",
+    "THM Notes/2. Cyber Security 101/4. Cryptography/4. John the Ripper The Basics.md",
+    "THM Notes/2. Cyber Security 101/4. Cryptography/3. Hashing Basics.md",
+    "THM Notes/3. Complete Beginner/2. Network Exploitation Basics/2. Network Exploitation Basics.md",
+    "THM Notes/4. Web Fundamentals/2. Web Fundamentals/2. Web Fundamentals.md",
     "THM Notes/4. Web Fundamentals/2. Web Fundamentals/1. Introduction to Web Hacking.md",
     "THM Notes/2. Cyber Security 101/10. Defensive Security Tooling/3. REMnux Getting Started.md",
     "THM Notes/4. Web Fundamentals/1. How The Web Works/How The Web Works.md",
@@ -214,19 +232,6 @@
     "THM Notes/3. Complete Beginner/6. Shell and Privilege Escalation/6. Shell and Privilege Escalation.md",
     "THM Notes/3. Complete Beginner/5. Windows Exploitation Basics/5. Windows Exploitation Basics.md",
     "THM Notes/3. Complete Beginner/4. Cryptography/4. Cryptography.md",
-    "THM Notes/3. Complete Beginner/3. Web Hacking Fundamentals/3. Web Hacking Fundamentals.md",
-    "THM Notes/3. Complete Beginner/2. Network Exploitation Basics/2. Network Exploitation Basics.md",
-    "THM Notes/3. Complete Beginner/1. Linux Fundamentals/1. Linux Fundamentals.md",
-    "THM Notes/2. Cyber Security 101/10. Defensive Security Tooling/4. Flare VM Arsenal of Tools.md",
-    "THM Notes/2. Cyber Security 101/10. Defensive Security Tooling/10. Defensive Security Tooling.md",
-    "THM Notes/2. Cyber Security 101/10. Defensive Security Tooling/2. CAPA The Basics.md",
-    "THM Notes/2. Cyber Security 101/10. Defensive Security Tooling/1. CyberChef The Basics.md",
-    "THM Notes/2. Cyber Security 101/8. Defensive Security/1. Defensive Security Intro.md",
-    "THM Notes/2. Cyber Security 101/9. Security Solutions/4. Vulnerability Scanner Overview.md",
-    "THM Notes/2. Cyber Security 101/9. Security Solutions/9. Security Solutions.md",
-    "THM Notes/2. Cyber Security 101/9. Security Solutions/3. IDS Fundamentals.md",
-    "THM Notes/2. Cyber Security 101/9. Security Solutions/2. Firewall Fudamentals.md",
-    "THM Notes/2. Cyber Security 101/9. Security Solutions/1. Introduction to SIEM.md",
     "THM Notes/4. Web Fundamentals/2. Web Fundamentals",
     "THM Notes/4. Web Fundamentals/1. How The Web Works",
     "THM Notes/3. Complete Beginner/7. Basic Computer Exploitation",
@@ -237,16 +242,6 @@
     "THM Notes/3. Complete Beginner/2. Network Exploitation Basics",
     "THM Notes/3. Complete Beginner/1. Linux Fundamentals",
     "THM Notes/2. Cyber Security 101/10. Defensive Security Tooling",
-    "attachments/URL.png",
-    "attachments/DB Table Example.png",
-    "attachments/NIST Incident Response.png",
-    "attachments/Pasted image 20240814113540.png",
-    "attachments/Pasted image 20241008144611.png",
-    "attachments/Pasted image 20241009193437.png",
-    "attachments/Pasted image 20241022144904.png",
-    "attachments/Pasted image 20241101121252.png",
-    "attachments/Pasted image 20241107162718.png",
-    "attachments/Pasted image 20250311192929.png",
     "Untitled.canvas"
   ]
 }

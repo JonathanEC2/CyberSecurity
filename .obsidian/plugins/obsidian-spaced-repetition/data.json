@@ -10,7 +10,8 @@
       "#network_services",
       "#web",
       "#metasploit",
-      "#defensive_security"
+      "#defensive_security",
+      "#offensive_security"
     ],
     "convertFoldersToDecks": false,
     "burySiblingCards": false,

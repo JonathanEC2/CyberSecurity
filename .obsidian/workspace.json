@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "THM Notes/4. Web Fundamentals/2. Web Fundamentals/10. SQL Injection.md",
+                "file": "THM Notes/4. Web Fundamentals/2. Introduction to Web Hacking/10. SQL Injection.md",
                 "mode": "source",
                 "source": false
               },
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "THM Notes/4. Web Fundamentals/2. Web Fundamentals/10. SQL Injection.md",
+                "file": "THM Notes/4. Web Fundamentals/2. Introduction to Web Hacking/10. SQL Injection.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -204,8 +204,7 @@
               "title": "Tags"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -223,21 +222,32 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "591fb4dfadd0e22b",
+  "active": "42e5c341715af5ac",
   "lastOpenFiles": [
-    "attachments/DBMS Example.png",
-    "THM Notes/4. Web Fundamentals/1. How The Web Works/How The Web Works.md",
-    "THM Notes/4. Web Fundamentals/2. Web Fundamentals/10. SQL Injection.md",
     "THM Notes/4. Web Fundamentals/2. Web Fundamentals/9. Command Injection.md",
-    "THM Notes/2. Cyber Security 101/7. Offensive Security Tooling/4. SQLMap The Basics.md",
-    "THM Notes/2. Cyber Security 101/2. Command Line/1. Windows Command Line.md",
+    "THM Notes/4. Web Fundamentals/2. Web Fundamentals",
+    "2025-05-08.md",
+    "THM Notes/4. Web Fundamentals/3. Burp Suite",
+    "THM Notes/2. Cyber Security 101/6. Web Hacking/3. SQL Fundamentals.md",
+    "THM Notes/2. Cyber Security 101/3. Networking/2. Networking Essentials.md",
+    "THM Notes/2. Cyber Security 101/3. Networking/1. Networking Concepts.md",
+    "THM Notes/4. Web Fundamentals/2. Introduction to Web Hacking/2. Content Discovery.md",
+    "THM Notes/4. Web Fundamentals/2. Introduction to Web Hacking/6. File Inclusion.md",
+    "THM Notes/4. Web Fundamentals/2. Introduction to Web Hacking/9. Command Injection.md",
+    "THM Notes/4. Web Fundamentals/2. Introduction to Web Hacking/8. Intro to XXS.md",
+    "THM Notes/1. Pre Security/How The Web Works/3. How Websites Work.md",
     "THM Notes/2. Cyber Security 101/4. Cryptography/2. Public Key Cryptography Basics.md",
     "THM Notes/2. Cyber Security 101/4. Cryptography/4. John the Ripper The Basics.md",
+    "THM Notes/2. Cyber Security 101/3. Networking/4. Networking Secure Protocols.md",
+    "THM Notes/4. Web Fundamentals/2. Introduction to Web Hacking/10. SQL Injection.md",
+    "attachments/DBMS Example.png",
+    "THM Notes/4. Web Fundamentals/1. How The Web Works/How The Web Works.md",
+    "THM Notes/2. Cyber Security 101/7. Offensive Security Tooling/4. SQLMap The Basics.md",
+    "THM Notes/2. Cyber Security 101/2. Command Line/1. Windows Command Line.md",
     "THM Notes/2. Cyber Security 101/7. Offensive Security Tooling/2. Gobuster The Basics.md",
     "THM Notes/2. Cyber Security 101/7. Offensive Security Tooling/3. Shells Overview.md",
     "THM Notes/2. Cyber Security 101/7. Offensive Security Tooling/1. Hydra.md",
     "THM Notes/2. Cyber Security 101/5. Exploitation Basics/1. Metasploit Introduction.md",
-    "THM Notes/4. Web Fundamentals/2. Web Fundamentals/8. Intro to XXS.md",
     "THM Notes/1. Pre Security/Windows Fundamentals/Windows Fundamentals 3.md",
     "THM Notes/1. Pre Security/Windows Fundamentals/Windows Fundamentals 2.md",
     "THM Notes/1. Pre Security/Windows Fundamentals/Windows Fundamentals 1.md",
@@ -249,19 +259,10 @@
     "attachments/Pasted image 20250430194004.png",
     "attachments/Pasted image 20250430193937.png",
     "attachments/Pasted image 20250430193851.png",
-    "THM Notes/4. Web Fundamentals/2. Web Fundamentals/6. File Inclusion.md",
-    "THM Notes/4. Web Fundamentals/2. Web Fundamentals/5. IDOR.md",
-    "THM Notes/4. Web Fundamentals/2. Web Fundamentals/3. Subdomain Enumeration.md",
-    "THM Notes/4. Web Fundamentals/2. Web Fundamentals/4. Authentication Bypass.md",
-    "THM Notes/4. Web Fundamentals/2. Web Fundamentals/7. Intro to SSRF.md",
-    "THM Notes/4. Web Fundamentals/2. Web Fundamentals/2. Content Discovery.md",
+    "THM Notes/4. Web Fundamentals/2. Introduction to Web Hacking/5. IDOR.md",
+    "THM Notes/4. Web Fundamentals/2. Introduction to Web Hacking/3. Subdomain Enumeration.md",
     "attachments/Pasted image 20241107162718.png",
-    "attachments/Pasted image 20250311192929.png",
-    "THM Notes/3. Complete Beginner/3. Web Hacking Fundamentals/3. Web Hacking Fundamentals.md",
-    "THM Notes/2. Cyber Security 101/3. Networking/2. Networking Essentials.md",
-    "THM Notes/2. Cyber Security 101/3. Networking/4. Networking Secure Protocols.md",
-    "THM Notes/2. Cyber Security 101/3. Networking/1. Networking Concepts.md",
-    "THM Notes/4. Web Fundamentals/2. Web Fundamentals",
+    "THM Notes/4. Web Fundamentals/2. Introduction to Web Hacking",
     "THM Notes/4. Web Fundamentals/1. How The Web Works",
     "THM Notes/3. Complete Beginner/7. Basic Computer Exploitation",
     "THM Notes/3. Complete Beginner/6. Shell and Privilege Escalation",
@@ -269,8 +270,6 @@
     "THM Notes/3. Complete Beginner/4. Cryptography",
     "THM Notes/3. Complete Beginner/3. Web Hacking Fundamentals",
     "THM Notes/3. Complete Beginner/2. Network Exploitation Basics",
-    "THM Notes/3. Complete Beginner/1. Linux Fundamentals",
-    "THM Notes/2. Cyber Security 101/10. Defensive Security Tooling",
     "Untitled.canvas"
   ]
 }

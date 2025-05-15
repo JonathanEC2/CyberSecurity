@@ -1,7 +1,7 @@
 {
   "collapse-filter": false,
-  "search": "2. How the ",
-  "showTags": false,
+  "search": "-review",
+  "showTags": true,
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
@@ -11,7 +11,7 @@
       "query": "linux",
       "color": {
         "a": 1,
-        "rgb": 14701138
+        "rgb": 6021202
       }
     }
   ],

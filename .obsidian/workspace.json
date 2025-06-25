@@ -11,14 +11,12 @@
             "id": "233eebf368e36b5f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "CCNA/Section 4. The Cisco IOS Operating System.md",
-                "mode": "source",
-                "source": false
+                "file": "attachments/SSRF.png"
               },
-              "icon": "lucide-file",
-              "title": "Section 4. The Cisco IOS Operating System"
+              "icon": "lucide-image",
+              "title": "SSRF"
             }
           }
         ]
@@ -94,13 +92,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CCNA/Section 4. The Cisco IOS Operating System.md",
+                "file": "attachments/SSRF.png",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Section 4. The Cisco IOS Operating System"
+              "title": "Outline of SSRF"
             }
           },
           {
@@ -171,6 +169,27 @@
   },
   "active": "233eebf368e36b5f",
   "lastOpenFiles": [
+    "attachments/URL.png",
+    "attachments/Diffie Hellman.png",
+    "attachments/DB Table Example.png",
+    "Home Lab/Projects.md",
+    "Home Lab/Notes.md",
+    "THM Notes/7. Jr Penetration Tester/5. Network Security.md",
+    "THM Notes/7. Jr Penetration Tester/10. Nmap The Basics.md",
+    "CEH/9. Cryptography.md",
+    "CEH/8. Cloud Computing.md",
+    "CEH/7. Mobile Platform, IoT, and OT Hacking.md",
+    "CEH/6. Wireless Network Hacking.md",
+    "CEH/5. Web App Hacking.md",
+    "CEH/4. Network and Perimeter Hacking.md",
+    "CEH/3. System Hacking Phases and Attack Techniques.md",
+    "THM Notes/2. Cyber Security 101/4. Cryptography/1. Cryptography Basics.md",
+    "THM Notes/2. Cyber Security 101/4. Cryptography/2. Public Key Cryptography Basics.md",
+    "THM Notes/2. Cyber Security 101/4. Cryptography/3. Hashing Basics.md",
+    "THM Notes/4. Web Fundamentals/2. Introduction to Web Hacking/10. SQL Injection.md",
+    "THM Notes/2. Cyber Security 101/6. Web Hacking/3. SQL Fundamentals.md",
+    "THM Notes/1. Pre Security/How The Web Works/3. How Websites Work.md",
+    "CCNA/Section 4. The Cisco IOS Operating System.md",
     "THM Notes/1. Pre Security/How The Web Works/2. HTTP In Detail.md",
     "CCNA/Section 3. Host to Host Communications.md",
     "THM Notes/4. Web Fundamentals/2. Introduction to Web Hacking/7. Intro to SSRF.md",
@@ -178,25 +197,6 @@
     "THM Notes/4. Web Fundamentals/1. How The Web Works/How The Web Works.md",
     "THM Notes/4. Web Fundamentals/2. Introduction to Web Hacking/6. File Inclusion.md",
     "THM Notes/4. Web Fundamentals/2. Introduction to Web Hacking/5. IDOR.md",
-    "THM Notes/4. Web Fundamentals/2. Introduction to Web Hacking/4. Authentication Bypass.md",
-    "THM Notes/4. Web Fundamentals/2. Introduction to Web Hacking/3. Subdomain Enumeration.md",
-    "THM Notes/4. Web Fundamentals/2. Introduction to Web Hacking/2. Content Discovery.md",
-    "THM Notes/4. Web Fundamentals/2. Introduction to Web Hacking/1. Introduction to Web Hacking.md",
-    "THM Notes/3. Complete Beginner/7. Basic Computer Exploitation/7. Basic Computer Exploitation.md",
-    "THM Notes/3. Complete Beginner/6. Shell and Privilege Escalation/6. Shell and Privilege Escalation.md",
-    "THM Notes/3. Complete Beginner/5. Windows Exploitation Basics/5. Windows Exploitation Basics.md",
-    "THM Notes/3. Complete Beginner/4. Cryptography/4. Cryptography.md",
-    "THM Notes/3. Complete Beginner/3. Web Hacking Fundamentals/3. Web Hacking Fundamentals.md",
-    "THM Notes/3. Complete Beginner/2. Network Exploitation Basics/2. Network Exploitation Basics.md",
-    "THM Notes/3. Complete Beginner/1. Linux Fundamentals/1. Linux Fundamentals.md",
-    "THM Notes/1. Pre Security/Linux Fundamentals/Linux Fundamentals 2.md",
-    "THM Notes/1. Pre Security/Linux Fundamentals/Linux Fundamentals 3.md",
-    "THM Notes/1. Pre Security/Linux Fundamentals/Linux Fundamentals 1.md",
-    "CCNA/Section 4. The Cisco IOS Operating System.md",
-    "THM Notes/1. Pre Security/1. Network Fundamentals/1. Network Fundamentals.md",
-    "CEH/5. Web App Hacking.md",
-    "CEH/4. Network and Perimeter Hacking.md",
-    "CEH/3. System Hacking Phases and Attack Techniques.md",
     "CCNA/OCB",
     "CCNA/Neil Anderson",
     "THM Notes/4. Web Fundamentals/2. Web Fundamentals",
@@ -209,8 +209,6 @@
     "attachments/Pasted image 20250430194629.png",
     "attachments/Pasted image 20250430194004.png",
     "attachments/Pasted image 20250430193937.png",
-    "attachments/Pasted image 20250430193851.png",
-    "attachments/Pasted image 20241107162718.png",
     "THM Notes/4. Web Fundamentals/2. Introduction to Web Hacking",
     "THM Notes/4. Web Fundamentals/1. How The Web Works",
     "THM Notes/3. Complete Beginner/7. Basic Computer Exploitation",

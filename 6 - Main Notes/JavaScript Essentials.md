@@ -1,0 +1,136 @@
+---
+sr-due: 2025-05-17
+sr-interval: 51
+sr-ease: 189
+---
+
+#review 
+#web 
+
+[[../2 - Tags/Web Hacking|Web Hacking]]
+## Essential Concepts
+
+Variables are containers that allow you to store data values in them. There are three ways to declare a variable in JS:
+
+- <mark style="background: #D2B3FFA6;">var</mark>
+- <mark style="background: #D2B3FFA6;">let</mark>
+- <mark style="background: #D2B3FFA6;">const</mark>
+
+#### Data Types
+
+Data types define the type of value a variable can hold. Examples include:
+
+- <mark style="background: #D2B3FFA6;">string</mark> 
+- <mark style="background: #D2B3FFA6;">number</mark>
+- <mark style="background: #D2B3FFA6;">boolean</mark>
+
+#### Functions
+
+Represents a block of code designed to perform a specific task
+
+#### Loops
+
+Allow you to run a block of code multiple times as long as a condition is true
+
+## JavaScript Overview
+
+JS is an ==interpreted language, meaning the code is executed directly in the browser without prior compilation==
+<!--SR:!2025-06-13,33,149-->
+
+JS is executed on the client side, which makes it easy to inspect and interact with HTML directly within the browser
+
+## Integrating JavaScript in HTML
+
+Usually JS is not used to render content; it works with HTML and CSS to create dynamic and interactive web pages. 
+
+#### Internal JavaScript
+
+Embedding the JS code directly within an HTML document with the \<script> tag
+
+#### External JavaScript
+
+Creating and storing JS code in separate file ending with a .js file extension. This file can be stored and hosted on the same web server as the HTML document or stored on an external web server such as the cloud. 
+
+This approach allows us to keep the JS code separate from the HTML, making the code more organized and easier to maintain, especially when working on larger projects.
+
+#### Verifying Internal or External JS
+
+When pen-testing a web application, <span style="color:rgb(255, 0, 0)">it is important to check whether the website uses internal or external JS</span>. This can be easily done by viewing the pages source code. 
+
+If you see a \<script> tag with a **src** attribute, it indicates that the page is loading external JS from a separate file.
+
+## Abusing Dialogue Functions
+
+One of the main objectives of JS is to provide dialogue boxes for interaction with users and dynamically update content on web pages. JS provides functions such as <mark style="background: #D2B3FFA6;">alert</mark>, <mark style="background: #D2B3FFA6;">prompt</mark>, and <mark style="background: #D2B3FFA6;">confirm</mark> to facilitate this interaction.
+
+#### Alert
+
+The alert function displays a message in a dialogue box with an "<mark style="background: #D2B3FFA6;">OK</mark>" button, typically used to convey information or warnings to users
+
+#### Prompt
+
+displays a dialogue box that asks the user for input. It returns the entered value when the user clicks "<mark style="background: #D2B3FFA6;">OK</mark>", or null if the user clicks "<mark style="background: #D2B3FFA6;">Cancel</mark>"
+
+#### Confirm
+
+displays a dialogue box with a message and two buttons: "<mark style="background: #D2B3FFA6;">OK</mark>" and "<mark style="background: #D2B3FFA6;">Cancel</mark>". It returns true if the user clicks "OK" and false if the user clicks "Cancel".
+
+#### How Hackers Exploit the Functionality
+
+Imagine receiving an email from a stranger with an attached HTML file. The file looks harmless, but when you open it, it contains JS that disrupts your browsing experience.
+
+
+``` html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hacked</title>
+</head>
+<body>
+    <script>
+        for (let i = 0; i < 3; i++) {
+            alert("Hacked");
+        }
+    </script>
+</body>
+</html>
+```
+
+## Bypassing Control Flow Statements
+
+Control flow refers to the order in which statements and code blocks are executed based on certain conditions. 
+
+- <mark style="background: #D2B3FFA6;">if-else</mark>
+- <mark style="background: #D2B3FFA6;">switch</mark>
+- <mark style="background: #D2B3FFA6;">for</mark> 
+- <mark style="background: #D2B3FFA6;">while</mark>
+- <mark style="background: #D2B3FFA6;">do...while</mark>
+
+## Exploring Minified Filters
+
+Minification ;; the process of compressing JS files by removing all unnecessary characters such as spaces, line breaks, comments, and even shortening variable names. Helps reduce file size.
+<!--SR:!2025-07-06,68,201-->
+
+Obfuscation ;; used to make code harder to understand by adding undesired code, renaming variables, and even inserting dummy code
+<!--SR:!2025-08-01,124,281-->
+
+## Best Practices
+
+#### Avoid using client side validation only
+
+Users can disable and manipulate JS on the client side. Performing server side validation is also essential
+
+#### Refrain from adding untrusted libraries
+
+Bad actors upload bundles of libraries on the internet with names resembling legitimate ones. 
+
+#### Avoid Hardcoded Secrets
+
+Never Hardcode sensitive API keys, access tokens, or credentials into your codes
+
+#### Minify and Obfuscate Your JS Code
+
+Reduces its size and load time and makes it harder to understand the logic of the code. <span style="color:rgb(255, 0, 0)">Always minify and obfuscate the code when using code in production</span>. The attacker can reverse engineer it, but getting the original code will at least take some effort
+
+[Obfuscate](https://codebeautify.org/javascript-obfuscator)
+[Minify](https://www.toptal.com/developers/javascript-minifier)

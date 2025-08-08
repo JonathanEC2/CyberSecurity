@@ -111,5 +111,13 @@
       ],
       "key": "F"
     }
+  ],
+  "insert-template": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "T"
+    }
   ]
 }

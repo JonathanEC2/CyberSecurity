@@ -4,22 +4,77 @@
     "type": "split",
     "children": [
       {
-        "id": "78c69359bea88f6a",
+        "id": "cada308c43e5ba66",
         "type": "tabs",
         "children": [
           {
-            "id": "233eebf368e36b5f",
+            "id": "605ae38dc83d8703",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "attachments/SSRF.png"
+                "file": "6 - Main Notes/Hydra.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "SSRF"
+              "icon": "lucide-file",
+              "title": "Hydra"
+            }
+          },
+          {
+            "id": "a53af81710323ec0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "6 - Main Notes/SOC Fundamentals.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "SOC Fundamentals"
+            }
+          },
+          {
+            "id": "c5eeae4cebb439f2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "6 - Main Notes/Introduction to SIEM.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Introduction to SIEM"
+            }
+          },
+          {
+            "id": "e529b1a1be97c833",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "6 - Main Notes/Projects.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Projects"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -92,13 +147,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "attachments/SSRF.png",
+                "file": "THM Notes/4. Web Fundamentals/2. Introduction to Web Hacking/8. Intro to XXS.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of SSRF"
+              "title": "Outline of 8. Intro to XXS"
             }
           },
           {
@@ -148,8 +203,19 @@
               "icon": "lucide-tags",
               "title": "Tags"
             }
+          },
+          {
+            "id": "8fce6289e25cab7f",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "SpacedRepIcon",
+              "title": "Notes Review Queue"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -164,57 +230,57 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "obsidian-git:Open Git source control": false,
-      "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
+      "obsidian-spaced-repetition:Review flashcards": false
     }
   },
-  "active": "233eebf368e36b5f",
+  "active": "e529b1a1be97c833",
   "lastOpenFiles": [
+    "6 - Main Notes/Notes.md",
+    "6 - Main Notes/Projects.md",
+    "6 - Main Notes/Nmap The Basics.md",
+    "6 - Main Notes/Networking Secure Protocols.md",
+    "6 - Main Notes/Networking Essentials.md",
+    "6 - Main Notes/Networking Core Protocols.md",
+    "6 - Main Notes/Networking Concepts.md",
+    "6 - Main Notes/Network Security.md",
+    "6 - Main Notes/Network Fundamentals.md",
+    "6 - Main Notes/Network and System Security.md",
+    "6 - Main Notes/Network and Perimeter Hacking.md",
+    "6 - Main Notes/Mobile Platform, IoT, and OT Hacking.md",
+    "6 - Main Notes/Metasploit Meterpreter.md",
+    "6 - Main Notes/Metasploit Introduction.md",
+    "6 - Main Notes/Metasploit Exploitatiom.md",
+    "6 - Main Notes/Logs Fundamentals.md",
+    "6 - Main Notes/Linux Shells.md",
+    "6 - Main Notes/Linux Fundamentals 3.md",
+    "6 - Main Notes/Linux Fundamentals 2.md",
+    "6 - Main Notes/Linux Fundamentals 1.md",
+    "6 - Main Notes/John the Ripper The Basics.md",
+    "6 - Main Notes/JavaScript Essentials.md",
+    "6 - Main Notes/Introduction to Web Hacking.md",
+    "6 - Main Notes/Introduction to SIEM.md",
+    "6 - Main Notes/Introduction to Security Engineering.md",
+    "6 - Main Notes/Intro to XXS.md",
+    "THM Notes/1. Pre Security/How The Web Works",
+    "THM Notes/1. Pre Security/1. Network Fundamentals",
+    "THM Notes/1. Pre Security/Windows Fundamentals",
+    "THM Notes/1. Pre Security/Linux Fundamentals",
+    "6 - Main Notes",
+    "4 - Templates",
+    "3 - Indexes",
+    "Indexes",
+    "2 - Tags",
+    "1 - Source Material",
+    "attachments/SSRF.png",
     "attachments/URL.png",
     "attachments/Diffie Hellman.png",
     "attachments/DB Table Example.png",
-    "Home Lab/Projects.md",
-    "Home Lab/Notes.md",
-    "THM Notes/7. Jr Penetration Tester/5. Network Security.md",
-    "THM Notes/7. Jr Penetration Tester/10. Nmap The Basics.md",
-    "CEH/9. Cryptography.md",
-    "CEH/8. Cloud Computing.md",
-    "CEH/7. Mobile Platform, IoT, and OT Hacking.md",
-    "CEH/6. Wireless Network Hacking.md",
-    "CEH/5. Web App Hacking.md",
-    "CEH/4. Network and Perimeter Hacking.md",
-    "CEH/3. System Hacking Phases and Attack Techniques.md",
-    "THM Notes/2. Cyber Security 101/4. Cryptography/1. Cryptography Basics.md",
-    "THM Notes/2. Cyber Security 101/4. Cryptography/2. Public Key Cryptography Basics.md",
-    "THM Notes/2. Cyber Security 101/4. Cryptography/3. Hashing Basics.md",
-    "THM Notes/4. Web Fundamentals/2. Introduction to Web Hacking/10. SQL Injection.md",
-    "THM Notes/2. Cyber Security 101/6. Web Hacking/3. SQL Fundamentals.md",
-    "THM Notes/1. Pre Security/How The Web Works/3. How Websites Work.md",
-    "CCNA/Section 4. The Cisco IOS Operating System.md",
-    "THM Notes/1. Pre Security/How The Web Works/2. HTTP In Detail.md",
-    "CCNA/Section 3. Host to Host Communications.md",
-    "THM Notes/4. Web Fundamentals/2. Introduction to Web Hacking/7. Intro to SSRF.md",
-    "THM Notes/1. Pre Security/How The Web Works/1. DNS in Detail.md",
-    "THM Notes/4. Web Fundamentals/1. How The Web Works/How The Web Works.md",
-    "THM Notes/4. Web Fundamentals/2. Introduction to Web Hacking/6. File Inclusion.md",
-    "THM Notes/4. Web Fundamentals/2. Introduction to Web Hacking/5. IDOR.md",
-    "CCNA/OCB",
-    "CCNA/Neil Anderson",
-    "THM Notes/4. Web Fundamentals/2. Web Fundamentals",
-    "THM Notes/4. Web Fundamentals/3. Burp Suite",
     "attachments/DBMS Example.png",
     "attachments/Pasted image 20250501211442.png",
     "attachments/Pasted image 20250501211149.png",
     "attachments/Pasted image 20250501204246.png",
     "attachments/Pasted image 20250430195055.png",
     "attachments/Pasted image 20250430194629.png",
-    "attachments/Pasted image 20250430194004.png",
-    "attachments/Pasted image 20250430193937.png",
-    "THM Notes/4. Web Fundamentals/2. Introduction to Web Hacking",
-    "THM Notes/4. Web Fundamentals/1. How The Web Works",
-    "THM Notes/3. Complete Beginner/7. Basic Computer Exploitation",
-    "THM Notes/3. Complete Beginner/6. Shell and Privilege Escalation",
-    "THM Notes/3. Complete Beginner/5. Windows Exploitation Basics",
-    "THM Notes/3. Complete Beginner/4. Cryptography",
     "Untitled.canvas"
   ]
 }

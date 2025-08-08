@@ -1,0 +1,214 @@
+---
+sr-due: 2025-05-17
+sr-interval: 51
+sr-ease: 189
+---
+[[../2 - Tags/SQL]] [[../2 - Tags/Web Hacking|Web Hacking]]
+
+#review 
+#web 
+## Databases 101
+
+Databases are  ==organized collection of structured information or data that is easily accessible and can be manipulated or analyzed.== The data can take many forms such as user authentication data, user generated data on social media, as well as information such as watch history
+<!--SR:!2025-06-21,41,181--> 
+
+## Different Types of Databases
+
+**Relational databases** ;; store structured data, meaning the data inserted into this database follows a structure. For example, the data collected on a user consists of first_name, last_name, email_address, username and password. When a new user joins, an entry is made in the database following this structure. This structured data is stored in rows and columns in a table
+<!--SR:!2025-06-06,78,249-->
+
+**Non-relational database** ;; data is stored in a non-tabular format. For example, if a document is being scanned which contains various types and quantities of information
+<!--SR:!2025-09-08,146,269-->
+
+The type of database you choose depends on the context in which the database will be used. Relational is often used when the data being stored is reliably going to be received in a consistent format where accuracy is important, such as processing e-commerce transactions. Non-relational is better when data being received can vary greatly in its format but needs to be collected an organized in the same place, such as social media platforms
+
+####  Tables, Rows and Columns
+
+All data stored in a relational database will be stored in a table. Below is an example of a collection of books
+
+![[../../../attachments/DB Table Example.png]]
+When creating this table, you need to define what pieces of information are needed to define a book record. For example, example, “id”, “Name”, and “Published_date”. These would be your columns. If an attempt is made to insert a record into a database where the data type doesn't match, it is rejected. The data types that can be defined can vary depending on what database you are using, but the core data types used by all include Strings (a collection of words and characters), Integers (numbers), floats/decimals (numbers with a decimal point) and Times/Dates.
+
+#### Primary and Foreign Keys
+
+Once a table has been defined and populated, more data needs to be stored.  For instance, we want to create a table named “Authors” that stores the authors of the books sold in the store. A book (stored in the Books table) is written by an author (stored in the Authors table). If we wanted to query for a book in our story but also have the author of that book returned, our data would need to be related somehow; we do this with keys. There are two types of keys:
+
+![[../../../attachments/Primary and Foreign Keys.png]]
+
+**Primary Keys** ;; A primary key is used to ensure that the data collected in a certain column is unique. There needs to be a way to uniquely identify each record in a table. ID would make the most sense in the example as an ID has been uniquely created for each book. <u>There can only be one primary key </u>
+<!--SR:!2025-08-19,142,289-->
+
+Foreign Keys ;; A column that also exists in another table within the database and therefore provides a link between the two tables. The “author_id” field in our “Books” would act as a foreign key because the author_id in our Books table corresponds to the “id” column in the author table. Foreign keys are what allow the relationships between different tables in relational databases. <u>There can be more than one foreign key</u>
+<!--SR:!2025-07-28,86,209-->
+
+## SQL
+
+Databases are usually controlled using a Database Management System (DBMS). Serving as an interface between the end user and database, a DBMS is a software program that allows users to retrieve, update, and manage the data being stored (MySQL, MongoDB, Oracle Database and Maria DB)
+
+The structure between the end user and the database can be done using SQL. SQL is ==a programming language that can be used to query, define and manipulate data stored in a relational database==
+<!--SR:!2025-08-17,110,229-->
+
+#### The Benefits of SQL and Relational Databases
+
+- Its fast
+- Easy to learn
+- Reliable
+- Flexible
+
+## Database and Table Statements
+
+#### Database Statements
+
+CREATE DATABASE {database_name}
+SHOW DATABASES {database_name}
+USE {database_name}
+DROP database {database_name} - removes database
+
+#### Table Statements
+
+CREATE TABLE {table_name}
+
+``` mysql
+
+mysql> CREATE TABLE book_inventory ( 
+book_id INT AUTO_INCREMENT PRIMARY KEY, 
+book_name VARCHAR(255) NOT NULL, 
+publication_date DATE
+
+```
+
+
+- <mark style="background: #D2B3FFA6;">AUTO_INCREMENT</mark> means the first book inserted would be assigned <mark style="background: #D2B3FFA6;">book_id</mark> 1, the second book inserted would be assigned a <mark style="background: #D2B3FFA6;">book_id</mark> of 2, and so on
+- <mark style="background: #D2B3FFA6;">book_id</mark> is set as the <mark style="background: #D2B3FFA6;">PRIMARY KEY</mark> as it will be the way we uniquely identify a book record in our table
+- <mark style="background: #D2B3FFA6;">VARCHAR(255)</mark> means it can variable characters and has a limit of 255, <mark style="background: #D2B3FFA6;">NOT NULL</mark> means it cannot be empty
+- Publication_date is set as the data type <mark style="background: #D2B3FFA6;">DATE</mark>
+
+- SHOW TABLES {table_name}
+- DESCRIBE {table_name} - what columns are contained within a table
+- DROP {table_name} - removes table
+- ALTER {table_name} - if you need to change a dataset
+
+```mysql
+ALTER TABLE book_inventory ADD page_count INT; -- would add  a coulmn
+
+```
+
+
+## CRUD Operations
+
+ CRUD stands for ;;  Create, Read, Update, and Delete which are considered the basic operations in any system that manages data
+<!--SR:!2025-06-16,35,205-->
+
+Create Operations (INSERT) - create new records in a table
+``` mysql
+INSERT INTO books (id, name, published_date, description) VALUES (1, "Android Security Internals", "2014-10-14", "An In-Depth Guide to Android's Security Architecture");
+
+```
+
+Read Operations (SELECT) - read or retrieves info from a table
+```mysql
+SELECT * FROM books; -- select all columns
+SELECT name, description FROM books; -- select certain columns 
+```
+
+Update Operation (UPDATE) - modifies and existing record within a table. UPDATE specifies the table, SET followed by the column name you will update. WHERE specifies which row to update when the clause is met
+```mysql
+UPDATE books 
+SET description = "An In-Depth Guide to Android's Security Architecture." WHERE id = 1;
+```
+
+Delete Operations (DELETE) - removes record from table
+
+``` mysql
+DELETE FROM books WHERE id = 1;
+
+```
+
+## Clauses
+
+A clause is part of a statement that specifies the criteria of the data being manipulated, usually by an initial statement
+
+- DISTINCT  - used to avoid duplicate records when doing  a query, only returning unique values
+``` mysql
+SELECT DISTINCT name FROM books;
+```
+
+- GROUP BY - aggregates data from multiple records and groups the query results in common
+``` mysql
+SELECT name, COUNT(*) 
+FROM books 
+GROUP BY name;
+```
+
+- ORDER BY - sorts the records returned by a query in ascending or descending order using <mark style="background: #D2B3FFA6;">ASC</mark> or <mark style="background: #D2B3FFA6;">DESC</mark>
+``` mysql
+SELECT * 
+FROM books 
+ORDER BY published_date ASC;
+```
+
+- HAVING - used with other clauses to filter groups or results of records based on a condition, filters after the aggregation is done
+``` mysql
+SELECT DISTINCT name FROM books;
+```
+
+
+## Operators
+
+#### Logical Operators
+LIKE - commonly used in conjunction with the WHERE clause in order to filter for a specific pattern within a columns
+
+``` mysql
+SELECT * 
+FROM books 
+WHERE description LIKE "%guide%";
+
+```
+
+- AND - multiple conditions within a query and returns TRUE if all of them are true
+- OR - multiple conditions within a query and returns TRUE if one of them are true
+- NOT - reverses the value of  a boolean operator
+- BETWEEN - tests if values exists within a defined range
+
+#### Comparison Operators
+- = - compares two expressions and determines if they are equal or it can check if a value matches another in one specific column
+- != - compares expressions and tests if they are not equal; it also checks if a value differs from the one within a column.
+- < - less than 
+- \> - greater than
+- <= - less than or equal to
+- \>= - greater than or equal to
+
+## Functions
+
+#### String Functions
+
+CONCAT() - adds two or more strings together. It is useful for combining text from different columns. The below query concatenates the name and category columns from the books table into a single one named book_info.
+``` mysql
+SELECT CONCAT(name, " is a type of ", category, " book.") AS book_info FROM books;
+```
+
+
+GROUP_CONCAT() - concatenates data from multiple rows into one field. The query below groups the books by category and concatenates the titles of books within each category into a single string.
+``` mysql
+SELECT category, GROUP_CONCAT(name SEPARATOR ", ") AS books 
+FROM books 
+GROUP BY category;
+```
+
+SUBSTRING() - retrieve a substring from a string within a query, starting at a determined position. The query above extracts the first four characters from the published_date column and stores them in the published_year column
+
+``` mysql
+SELECT SUBSTRING(published_date, 1, 4) AS published_year FROM books;
+```
+
+
+LENGTH() - returns the number of characters in a string
+
+
+#### Aggregate Functions
+
+COUNT() - returns the number of records within an expression
+SUM() - sums all values
+MAX() - maximum value within a provided column
+MIN() Function - minimum value within a provided column
+

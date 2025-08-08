@@ -1,0 +1,45 @@
+[[../2 - Tags/Defensive|Defensive]] [[../2 - Tags/Tools|Tools]]
+# REMnux: Getting Started
+
+ REMnux VM is a specialized distro.  It includes tools like Volatility, YARA, Wireshark, oledump, and INetSim. It also provides a sandbox-like environment for dissecting potentially malicious software without risking your primary system. 
+
+## File analysis
+
+<span style="color:rgb(0, 176, 240)">oledump.py</span> is a python tool that analyzed OLE2 files, commonly called commonly called Structured Storage or Compound File Binary Format. OLE stands for Object Linking and Embedding. They are typically used to store multiple data types such as documents, spreadsheets, and presentations within a single file. 
+
+```
+oledump.py agenttesla.xlsm -s 4 --vbadecompress
+```
+
+<span style="color:rgb(255, 192, 0)">-s </span>select
+<span style="color:rgb(255, 192, 0)">4</span> selects data stream of interest in the fourth place
+<span style="color:rgb(255, 192, 0)">--vbadecompress</span>   automatically decompresses any compressed VBA micros it finds into a more readable format
+
+## Fake Network to Aid Analysis
+
+INetSim's simulate a real network
+
+Configure iNetSim in REMnux VM:
+
+- Change dns_default to  REMnux VM machines IP. 
+- Run sudo inetsim
+- Connect to REMnux VM machines IP in your attack box
+- Download files from inetsim using wget
+- Stop iNetSim
+- Get logs from  <span style="color:rgb(0, 176, 80)">/var/log/inetsim/report/</span>
+
+### Memory Investigation: Evidence Preprocessing
+
+Preprocessing evidence involves running tools and saving the results in text or JSON format. The analyst often relies on tools such as Volatility when dealing with memory images as evidence. Volatility commands are executed to identify and extract specific artefacts from memory images, and the resulting output can be saved to text files for further examination.
+
+### Preprocessing With Volatility
+
+We will run each plugin after the command <mark style="background: #D2B3FFA6;">vol3 -f wcry.mem</mark>
+
+- windows.pstree.PsTree - lists processes in a tree based on their parent process ID
+- windows.pslist.PsList - list all currently active processes in the machine
+- windows.cmdline.CmdLine -  list process command line arguments 
+- windows.filescan.FileScan - cans for file objects in a particular Windows memory image. 
+- windows.dlllist.DllList - lists the loaded modules in a particular Windows memory image.
+- windows.malfind.Malfind - lists process memory ranges that potentially contain injected code.
+- windows.psscan.PsScan -  scan for processes present in a particular Windows memory image

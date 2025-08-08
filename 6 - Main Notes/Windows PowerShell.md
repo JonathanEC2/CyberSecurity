@@ -1,0 +1,97 @@
+[[../2 - Tags/Windows|Windows]] 
+Command Line interface and a scripting language built on the .NET framework. It is **object oriented** meaning it can handle complex data types and interacts with system component more effectively
+
+In programming, an object has **properties** (characteristics) and **methods** (actions). For example, a car object would have color and model for properties and drive() and HonkHorn() for methods. An object in PowerShell can contain file names, usernames or sizes as data (**properties**), and carry functions (**methods**) such as copying a file or stopping a process.
+
+ A **cmdlet**  returns objects that retain their properties and methods.
+
+## PowerShell Basics
+
+### Basic Syntax: Verb-Noun
+
+cmdlets follow a **verb-noun** naming convention. The verb does the action and the noun specifies the object on which the action is performed. For example:
+
+- <span style="color:rgb(255, 192, 0)">Get-Content</span>: Retrieves (gets) the content of a file and displays it in the console.
+- <span style="color:rgb(255, 192, 0)">Set-Location</span>: Changes (sets) the current working directory.
+
+### Basic Cmdlets
+
+<u><span style="color:rgb(255, 192, 0)">Get-Command</span> is an essential tool for discovering what commands you can use</u>
+	It’s possible to filter the list of commands based on displayed property values. For example, if we want to display only the available commands of type “function”, we can use                          <span style="color:rgb(0, 176, 240)"> -CommandType </span><span style="color:rgb(0, 176, 80)">"Function"</span>
+	
+
+<u><span style="color:rgb(255, 192, 0)">Get-Help</span>  provides detailed information about cmdlets, including usage, parameters, and examples. It’s the go-to cmdlet for learning how to use PowerShell commands. </u>
+	<span style="color:rgb(0, 176, 240)">-examples</span> to the command displayed above, we will be shown a list of common ways in which the chosen cmdlet can be used.
+
+<span style="color:rgb(255, 192, 0)">Get-Alias</span>;;; displays shortcuts or alternative names for cmdlets
+<!--SR:!2025-11-14,213,276!2025-06-03,123,296-->
+
+### Where to Find and Download Cmdlets
+
+<span style="color:rgb(255, 192, 0)">Find-Module</span> 
+
+If you don't have the exact name of the module, you can filter using -Name and append a wildcard to the modules partial name such as <span style="color:rgb(255, 192, 0)">Find-Module</span>  <span style="color:rgb(0, 176, 240)">-Name </span><span style="color:rgb(0, 176, 80)">"PowerShell*"</span>
+
+Once identified, the modules can be downloaded and installed from the repository with <span style="color:rgb(255, 192, 0)">Install-Module -Name "MODULE _NAME"</span> 
+
+## Navigating the File System and Working with Files
+
+<span style="color:rgb(255, 192, 0)">Get-ChildItem</span> lists the files and directories in a location specified with the <span style="color:rgb(0, 176, 240)">-Path</span> parameter
+<span style="color:rgb(255, 192, 0)">Set-Location </span>To navigate to a different directory
+<span style="color:rgb(255, 192, 0)">New-Item</span> To create an item in PowerShell, need to specify the path of the item and its type
+Remove-Item > rd
+Copy-Item? > cp
+Move Item > move
+Get-Content > gc similar to cat and type
+
+## Piping, Filtering, and Sorting Data
+
+Piping allows one command to be used as input for another. In PowerShell, it passes objects rather than just text
+
+-eq: equal
+<span style="color:rgb(0, 176, 240)">-ne</span>: "not equal"
+<span style="color:rgb(0, 176, 240)">-gt</span>: "greater than". 
+<span style="color:rgb(0, 176, 240)">-ge</span>: "greater than or equal to". 
+<span style="color:rgb(0, 176, 240)">-lt</span>: "less than". 
+<span style="color:rgb(0, 176, 240)">-le</span>: "less than or equal to".
+
+<span style="color:rgb(0, 176, 240)">-like </span>selects properties that match a specified pattern
+
+<span style="color:rgb(255, 192, 0)">Select-Object</span> ;; is used to select specific properties from objects or limit the number of objects returned
+<!--SR:!2025-05-01,71,235-->
+	Get-ChildItem | Select-Object Name,Length
+<!--SR:!2024-11-26,4,276-->
+
+<span style="color:rgb(255, 192, 0)">Where-Object </span>Selects objects from a collection based on their property values
+	Get-ChildItem | Where-Object -Property "Extension" -eq ".txt"
+
+<span style="color:rgb(255, 192, 0)">Sort-Object</span> Sorts objects by property values
+	Get-ChildItem | Sort-Object Length
+
+<span style="color:rgb(255, 192, 0)">Select-String</span>. This cmdlet searches for text patterns within files, similar to grep
+## System and Network Information
+
+<span style="color:rgb(255, 192, 0)">Get-ComputerInfo</span>  retrieves comprehensive system information, including operating system information, hardware specifications, BIOS details, and more
+<span style="color:rgb(255, 192, 0)">Get-LocalUser </span>lists all the local user accounts on the system
+<span style="color:rgb(255, 192, 0)">Get-NetIPConfiguration</span> provides detailed information about the network interfaces on the system, including IP addresses, DNS servers, and gateway configurations.
+<span style="color:rgb(255, 192, 0)">Get-NetIPAddress</span> cmdlet will show details for all IP addresses configured on the system, including those that are not currently active.
+
+## Real-Time System Analysis
+
+<span style="color:rgb(255, 192, 0)">Get-Process</span> provides a detailed view of currently running processes
+<span style="color:rgb(255, 192, 0)">Get-Services </span>allows the retrieval of info about the status of services on the machine such as running, stopped, or paused
+<span style="color:rgb(255, 192, 0)">Get-NetTCPConnection</span> displays current TCP connections 
+<span style="color:rgb(255, 192, 0)">Get-FileHash</span> generates file hashes to verify integrity
+
+## Scripting
+
+Scripting is the process of writing and executing a series of commands contained in a text file to automate tasks. It is essentially like giving a computer a to-do list. Saves time and reduces chance of errors
+
+- <span style="color:rgb(0, 176, 240)">Blue team </span>professionals can automate different tasks, including log analysis, detecting anomalies, extracting indicators of compromise (IOCs), reverse-engineer malicious code (malware) or automate the scanning of systems for signs of intrusion.
+- <span style="color:rgb(255, 0, 0)">Red team</span> can automate tasks like system enumeration, executing remote commands, and crafting obfuscated scripts to bypass defenses.
+- System administrators can automate integrity checks, manage system configurations, and secure networks, especially in remote or large-scale environments.
+
+<span style="color:rgb(255, 192, 0)">Invoke-Command</span> enables efficient remote management and automation of tasks across multiple machines. It can also be used to execute payloads or commands on target systems
+	<span style="color:rgb(255, 192, 0)">Invoke-Command </span><span style="color:rgb(0, 176, 240)">-ComputerName</span> Server01 <span style="color:rgb(0, 176, 240)">-Credential</span> Domain01\User01 <span style="color:rgb(0, 176, 240)">-ScriptBlock</span> { <span style="color:rgb(255, 192, 0)">Get-Culture </span>}
+
+<span style="color:rgb(0, 176, 240)">-ScriptBlock</span> { ... } allows you to execute command on remote computer

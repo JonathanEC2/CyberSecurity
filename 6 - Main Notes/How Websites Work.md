@@ -1,0 +1,35 @@
+---
+sr-due: 2025-06-07
+sr-interval: 30
+sr-ease: 270
+---
+[[../2 - Tags/Web Application|Web Application]]
+
+#web
+#review 
+
+
+When you visit a website, your browser makes a request to a web server asking for information about the page you're visiting. A web server is just a dedicated computer somewhere else in the world that handles your requests.
+
+Two major components that make up a website:
+	- Front End (Client-Side) - the way your browser renders a website.
+	- Back End (Server-Side) - a server that processes your request and returns a response.
+
+
+Sensitive Data Exposure occurs when a website doesn't properly protect (or remove) sensitive clear-text information to the end-user; usually found in a site's frontend source code.  A website developer may have forgotten to remove login credentials, hidden links to private parts of the website or other sensitive data shown in HTML or JavaScript.
+
+<mark style="background: #D2B3FFA6;">Whenever you're assessing a web application for security issues, one of the first things you should do is review the page source code to see if you can find any exposed login credentials or hidden links.
+</mark>
+## Putting it all together
+
+- A CDN (Content Delivery Network) can be an excellent resource for cutting down traffic to a busy website. It allows you to host static files from your website across thousands of servers all over the world. When a user requests one of the hosted files, the CDN works out where the nearest server is physically located and sends the request there instead of potentially the other side of the world.
+- Database stores information
+
+- A WAF sits between ==your web request and the web server; its primary purpose is to protect the web server from hacking or denial of service attacks. ==
+<!--SR:!2025-05-26,67,230-->
+  
+
+A **web server** is software that ==listens for incoming connections and then utilizes the HTTP protocol to deliver web content to its clients==. The most common web server software you'll come across is Apache, Nginx, IIS, and NodeJS.
+<!--SR:!2025-06-24,44,190--> 
+
+Web servers can host multiple websites with different domain names; to achieve this, they use virtual hosts. The web server software checks the hostname being requested from the HTTP headers and matches that against its virtual hosts (virtual hosts are just text-based configuration files). If it finds a match, the correct website will be provided. If no match is found, the default website will be provided instead.

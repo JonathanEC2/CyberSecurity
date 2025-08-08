@@ -1,0 +1,189 @@
+[[../2 - Tags/Networking|Networking]]
+#net_and_sys_security
+# Secure Network Architecture
+
+Properly designed networks permit internet usage as well as redundancy, optimization, and security
+
+
+## Need for Secure Segmentation
+
+<span style="color:rgb(255, 0, 0)">VLANS</span>;;  used to segment portions of the network at layer two and differentiate devices. VLANs are configured on a switch by adding a "tag" to a frame. The 802.1Q tag designates the VLAN that the traffic originated from
+<!--SR:!2025-08-21,121,210-->
+
+**Native VLAN**;; is used for any traffic that is not tagged and passes through a switch.
+<!--SR:!2025-06-30,48,170-->
+
+VLANS are configured to communicate with routers through a designed interface on a switch known as a <span style="color:rgb(255, 0, 0)">switch port</span>. 
+<span style="color:rgb(255, 0, 0)">trunk</span>;; The connection between a switch and a router
+<!--SR:!2025-07-05,143,250-->
+
+## Common Secure Network Architecture
+
+Security, optimization, and redundancy should be taken into consideration when designing a network, ideally without compromising one component
+
+**Security zones**;; define what or who is in a VLAN and how traffic can travel in and out. They physically direct how and where traffic goes
+<!--SR:!2025-05-25,22,130-->
+
+
+| Zone       | Explanation                                                                                          | Example                                   |
+| ---------- | ---------------------------------------------------------------------------------------------------- | ----------------------------------------- |
+| External   | All devices outside of our network or asset control                                                  | Devices connecting to a wan server        |
+| DMZ        | Separates untrusted network devices from internal resources                                          | BYOD, remote users/guests                 |
+| Trusted    | Internal networks or devices                                                                         | Workstations                              |
+| Restricted | Any high-risk servers or datatbases                                                                  | Domain controllers, client info           |
+| Management | Devices or services dedicated to network or other device management. (Less common)                   | Virtualization management, backup servers |
+| Audit      | Devices or services dedicated to security or monitoring. Less common, can be grouped with management | SIEM                                      |
+
+## Network Security Policies and Controls
+
+**ACL** is used as a loose standard to create a ruleset for different implementations and access control protocols
+
+An ACL contains an Access Entry Control (**ACE**), rules that define a list's profile based on predefined criteria (source destination, destination address)
+
+## Zone-Pair Policies and Filtering
+
+When considering protocols and the requirements of a zone, we need to shift our focus towards traffic and correlation. Traffic correlation is standardized as the state of a packet (protocol, process, direction). We must employ a firewall to analyze the state of a packet and enforce policies based on that state
+
+Stateful vs Stateless
+
+Zone pairs are direction based and stateful policies that will enforce the traffic in a single direction per each VLAN. (**DMZ to VLAN** or **VLAN to DMZ**)
+
+Each zone in a given topology must have a different zone-pair for each other in the topology and every possible direction. This approach provides the most visibility from a firewall and drastically improves the filtering capabilities.
+
+## Validating Network Traffic
+
+SSL/TLS inspection uses an SSL proxy to intercept protocols, including HTTP, POP3, SMTP, or other SSL/TLS encrypted traffic. Once intercepted, the proxy will decrypt the traffic and send it to be processed by a UTM (Unified Threat Management) platform. This solution may seem ideal, but what are the downsides? Some of you may have already noted that this requires an SSL proxy or MitM (Man-in-the-Middle). Even if a firewall or vendor has already implemented the solution, it will still act as a MiTM between your devices and the outside world; what if it intercepts potentially plain-text passwords? A corporation must assess the pros and cons of this solution, dependent on its calculated risk.
+
+## Addressing Common Attacks
+
+**DHCP snooping**;; a security feature that acts like a firewall between untrusted hosts and trusted DHCP servers.
+<!--SR:!2025-05-30,44,165-->
+**DHCP Binding Database**;; where a switch stores untrusted hosts with leased IP addresses. It provides the expected MAC and IP address pair of untrusted hosts
+<!--SR:!2025-05-19,34,170-->
+
+ARP checks if MAC and IP address match
+ARP inspection uses DHCP binding database filled from DHCP snooping as its list of binding IP addresses
+
+# Linux System Hardening
+
+## Physical Security 
+
+**boot access = root access**
+
+Additional layers of security could be to add a boot password to prevent unauthorized users from booting system. This could only be used on personal systems. We can also consider adding a GRUB password with **<span style="font-weight:bold; color:rgb(0, 176, 240)">grub2-mkpasswd-pbkdf2</span>**, which prompts you to input your password twice and generates a hash for you. The resulting hash should be added to the appropriate configuration file depending on the Linux distribution. **GRUB is not available for systems deployed using cloud service providers** 
+
+## Filesystem Partitioning and Encryption
+
+
+- **LUKS phdr**: It stands for _LUKS Partition Header_. LUKS phdr stores information about the UUID (Universally Unique Identifier), the used cipher, the cipher mode, the key length, and the checksum of the master key.
+- **KM**: KM stands for _Key Material_, where we have KM1, KM2, …, KM8. Each key material section is associated with a key slot, which can be indicated as active in the LUKS phdr. When the key slot is active, the associated key material section contains a copy of the master key encrypted with a user's password. In other words, we might have the master key encrypted with the first user's password and saved in KM1, encrypted with the second user's password and saved in KM2, and so on.
+- **Bulk Data**: This refers to the data encrypted by the master key. The master key is saved and encrypted by the user's password in a key material section.
+
+## Firewalls
+
+Client/Server model - any networked device can be a client, server or both. Servers offer a service such as HTTP, IMAP, POP3, DNS, etc. A server listens on a port for incoming connection requests from clients. A firewall decides which packets can enter and leave a system
+
+Stateless firewalls;; inspect certain fields in the TCP/UDP headers to decide on a packet but does not maintain information about ongoing TCP connections
+<!--SR:!2025-07-01,103,205-->
+
+Stateful firewalls;;  keep track of ongoing connections and restricted packets based on specific fields in the IP and TCP/UDP headers. The IP header firewall rules are Source IP address and Destination IP address. The TCP/UDP header firewall rules are Source TCP/UDP port
+<!--SR:!2025-09-19,190,275-->
+and Destination TCP/UDP port
+<!--SR:!2024-11-11,6,265-->
+
+
+#### Netfilter
+
+Requires front end such as iptables and nftables
+
+<u><b><font size = 4>iptables</font></b></u>
+
+iptables provide a CLI to configure packet filtering rules using netfilter hooks. iptables has:
+- **Input**: This chain applies to the packets incoming to the firewall.
+- **Output**: This chain applies to the packets outgoing from the firewall.
+- **Forward** This chain applies to the packets routed through the system.
+
+if we wanted to allow ssh access to the world, we would do the following:
+
+<span style="color:rgb(255, 192, 0)">iptables -A INPUT -p tcp --dport 22 -j ACCEPT</span> 
+- `-A INPUT` appends to the INPUT chain, i.e., packets destined for the system.
+- `-p tcp --dport 22` applies to TCP protocol with destination port 22.
+- `-j ACCEPT` specifies (jump to) target rule ACCEPT.
+
+<span style="color:rgb(255, 192, 0)">iptables -A OUTPUT -p tcp --sport 22 -j ACCEPT</span> 
+- `-A OUTPUT` append to the OUTPUT chain, i.e., packets leaving the system.
+- `-p tcp --sport 22` applies to TCP protocol with source port 22.
+
+Don't specify port if you want to <span style="color:rgb(255, 192, 0)">DROP</span> all other incoming traffic
+
+<u><b><font size = 4>nftables</font></b></u>
+
+nftables dont start with tables and chains, we need to add them:
+- <span style="color:rgb(255, 192, 0)">nft add table</span> TABLE_NAME
+
+In our newly created table, `fwfilter`, we will add an _input_ chain and an _output_ chain for incoming and outgoing packets, respectively:
+- <span style="color:rgb(255, 192, 0)">nft add chain fwfilter fwinput { type filter hook input priority 0 \; }</span>
+- <span style="color:rgb(255, 192, 0)">nft add chain fwfilter fwoutput { type filter hook output priority 0\; }</span>
+
+With the two chains created within our table, we can add the necessary rule to allow SSH traffic.
+- <span style="color:rgb(255, 192, 0)">nft add fwfilter fwinput tcp dport 22 accept</span>
+- <span style="color:rgb(255, 192, 0)">nft add fwfilter fwoutput tcp sport 22 accept</span> 
+
+### UFW
+
+<span style="color:rgb(255, 192, 0)">ufw allow to</span> or <span style="color:rgb(255, 192, 0)">from</span>
+<span style="color:rgb(255, 192, 0)">ufw status</span>
+
+## Remote Access
+
+Common attacks include:
+
+- Password sniffing 
+	-  Use SSH to protect against password sniffing
+- Password guessing and brute-forcing
+	- Disable remote login as root
+	- Disable password authentication, for public key authentication instead
+	- The configuration of the OpenSSH server can be controlled via the sshd_config file, usually located at <span style="color:rgb(0, 176, 80)">/etc/ssh/sshd_config</span>. You can disable the root login by adding the following line: <span style="color:rgb(255, 192, 0)">PermitRootLogin no</span>
+	- Generate ssh keys 
+	
+- Exploiting the listening service
+
+## Securing User Accounts
+
+Avoid logging in as root, instead have an account created for administrative purposes. Do this by adding a user to the sudoers gruop using:
+
+#### Use sudo
+<span style="color:rgb(255, 192, 0)">usermod -aG sudo username</span> 
+- `usermod` modifies a user account.
+- `-aG` appends to group.
+- `sudo` is the name of the group of users who can use `sudo` on Debian-based distributions.
+- `username` is the name of the user account you want to modify.
+
+#### Disable root
+ You might consider disabling root after creating an admin account. You can do this by modifying <span style="color:rgb(0, 176, 80)">/etc/passwd</span> and change the line <span style="color:rgb(0, 176, 80)">root:x:0:0:root:/root:/bin/bash</span> to <span style="color:rgb(0, 176, 80)">root:x:0:0:root:/root:/sbin/</span><span style="color:rgb(255, 0, 0)">nologin</span>
+
+#### Enforce Strong Password Policy
+
+<span style="color:rgb(0, 176, 240)"><b>libpwquality</b></span> library provides many options for password constraints. The configuration file can be found at <span style="color:rgb(0, 176, 80)">/etc/pam.d/common-password</span> 
+
+#### Disable Unused Accounts
+
+edit <span style="color:rgb(0, 176, 80)">/etc/passwd</span> file and set the shell of the user account we want to disable to <span style="color:rgb(0, 176, 80)">/sbin/nologin</span>, similar to disabling root. ALSO DO THIS FOR LOCAL SERVICES
+
+## Software and Services
+
+- Disable unnecessary services: Avoid installing unneeded packages. For example, if you don’t need a web server, you should ensure you don’t install one.
+- Block unneeded ports
+- Avoid legacy protocols: Ex, TFTP
+- Remove Identification Strings: <u>Whenever you connect to a remote server, it usually replies with its version number. This information would reveal various information to the attacker, such as the name of the server/program, the version number, and the host operating system.</u>
+
+## Update and Upgrade Policies
+
+<span style="color:rgb(0, 176, 240)">apt update</span> to download package information from the configured sources
+<span style="color:rgb(0, 176, 240)">apt upgrade</span> to install available upgrades for all packages from the configured sources
+
+Depending on the Linux distribution that you are using, consider configuring automatic updates.
+
+## Audit and Log Configuration
+
+Most log files on Linux systems are stored in the <span style="color:rgb(0, 176, 240)"><b>/var/log</b></span> directory.

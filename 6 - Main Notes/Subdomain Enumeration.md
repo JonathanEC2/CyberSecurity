@@ -1,0 +1,53 @@
+---
+sr-due: 2025-05-11
+sr-interval: 3
+sr-ease: 250
+---
+
+#review
+
+[[../2 - Tags/Web Hacking|Web Hacking]]
+# Subdomain Enumeration
+
+Subdomain enumeration is the process of finding valid subdomains for a domain, but why do we do this. three different subdomain enumeration methods: 
+- Brute Force
+- OSINT (Open-Source Intelligence)
+- Virtual Host.
+
+## OSINT
+
+#### SSL/TLS Certificates
+
+When an SSL/TLS certificate is created for a domain by a CA (Certificate Authority), CA's take part in what's called "Certificate Transparency (CT) logs". These are publicly accessible logs of every SSL/TLS certificate created for a domain name. The purpose of Certificate Transparency logs is to stop malicious and accidentally made certificates from being used. We can use this service to our advantage to discover subdomains belonging to a domain, sites like https://crt.sh offer a searchable database of certificates that shows current and historical results.
+
+#### Search Engines
+
+Using advanced search methods on websites like Google, such as the <mark style="background: #D2B3FFA6;">site: filter</mark>, can narrow the search results. For example, <mark style="background: #D2B3FFA6;">site:*.domain.com -site:www.domain.com</mark> would only contain results leading to the domain name domain.com but exclude any links to www.domain.com; therefore, it shows us only subdomain names belonging to domain.com.
+
+#### DNS Bruteforce
+
+Bruteforce DNS (Domain Name System) enumeration is the method of trying tens, hundreds, thousands or even millions of different possible subdomains from a pre-defined list of commonly used subdomains. Because this method requires many requests, we automate it with tools to make the process quicker.
+
+```
+dnsrecon -t brt -d acmeitsupport.thm
+```
+
+```
+./sublist3r.py -d acmeitsupport.thm
+```
+
+## Virtual Hosts
+Some subdomains aren't always hosted in publically accessible DNS results, such as development versions of a web application or administration portals. Instead, the DNS record could be kept on a private DNS server or recorded on the developer's machines in their <span style="color:rgb(0, 176, 80)">/etc/hosts</span> file (or <span style="color:rgb(0, 176, 80)">c:\windows\system32\drivers\etc\hosts</span> file for Windows users), which maps domain names to IP addresses. 
+
+Because web servers can host multiple websites from one server when a website is requested from a client, the server knows which website the client wants from the Host header. We can utilize this host header by making changes to it and monitoring the response to see if we've discovered a new website.
+
+
+```
+ffuf -w /usr/share/wordlists/SecLists/Discovery/DNS/namelist.txt -H "Host: FUZZ.acmeitsupport.thm" -u http://10.10.197.103
+```
+
+Because the above command will always produce a valid result, we need to filter the output. We can do this by using the page size result with the -fs switch. Edit the below command replacing {size} with the most occurring size value from the previous result
+
+```
+-w /usr/share/wordlists/SecLists/Discovery/DNS/namelist.txt -H "Host: FUZZ.acmeitsupport.thm" -u http://10.10.197.103 -fs {size}
+```

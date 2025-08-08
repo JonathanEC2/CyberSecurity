@@ -1,0 +1,100 @@
+---
+sr-due: 2025-08-17
+sr-interval: 12
+sr-ease: 210
+---
+
+#review
+
+[[../2 - Tags/Web Hacking|Web Hacking]]
+
+Command injection is ==the abuse of an application's behavior to execute commands on the operating system, using the same privileges that the application on a device is running is running with.== For example, achieving command injection on a web server running as a user named joe will execute commands under this joe user - and therefore obtain any permissions that joe has.
+
+Command injection is often known as RCE because it has the ability to remotely execute code within the application. These are often the most lucrative to attackers because it means they can directly interact with the vulnerable system. For example, an attacker may read system or user files, data, and things of that nature.
+
+# Discovering Command Injection
+
+This vulnerability exists because applications often use functions in programming languages such as PHP, Python and NodeJS to pass data to and to make system calls on the machine’s operating system. For example, taking input from a field and searching for an entry into a file.
+
+In the code below, the application takes data that a user enters in an input field named $title to search a directory for a song title. 
+
+![[../../../attachments/Pasted image 20250501204246.png]]
+
+1. The application stores MP3 files in a directory contained on the operating system.
+2. The user inputs the song title they wish to search for. The application stores this input into the $title variable.
+3. The data within this $title variable is passed to the command grep to search a text file named songtitle.txt for the entry of whatever the user wishes to search for.
+4. The output of this search of songtitle.txt will determine whether the application informs the user that the song exists or not.
+
+An attacker could abuse this application by injecting their own commands for the application to execute. Rather than using grep to search for an entry in songtitle.txt, they could ask the application to read data from a more sensitive file. Abusing applications in this way can be possible no matter the programming language the application uses. As long as the application processes and executes it, it can result in command injection.
+
+# Exploiting Command Injection
+
+You can often determine whether or not command injection may occur by the behaviors of an application
+
+- Blind command injection;; there is no direct output from the application when testing the payload. You will have to investigate the behavior of the application to determine whether or not the payload was successful
+- Verbose command injection;; receive direct feedback from the application once you have tested a payload. For example, running the whoami command to see what user the application is running under. The web application will output the username on the page directly.
+
+<u>Detecting Blind Command Injection</u>
+
+We will need to use payloads that will cause some time delay. For example, the `ping` and `sleep` commands are significant payloads to test with. Using ping as an example, the application will hang for x seconds in relation to how many pings you have specified.
+
+Another method of detecting blind command injection is by forcing some output. This can be done by using redirection operators such as `>`.  We can tell the web application to execute commands such as whoami and redirect that to a file. We can then use a command such as cat to read this newly created file’s contents.
+
+A great way to test for command injection is ==the curl command.==  This is because you are able to use curl to deliver data to and from an application in your payload. a simple curl payload to an application is possible for command injection.
+
+`curl http://vulnerable.app/process.php%3Fsearch%3DThe%20Beatles%3B%20whoami`
+
+<u>Detecting Verbose Command Injection</u>
+
+Useful payloads for Linux:
+
+- whoami
+- ping
+- sleep - useful when ping is not available
+- nc
+
+
+Useful payloads for Windows:
+
+- whoami
+- dir
+- ping
+- timeout - invokes an application to hang
+
+# Remediating Command Injection
+
+Command injection can be prevented in a variety of ways. Everything from minimal use of potentially dangerous functions or libraries in a programming language to filtering input without relying on a user’s input. 
+
+<b><u>Vulnerable Functions</u></b>
+
+In PHP, many functions interact with the operating system to execute commands via shell; these include:
+
+- Exec
+- Passthru
+- System
+
+In the snippet below, the application will only accept and process numbers that are inputted into the form. This means that any commands such as whoami will not be processed.
+
+![[../../../attachments/Pasted image 20250501211149.png]]
+
+1. The application will only accept a specific pattern of characters (the digits  0-9)
+2. The application will then only proceed to execute this data which is all numerical.
+
+<b><u>Input sanitisation</u></b>
+
+This is a process of specifying the formats or types of data that a user can submit. For example, an input field that only accepts numerical data or removes any special characters such as <mark style="background: #D2B3FFA6;">></mark> , <mark style="background: #D2B3FFA6;"> &</mark> and<mark style="background: #D2B3FFA6;"> /</mark>
+
+In the snippet below, the filter_input PHP function is used to check whether or not any data submitted via an input form is a number or not. If it is not a number, it must be invalid input.
+
+![[../../../attachments/Pasted image 20250501211442.png]]
+
+<u>Bypassing Filters</u>
+
+Applications will employ numerous techniques in filtering and sanitizing data that is taken from a  user's input. These filters will restrict you to specific payloads; however, we can abuse the logic behind an application to bypass these filters. For example, an application may strip out quotation marks; we can instead use the hexadecimal value of this to achieve the same result.
+
+When executed, although the data given will be in a different format than what is expected, it can still be interpreted and will have the same result.
+
+[Payload cheat sheet](https://github.com/payloadbox/command-injection-payload-list)
+
+
+<mark style="background: #D2B3FFA6;">&</mark> lets you launch the first program, and then do another one while the first is still running.

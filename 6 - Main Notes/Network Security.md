@@ -1,0 +1,223 @@
+[[../2 - Tags/Networking|Networking]]
+#nmap 
+
+# Nmap Live Host Discovery
+## Subnetworks
+
+A **network segment** is a group of computers connected using a shared medium such as Ethernet switch or Wi-Fi AP. In an IP network, a **subnetwork** is the equivalent to one or more network segments connected together and configured to use the same router. <u>Network segment refers to physical connection, subnet refers to logical</u>
+
+Subnet has its own IP range and is connected to a more extensive network via a router
+
+ARP queries are no routed and cannot cross a subnet router (ARP is link layer)
+
+## Enumerating Targets
+
+- list: <span style="color:rgb(255, 192, 0)">MACHINE_IP scanme.nmap.org example.com</span> will scan 3 IP addresses.
+- range: <span style="color:rgb(255, 192, 0)">10.11.12.15-20</span> will scan 6 IP addresses: 10.11.12.15, 10.11.12.16,… and 10.11.12.20.
+- subnet: <span style="color:rgb(255, 192, 0)">MACHINE_IP/30</span> will scan 4 IP addresses.
+
+File as input <span style="color:rgb(255, 192, 0)">nmap -iL list_of_hosts.txt</span> 
+
+
+## Discovering Live Hosts
+
+If you want to ping a system, an ARP query should precede the ICMP echo
+Send TCP/UDP packets if ICMP Echo is blocked
+
+## Nmap Host Discovery Using ARP
+
+1. When a _privileged_ user tries to scan targets on a local network (Ethernet), Nmap uses _ARP requests_
+2. 1. When a _privileged_ user tries to scan targets outside the local network, Nmap uses ICMP echo requests, TCP ACK (Acknowledge) to port 80, TCP SYN (Synchronize) to port 443, and ICMP timestamp request.
+3. 1. When an _unprivileged_ user tries to scan targets outside the local network, Nmap resorts to a TCP 3-way handshake by sending SYN packets to ports 80 and 443.
+
+<span style="color:rgb(255, 192, 0)">nmap -PR -sn TARGETS</span>;;   perform an ARP scan without port-scanning
+<!--SR:!2025-08-13,119,210-->
+
+<span style="color:rgb(0, 176, 240)"><b><font size = 5>arp-scan</font></b></span>
+	<span style="color:rgb(255, 192, 0)">arp-scan -l</span> sends ARP queries to all valid IP addresses on your local network. 
+	<span style="color:rgb(255, 192, 0)">-I</span> specifies interface
+
+## Nmap Host Discovery Using ICMP
+
+Many firewalls block ICMP echo; ARP query will precede the ICMP request if target is on the same network
+
+<span style="color:rgb(255, 192, 0)">-PE</span>;; ICMP echo requests to discover live hosts
+<!--SR:!2025-08-10,172,288-->
+<span style="color:rgb(255, 192, 0)">-PP</span>;; timestamp request, used if ICMP is blocked
+<!--SR:!2025-06-09,117,308-->
+<span style="color:rgb(255, 192, 0)">-PM</span>;; address mask query, checks whether it gets an address mask reply
+<!--SR:!2025-06-11,119,290-->
+
+**<u><b>Learn multiple approaches to achieve the same result</b></u>
+
+## Nmap Host Discovery Using TCP and UDP
+
+<span style="color:rgb(255, 192, 0)">-PS</span>;; TCP SYN ping, SYN > SYN/ACK > RST
+<!--SR:!2025-10-04,172,268-->
+<span style="color:rgb(255, 192, 0)">-PA</span>;; ACK ping, must be running as a privileged user to be able to accomplish this. ACK > RST if target is up
+<!--SR:!2025-10-25,191,248-->
+<span style="color:rgb(255, 192, 0)">-PU</span>;; UDP ping, closed ports reply with ICMP port unreachable packet. No response means port is open
+<!--SR:!2025-06-22,42,190-->
+
+<font size = 5><b><span style="color:rgb(0, 176, 240)">Masscan</span></b></font>
+
+Aggressive with the rate of packets it generates
+
+<span style="color:rgb(255, 192, 0)">masscan MACHINE_IP/24 -p443</span> 
+
+## Using Reverse-DNS Lookup
+
+<span style="color:rgb(255, 192, 0)">-n</span>;; don't want nmap to use DNS server
+<!--SR:!2025-05-23,12,168-->
+<span style="color:rgb(255, 192, 0)">-R</span>;; query the DNS server even for offline hosts
+<!--SR:!2025-05-26,15,130-->
+
+# Nmap Basic Port Scans
+## TCP and UDP Ports
+
+Nmap considers ports to be in the following six states:
+
+1. Open: Service is listening on the specifies port
+2. Closed: no service is listening on the specified port but it is not blocked by a firewall or other security appliance
+3. Filtered: cannot determine if the port is open or closed because it is not accessible, usually due to a firewall
+4. Unfiltered: cannot determine if the port is open or closed, but it is accessible. -sA
+5. Open|Filtered: This means that Nmap cannot determine whether the port is open or filtered.
+6. Closed|Filtered: This means that Nmap cannot decide whether a port is closed or filtered.
+
+## TCP Flags
+
+Setting a flag bit means setting its value to 1.
+
+1. **URG**;; means flag is significant, needs to be processed immediately
+<!--SR:!2025-08-22,129,268-->
+2. **ACK**;; means acknowledgement number is significant, used to acknowledge a TCP segment
+<!--SR:!2025-05-31,46,230-->
+3. **PSH**;; asks TCP to pass the application promptly
+<!--SR:!2025-07-01,63,170-->
+4. **RST**;; resets connection, also used when data is sent to a host and there is no service on the receiving end to answer
+<!--SR:!2025-07-29,130,250-->
+5. **SYN**;; initiates a three way handshake an synchronizes sequence numbers with the other host. <u>Sequence number should be set randomly during connection establishment</u>
+<!--SR:!2026-01-23,265,288-->
+6. **FIN**;; sender has no more data
+<!--SR:!2025-08-09,167,270-->
+
+## TCP Connect Scan
+
+ - Unprivileged users are limited to Connect Scans
+ - A closed TCP port responds to a SYN packet with RST/ACK to indicate that it is not open.
+ - The first three packets are the TCP 3-way handshake being completed. Then, the fourth packet tears it down with an RST/ACK packet.
+
+## TCP SYN Scan
+
+- Default scan mode, limited to privileged or root users
+- Does not complete handshake, decreases chance of scan being logged
+- Nmap sends an RST packet once a SYN/ACK packet is received
+
+## UDP Scan
+
+ **UDP ports that don’t generate any response are the ones that Nmap will state as open**
+ Every closed port will generate an ICMP packet destination unreachable (port unreachable).
+# Nmap Advanced Port Scans
+
+## TCP Null Scan, FIN Scan, and Xmas Scan
+
+<span style="color:rgb(255, 192, 0)">-sN</span>;; null scan; no response means the port is either open or a firewall is blocking the packet, RST if port is closed
+<!--SR:!2025-06-14,34,168-->
+<span style="color:rgb(255, 192, 0)">-sF</span>;; FIN scan; no response means the port is either open or a firewall is blocking the packet, RST if port is closed
+<!--SR:!2025-06-25,96,228-->
+<span style="color:rgb(255, 192, 0)">-sX</span>;; Xman scan if an RST packet is received, it means that the port is closed. Otherwise, it will be reported as open|filtered
+<!--SR:!2025-08-27,120,210-->
+
+## TCP Maimon Scan
+
+<span style="color:rgb(255, 192, 0)">-sM</span>;; FIN and ACK bits are set. The target should send an RST packet as a response
+<!--SR:!2025-05-20,21,150-->
+
+## TCP ACK, Window, and Custom Scan
+
+<span style="color:rgb(255, 192, 0)">-sA</span>;; ACK should respond to ACK with RST regardless of the state because ACK flag should be sent only in response to a received TCP packet to acknowledge the receipt of some data. This type of scan is more suitable to discover firewall rule sets and configuration.
+<!--SR:!2025-09-16,154,230-->
+<span style="color:rgb(255, 192, 0)">-sW</span>;; Windows scan is similar to ACK scan except it examines the TCP Window field of the RST packet returned
+<!--SR:!2025-12-30,233,250-->
+
+## Spoofing and Decoys
+
+Only beneficial in a situation where you can guarantee to capture the response. 
+
+<span style="color:rgb(255, 192, 0)">nmap -S SPOOFED_IP MACHINE_IP</span>  Nmap will craft packets using the provided source address. The target machine will respond to the incoming packets sending the reply to the destination IP address. <u>Attacker needs to monitor network traffic to analyze replies, useless otherwise</u>
+
+Scanning with a spoofed IP address is three steps:
+
+- Attacker sends a packet with a spoofed source IP address to the target machine.
+- Target machine replies to the spoofed IP address as the destination.
+- Attacker captures the replies to figure out open ports.
+
+Expect to specify the network interface using <span style="color:rgb(255, 192, 0)">-e</span> and to disable ping scan <span style="color:rgb(255, 192, 0)">-Pn</span>. 
+<span style="color:rgb(255, 192, 0)">nmap -e NET_INTERFACE -Pn -S SPOOFED_IP MACHINE_IP</span> 
+
+When you are on the same subnet as the target machine, you would be able to spoof your MAC address as well. You can specify the source MAC address using <span style="color:rgb(255, 192, 0)">--spoof-mac SPOOFED_MAC</span> 
+
+<span style="color:rgb(255, 192, 0)">nmap -D 10.10.0.1,10.10.0.2,ME MACHINE_IP</span>
+	-D;; decoy scan
+<!--SR:!2025-07-22,123,270-->
+	ME;; to indicate your IP address should appear in the third order
+<!--SR:!2025-05-28,105,250-->
+
+## Fragmented Packets
+
+<span style="color:rgb(255, 192, 0)">-f</span>;; fragments packets. Once chosen, the IP data will be divided into 8 bytes or less.
+<!--SR:!2025-08-11,151,268-->
+
+## Idle/Zombie Scan
+
+Idle scan requires and idle system connected to the network that you can communicate with. Nmap will make each probe appear as it is coming from the idle host, then it will check for indicators whether the idle host received any response from the spoofed probe. Done by checking IPID value in the header
+
+<span style="color:rgb(255, 192, 0)">nmap -sI ZOMBIE_IP MACHINE_IP</span> 
+
+The idle (zombie) scan requires the following three steps to discover whether a port is open:
+
+1. Trigger the idle host to respond so that you can record the current IP ID on the idle host.
+2. Send a SYN packet to a TCP port on the target. The packet should be spoofed to appear as if it was coming from the idle host (zombie) IP address.
+3. Trigger the idle machine again to respond so that you can compare the new IP ID with the one received earlier.
+
+Three scenarios for Idle scan:
+
+ 1. the TCP port is closed; therefore, the target machine responds to the idle host with an RST packet. The idle host does not respond; hence its IP ID is not incremented.
+ 2. the TCP port is open, so the target machine responds with a SYN/ACK to the idle host (zombie). The idle host responds to this unexpected packet with an RST packet, thus incrementing its IP ID.
+ 3. the target machine does not respond at all due to firewall rules. This lack of response will lead to the same result as with the closed port; the idle host won’t increase the IP ID.
+
+## Getting More Details
+
+<span style="color:rgb(255, 192, 0)">--reason</span>;; provide more details regarding its reasoning and conclusions
+<!--SR:!2025-07-03,141,288-->
+
+# Nmap Post Port Scans
+
+## Service Detection
+<span style="color:rgb(255, 192, 0)">-sV</span>;; collects and determines service version info on open ports <span style="color:rgb(255, 192, 0)">--version-intensity LEVEL</span> where level ranges between 0 and 9. Forces TCP 3 way handshake.
+<!--SR:!2025-12-08,227,270-->
+
+## OS Detection and Traceroute
+<span style="color:rgb(255, 192, 0)">-O</span>;; OS scan. TAKE OS VERSIONS WITH A GRAIN OF SALT
+<!--SR:!2025-06-24,140,308-->
+<span style="color:rgb(255, 192, 0)">--traceroute</span>;;  starts with a packet of high TTL and keeps decreasing it
+<!--SR:!2025-06-10,126,270-->
+
+## Nmap Scripting Engine (NSE)
+A script is code that doesn't need to be compiled. It remains in its human readable for and does not need to be converted to machine language
+
+<span style="color:rgb(255, 192, 0)">-sC, --script=, --script "SCRIPT-NAME"</span>;; If you are unsure what a script does, you can open the script file with a text reader, such as `less`, or a text editor.
+<!--SR:!2025-08-20,143,230-->
+
+<span style="color:rgb(0, 176, 80)">/usr/share/nmap/scripts</span>  
+
+## Saving the Output
+
+<span style="color:rgb(255, 192, 0)">-oN FILENAME</span>;; N stands for normal
+<!--SR:!2025-07-23,161,310-->
+<span style="color:rgb(255, 192, 0)">-oG FILENAME</span> ;; makes filtering the scan output for specific keywords or terms efficient, not convenient to read compared to normal output. <span style="color:rgb(255, 192, 0)">grep KEYWORD TEXT_FILE</span>  will display all the lines containing the provided keyword
+<!--SR:!2025-11-14,257,330-->
+<span style="color:rgb(255, 192, 0)">-oX FILENAME;</span>;  XML format would is most convenient to process the output in other programs
+<span style="color:rgb(255, 192, 0)">-oA FILENAME</span>;; output all formats
+<!--SR:!2025-07-04,149,310-->
+

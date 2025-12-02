@@ -1,0 +1,43 @@
+
+
+2025-08-08 17:33
+Status:
+Source: [[../3 - Indexes/THM#|THM]]
+Tags: [[../2 - Tags/Cryptography|Cryptography]]
+
+## Importance of Cryptography 
+
+Cryptography can be defined as the practice and study of techniques for secure communication and data protection where we expect the presence of adversaries and third parties
+
+## Plaintext to Ciphertext 
+
+Plaintext is readable data. Plaintext is passed through the encryption function along with the proper key; returns a ciphertext.
+The encryption function is part of the cipher. A <mark style="background: #FFF3A3A6;">cipher</mark> ==is an algorithm to convert a plaintext into a ciphertext and vice versa.==
+
+To recover the plaintext, we must pass the ciphertext along with the proper key via the decryption function
+
+## Types of Encryption
+
+#### Symmetric encryption
+
+Uses the same key to encrypt and decrypt data. Called private key cryptography. Requires a secure communication channel.
+
+#### Asymmetric encryption
+
+ uses key pairs; called public key cryptography. Tends to be slower than symmetric.
+
+## Basic Math
+
+#### XOR operation 
+
+exclusive or; compares two bits and returns 1 if the bits are different and 0 if they are the same. This is often represented by the ⊕ symbol
+
+XOR has many properties that make it useful in cryptography and error detection. One property is that applying XOR to a value within itself results in 0 and applying XOR to any value with 0 leaves it unchanged. This means A ⊕ A = 0, and A ⊕ 0 = A for any binary value A. Additionally, XOR is **commutative**, i.e., A ⊕ B = B ⊕ A. And it is **associative**, i.e., (A ⊕ B) ⊕ C = A ⊕ (B ⊕ C).
+
+#### Modulo Operation
+
+the modulo operator, X%Y, is the remainder when X is divided by Y.
+
+<span style="color:rgb(255, 0, 0)">Modulo is not reversible.</span> If we are given the equation _x_%5 = 4, infinite values of _x_ would satisfy this equation.
+
+Always returns a non-negative number less than the divisor.

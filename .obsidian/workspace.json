@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ad4d376a61f7a647",
+        "id": "b45a1f43b4401e90",
         "type": "tabs",
         "children": [
           {
-            "id": "31b74456072f2de6",
+            "id": "01fcf1da416e3167",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -29,30 +29,6 @@
               },
               "icon": "lucide-file",
               "title": "Section 8. Subnetting"
-            }
-          },
-          {
-            "id": "55221f68b7e3b7b3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1 - Source Material/Section 6. OSI Layer 3 - The Network Layer.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Section 6. OSI Layer 3 - The Network Layer"
             }
           }
         ]
@@ -136,64 +112,6 @@
               "icon": "lucide-list",
               "title": "Outline of Section 8. Subnetting"
             }
-          },
-          {
-            "id": "21d1d2ed24367c53",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "CCNA/Section 3. Host to Host Communications.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks for Section 3. Host to Host Communications"
-            }
-          },
-          {
-            "id": "f736bd4433bf3943",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "CCNA/Section 3. Host to Host Communications.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "Outgoing links from Section 3. Host to Host Communications"
-            }
-          },
-          {
-            "id": "14e3a2175e6003e4",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-tags",
-              "title": "Tags"
-            }
-          },
-          {
-            "id": "8fce6289e25cab7f",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "SpacedRepIcon",
-              "title": "Notes Review Queue"
-            }
           }
         ]
       }
@@ -214,12 +132,16 @@
       "obsidian-spaced-repetition:Review flashcards": false
     }
   },
-  "active": "31b74456072f2de6",
+  "active": "01fcf1da416e3167",
   "lastOpenFiles": [
     "1 - Source Material/Section 6. OSI Layer 3 - The Network Layer.md",
-    "3 - Indexes/Neil Anderson Cisco CCNA 200-301.md",
-    "1 - Source Material/Section 5. OSI Layer 4  - The Transport Layer.md",
     "1 - Source Material/Section 8. Subnetting.md",
+    "attachments/Pasted image 20251204181131.png",
+    "attachments/Pasted image 20251204153725.png",
+    "attachments/Pasted image 20251204153708.png",
+    "3 - Indexes/Neil Anderson Cisco CCNA 200-301.md",
+    "1 - Source Material/Section 7. IP Address Classes.md",
+    "1 - Source Material/Section 5. OSI Layer 4  - The Transport Layer.md",
     "3 - Indexes/THM.md",
     "2 - Tags/Exploitation.md",
     "2 - Tags/Defensive.md",
@@ -240,8 +162,6 @@
     "1 - Source Material/TCPdump The Basics.md",
     "1 - Source Material/System Hacking Phases and Attack Techniques.md",
     "1 - Source Material/Subdomain Enumeration.md",
-    "1 - Source Material/SQLMap The Basics.md",
-    "1 - Source Material/SQL Injection.md",
     "attachments/Pasted image 20251202161954.png",
     "attachments/Pasted image 20251122195144.png",
     "attachments/Pasted image 20251118193907.png",
@@ -259,9 +179,6 @@
     "THM Notes/1. Pre Security/1. Network Fundamentals",
     "THM Notes/1. Pre Security/Windows Fundamentals",
     "attachments/SSRF.png",
-    "attachments/URL.png",
-    "attachments/Diffie Hellman.png",
-    "attachments/DB Table Example.png",
-    "attachments/DBMS Example.png"
+    "attachments/URL.png"
   ]
 }

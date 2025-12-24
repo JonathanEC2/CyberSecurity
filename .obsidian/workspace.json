@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1 - Source Material/Section 8. Subnetting.md",
+                "file": "1 - Source Material/Section 11. Cisco Device Function.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Section 8. Subnetting"
+              "title": "Section 11. Cisco Device Function"
             }
           }
         ]
@@ -104,13 +104,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1 - Source Material/Section 8. Subnetting.md",
+                "file": "1 - Source Material/Section 11. Cisco Device Function.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Section 8. Subnetting"
+              "title": "Outline of Section 11. Cisco Device Function"
             }
           }
         ]
@@ -134,14 +134,21 @@
   },
   "active": "01fcf1da416e3167",
   "lastOpenFiles": [
+    "3 - Indexes/Neil Anderson Cisco CCNA 200-301.md",
+    "1 - Source Material/Section 10. OSI Layer 1 - The Physical Layer.md",
+    "1 - Source Material/Section 9. OSI Layer 2 - The Data Link Layer.md",
+    "1 - Source Material/Section 11. Cisco Device Function.md",
+    "1 - Source Material/Section 4. The Cisco IOS Operating System.md",
+    "1 - Source Material/Section 3. Host to Host Communications.md",
     "1 - Source Material/Section 6. OSI Layer 3 - The Network Layer.md",
+    "1 - Source Material/Section 5. OSI Layer 4  - The Transport Layer.md",
+    "1 - Source Material/Section 7. IP Address Classes.md",
     "1 - Source Material/Section 8. Subnetting.md",
+    "attachments/Subnet Cheatsheet.webp",
+    "attachments/Pasted image 20251213214326.png",
     "attachments/Pasted image 20251204181131.png",
     "attachments/Pasted image 20251204153725.png",
     "attachments/Pasted image 20251204153708.png",
-    "3 - Indexes/Neil Anderson Cisco CCNA 200-301.md",
-    "1 - Source Material/Section 7. IP Address Classes.md",
-    "1 - Source Material/Section 5. OSI Layer 4  - The Transport Layer.md",
     "3 - Indexes/THM.md",
     "2 - Tags/Exploitation.md",
     "2 - Tags/Defensive.md",
@@ -158,10 +165,6 @@
     "1 - Source Material/Web Application Basics.md",
     "1 - Source Material/Web App Hacking.md",
     "1 - Source Material/Vulnerability Scanner Overview.md",
-    "1 - Source Material/Threats and Risks.md",
-    "1 - Source Material/TCPdump The Basics.md",
-    "1 - Source Material/System Hacking Phases and Attack Techniques.md",
-    "1 - Source Material/Subdomain Enumeration.md",
     "attachments/Pasted image 20251202161954.png",
     "attachments/Pasted image 20251122195144.png",
     "attachments/Pasted image 20251118193907.png",
@@ -177,8 +180,6 @@
     "THM Notes/1. Pre Security",
     "THM Notes",
     "THM Notes/1. Pre Security/1. Network Fundamentals",
-    "THM Notes/1. Pre Security/Windows Fundamentals",
-    "attachments/SSRF.png",
-    "attachments/URL.png"
+    "THM Notes/1. Pre Security/Windows Fundamentals"
   ]
 }

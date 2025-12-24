@@ -89,11 +89,11 @@ Most common iOS command
 - If you want to restore from a back up, you'll do this by copying to the startup configuration and then rebooting.  However, copy merges commands instead of replacing so we use <span style="color:rgb(255, 192, 0)">erase start</span> first and then copy the file  you wish to restore from. 
 	Ex. copy flash:my-config start
 
-- <span style="color:rgb(255, 192, 0)">copy run tftp </span> backs up to tftp server
+- <span style="color:rgb(255, 192, 0)">copy run tftp </span> backs up to TFTP server
 - use <span style="color:rgb(255, 192, 0)">more</span> to see content of back up file
 
 ### Config Storage Locations
 
 - IOS image is store on Flash
-- Starup config is stored on NVRAM
+- Startup config is stored on NVRAM
 - The running config is stored RAM (Loaded into RAM from the startup config when the device boots up )

@@ -6,7 +6,7 @@ Tags: [[]]
 
 # Switches vs Hubs
 
-Hubs and switches perform similar function. End hosts in a LAN plug into them with and ethernet cable which then allows the end hosts to communicate with each other
+Hubs and switches perform similar function. End hosts in a LAN plug into them with an ethernet cable which then allows the end hosts to communicate with each other
 
 ## Hubs - Half Duplex and Shared Collision Domain
 

@@ -31,5 +31,7 @@ Plugged into a transceiver that then plugs into a router or switch
 
 Single mode supports higher bandwidth and longer distances but is more expensive
 
+Multi mode only supports a few hundred meters 
+
 PoE (power over ethernet) switch sends power over Ethernet, don't need a separate power supply for IP phone
 ## References

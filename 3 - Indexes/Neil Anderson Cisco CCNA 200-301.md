@@ -13,3 +13,5 @@
 [[../1 - Source Material/Section 14. Cisco Router and Switch Basics|Section 14. Cisco Router and Switch Basics]]
 [[../1 - Source Material/Section 15. Cisco Device Management|Section 15. Cisco Device Management]]
 [[../1 - Source Material/Section 16. Routing Fundamentals|Section 16. Routing Fundamentals]]
+[[../1 - Source Material/Section 17. Dynamic Routing Protocols|Section 17. Dynamic Routing Protocols]]
+[[../1 - Source Material/Section 18. Connectivity Troubleshooting|Section 18. Connectivity Troubleshooting]]

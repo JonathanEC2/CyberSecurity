@@ -8,30 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "806f1850d21d1bb4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1 - Source Material/Section 17. Dynamic Routing Protocols.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Section 17. Dynamic Routing Protocols"
-            }
-          },
-          {
             "id": "d4e6ebb7fd198dbe",
             "type": "leaf",
             "state": {
@@ -53,30 +29,6 @@
               },
               "icon": "lucide-file",
               "title": "Neil Anderson Cisco CCNA 200-301"
-            }
-          },
-          {
-            "id": "bac85cd07b5fe62c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Section 19. IGP Fundamentals.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Section 19. IGP Fundamentals"
             }
           },
           {
@@ -102,9 +54,57 @@
               "icon": "lucide-file",
               "title": "Section 16. Routing Fundamentals"
             }
+          },
+          {
+            "id": "806f1850d21d1bb4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1 - Source Material/Section 17. Dynamic Routing Protocols.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Section 17. Dynamic Routing Protocols"
+            }
+          },
+          {
+            "id": "bac85cd07b5fe62c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Section 19. IGP Fundamentals.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Section 19. IGP Fundamentals"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -254,11 +254,11 @@
   },
   "active": "bac85cd07b5fe62c",
   "lastOpenFiles": [
-    "3 - Indexes/Neil Anderson Cisco CCNA 200-301.md",
-    "Section 19. IGP Fundamentals.md",
-    "1 - Source Material/Section 18. Connectivity Troubleshooting.md",
-    "1 - Source Material/Section 16. Routing Fundamentals.md",
     "1 - Source Material/Section 17. Dynamic Routing Protocols.md",
+    "1 - Source Material/Section 16. Routing Fundamentals.md",
+    "Section 19. IGP Fundamentals.md",
+    "3 - Indexes/Neil Anderson Cisco CCNA 200-301.md",
+    "1 - Source Material/Section 18. Connectivity Troubleshooting.md",
     "1 - Source Material/Section 7. IP Address Classes.md",
     "1 - Source Material/Network Fundamentals.md",
     "2 - Tags/OSI.md",

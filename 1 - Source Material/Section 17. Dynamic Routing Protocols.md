@@ -201,8 +201,8 @@ IGP protocols are configured under global config mode and then enabled on each i
 
 ### Passive Interface Use Cases
 
-Loopback interfaces
-When we don't want to send out routing information but we want our internal devices to know about the link (external link)
+- Loopback interfaces
+- When we don't want to send out routing information but we want our internal devices to know about the link (external link)
 
 ```IOS
 passive-interface {loopback address}

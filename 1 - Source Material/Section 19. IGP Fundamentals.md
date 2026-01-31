@@ -56,6 +56,9 @@ router rip
 default-information originate
 ```
 
+# RIP Lab
+
+**If you want your routers to have a route to the external network (internet), you must configure that network statement on the border router (12:10)**
 # EIGRP 
 
 ## EIGRP Characteristics
@@ -104,6 +107,12 @@ Manually configured EIGRP Router ID:
 router eigrp 100
 eigrp router-id {ip address}
 ```
+
+`show ip eigrp neighbors`
+`show ip route`
+`sh run | section eigrp`
+`show ip protocol`
+`show ip eigrp interfaces`
 
 
 ## References

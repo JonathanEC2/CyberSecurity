@@ -8,54 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d4e6ebb7fd198dbe",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3 - Indexes/Neil Anderson Cisco CCNA 200-301.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Neil Anderson Cisco CCNA 200-301"
-            }
-          },
-          {
-            "id": "6cf7c250d2751fb8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1 - Source Material/Section 16. Routing Fundamentals.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Section 16. Routing Fundamentals"
-            }
-          },
-          {
             "id": "806f1850d21d1bb4",
             "type": "leaf",
             "state": {
@@ -85,7 +37,55 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Section 19. IGP Fundamentals.md",
+                "file": "1 - Source Material/Section 19. IGP Fundamentals.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Section 19. IGP Fundamentals"
+            }
+          },
+          {
+            "id": "40d1a0800c38d555",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1 - Source Material/Section 19. IGP Fundamentals.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Section 19. IGP Fundamentals"
+            }
+          },
+          {
+            "id": "7a6f12416b3a2d5c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1 - Source Material/Section 19. IGP Fundamentals.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -104,7 +104,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -177,7 +177,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Section 19. IGP Fundamentals.md",
+                "file": "1 - Source Material/Section 19. IGP Fundamentals.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -252,12 +252,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "bac85cd07b5fe62c",
+  "active": "40d1a0800c38d555",
   "lastOpenFiles": [
-    "1 - Source Material/Section 17. Dynamic Routing Protocols.md",
-    "1 - Source Material/Section 16. Routing Fundamentals.md",
-    "Section 19. IGP Fundamentals.md",
     "3 - Indexes/Neil Anderson Cisco CCNA 200-301.md",
+    "1 - Source Material/Section 17. Dynamic Routing Protocols.md",
+    "1 - Source Material/Section 15. Cisco Device Management.md",
+    "1 - Source Material/Section 13. The Cisco Troubleshooting Methodology.md",
+    "1 - Source Material/Section 20. Open Shortest Path First.md",
+    "1 - Source Material/Section 19. IGP Fundamentals.md",
+    "1 - Source Material/Section 16. Routing Fundamentals.md",
     "1 - Source Material/Section 18. Connectivity Troubleshooting.md",
     "1 - Source Material/Section 7. IP Address Classes.md",
     "1 - Source Material/Network Fundamentals.md",
@@ -268,9 +271,7 @@
     "Untitled.md",
     "Untitled 2.base",
     "1 - Source Material/Section 11. Cisco Device Function.md",
-    "1 - Source Material/Section 15. Cisco Device Management.md",
     "1 - Source Material/Section 14. Cisco Router and Switch Basics.md",
-    "1 - Source Material/Section 13. The Cisco Troubleshooting Methodology.md",
     "4 - Templates/{{Title}}.md",
     "1 - Source Material/Section 4. The Cisco IOS Operating System.md",
     "1 - Source Material/Section 3. Host to Host Communications.md",
@@ -286,7 +287,6 @@
     "attachments/Pasted image 20251204153725.png",
     "attachments/Pasted image 20251204153708.png",
     "2 - Tags/Exploitation.md",
-    "2 - Tags/Defensive.md",
     "attachments/Pasted image 20251202161954.png",
     "attachments/Pasted image 20251122195144.png",
     "attachments/Pasted image 20251118193907.png",

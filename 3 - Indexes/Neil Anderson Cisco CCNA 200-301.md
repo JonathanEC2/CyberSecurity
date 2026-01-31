@@ -15,3 +15,4 @@
 [[../1 - Source Material/Section 16. Routing Fundamentals|Section 16. Routing Fundamentals]]
 [[../1 - Source Material/Section 17. Dynamic Routing Protocols|Section 17. Dynamic Routing Protocols]]
 [[../1 - Source Material/Section 18. Connectivity Troubleshooting|Section 18. Connectivity Troubleshooting]]
+[[../1 - Source Material/Section 19. IGP Fundamentals|Section 19. IGP Fundamentals]]

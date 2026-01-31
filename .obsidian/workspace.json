@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1 - Source Material/Section 19. IGP Fundamentals.md",
+                "file": "1 - Source Material/Section 18. Connectivity Troubleshooting.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -76,7 +76,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Section 19. IGP Fundamentals"
+              "title": "Section 18. Connectivity Troubleshooting"
             }
           },
           {
@@ -85,7 +85,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1 - Source Material/Section 19. IGP Fundamentals.md",
+                "file": "1 - Source Material/Section 17. Dynamic Routing Protocols.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -100,11 +100,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Section 19. IGP Fundamentals"
+              "title": "Section 17. Dynamic Routing Protocols"
+            }
+          },
+          {
+            "id": "7f32579af9089666",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1 - Source Material/Section 20. Open Shortest Path First.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Section 20. Open Shortest Path First"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -177,13 +201,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1 - Source Material/Section 19. IGP Fundamentals.md",
+                "file": "1 - Source Material/Section 20. Open Shortest Path First.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Section 19. IGP Fundamentals"
+              "title": "Outline of Section 20. Open Shortest Path First"
             }
           },
           {
@@ -252,16 +276,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "40d1a0800c38d555",
+  "active": "7f32579af9089666",
   "lastOpenFiles": [
     "3 - Indexes/Neil Anderson Cisco CCNA 200-301.md",
     "1 - Source Material/Section 17. Dynamic Routing Protocols.md",
-    "1 - Source Material/Section 15. Cisco Device Management.md",
-    "1 - Source Material/Section 13. The Cisco Troubleshooting Methodology.md",
-    "1 - Source Material/Section 20. Open Shortest Path First.md",
+    "1 - Source Material/Section 18. Connectivity Troubleshooting.md",
     "1 - Source Material/Section 19. IGP Fundamentals.md",
     "1 - Source Material/Section 16. Routing Fundamentals.md",
-    "1 - Source Material/Section 18. Connectivity Troubleshooting.md",
+    "1 - Source Material/Section 15. Cisco Device Management.md",
+    "1 - Source Material/Section 14. Cisco Router and Switch Basics.md",
+    "1 - Source Material/Section 13. The Cisco Troubleshooting Methodology.md",
+    "1 - Source Material/Section 11. Cisco Device Function.md",
+    "1 - Source Material/Section 20. Open Shortest Path First.md",
     "1 - Source Material/Section 7. IP Address Classes.md",
     "1 - Source Material/Network Fundamentals.md",
     "2 - Tags/OSI.md",
@@ -270,8 +296,6 @@
     "attachments/Default Administrative Distance.png",
     "Untitled.md",
     "Untitled 2.base",
-    "1 - Source Material/Section 11. Cisco Device Function.md",
-    "1 - Source Material/Section 14. Cisco Router and Switch Basics.md",
     "4 - Templates/{{Title}}.md",
     "1 - Source Material/Section 4. The Cisco IOS Operating System.md",
     "1 - Source Material/Section 3. Host to Host Communications.md",

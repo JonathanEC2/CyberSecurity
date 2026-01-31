@@ -39,7 +39,7 @@ Additional commands need to be entered to be able to use Tenet or SSH, see secti
 
 Descriptions can aid in troubleshooting
 
-`descritption {description}`
+`description {description}`
 
 # The Setup Wizard
 

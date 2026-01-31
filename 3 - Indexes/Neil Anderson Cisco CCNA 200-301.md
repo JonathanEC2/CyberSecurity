@@ -16,3 +16,4 @@
 [[../1 - Source Material/Section 17. Dynamic Routing Protocols|Section 17. Dynamic Routing Protocols]]
 [[../1 - Source Material/Section 18. Connectivity Troubleshooting|Section 18. Connectivity Troubleshooting]]
 [[../1 - Source Material/Section 19. IGP Fundamentals|Section 19. IGP Fundamentals]]
+[[../1 - Source Material/Section 20. Open Shortest Path First|Section 20. Open Shortest Path First]]

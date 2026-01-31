@@ -1,3 +1,6 @@
+2026-01-30 14:28
+Tags: [[]]
+
 
 # OSPF Characteristics
 
@@ -181,8 +184,79 @@ Routes that are shared between different OSPF areas. These are typically summary
 Routers that have all their interfaces in one normal area
 Routers maintain a full LSDB of other routes and link in their own area. They learn Inter Area routes to other areas from their ABRs
 
-### Autonomous System Boundary Routers ASBRs 
+### Autonomous System Boundary Routers (ASBRs) 
 
 The router is running OSPF and redistributing from another source into OSPF. An example would be if we are running EIGRP on the router as well, those routes will be redistributed into OSPF so they will also be advertised through our OSPF neighbors
 
 Our redistributed routes show up as external route. External route literally means it was redistributed into OSPF 
+
+# Bandwidth vs Clock Rate and Speed
+
+## The `speed` command
+
+- The rate that Ethernet interfaces physically transmit at is set by the speed command
+- GigabitEthernet interfaces transmit at 1000 mpbs by default
+- FastEthernet interfaces transmit at 100 mbps by default
+- If you use the `speed 10` command on FastEthernet interface it will physically transmit at 10 mbps
+
+## The `clock rate` command
+
+- The rate that serial interfaces physically transmit at is set by the `clock rate` command
+- Serial Interfaces transmit at 1.544 mpbs by default
+- If you use the clock rate 64000 command, on a Serial interface it will physically transmit at 64 kbps
+
+## The `bandwidth` command
+
+- Interfaces also have a default bandwidth. **The bandwidth typically matches the physical transmission rate of the interface**
+- The bandwidth setting on an interface **does not** affect the physical transmission rate this is set by the speed or clock rate
+- If you set a bandwidth of 50 mbps on a FastEthernet interface, it will still transmit at 100 mbps
+- The bandwidth command affects software policy on the router, such as which path will be selected by EIGRP or OSPF, or how much bandwidth will be guaranteed to a traffic type by QoS
+
+# OSPF Cost Metric
+
+## OSPF Metric Calculations
+
+- Routes will be selected based on lowest cost to get to the destination
+- For destinations in its own area, a router looks at all available links to get there, and chooses the path with the lowest overall cost
+- For destinations in another area, a router looks at all available links to get to the ABR and chooses the path with the lowest cost to the ABR. Its then up to the ABR to choose the best path from there
+
+## OSPF Link States
+
+In a multiple area OSPF network, ABRs know the info for each area they are connected to. When multiple areas are in use, each router had individual routes for each IP in its own area and summary routes to areas which go via ABR
+
+## Shortest Path First (SPF) Algorithm
+
+- SPF calculates the overall cost for each available path to each destination network and then selects the lowest cost path
+- The overall cost = cumulative cost of all outgoing interfaces
+- Ensure the cost is set the same on the interfaces on both sides of a link or you can get asymmetric routing
+
+## Reference Bandwidth
+
+- The cost is automatically derived from the interface bandwidth
+- Cost = Reference Bandwidth / Interface bandwidth
+- The default reference bandwidth is 100 mbps
+- FastEthernet link costs default to 1 (100/100)
+- T1 links cost defaults to 64 (100/1.544)
+
+OSPF treats all interfaces of 100 mbps or faster equal. FastEthernet, Gigabit Ethernet, 10 Gigabit ethernet all default to cost of 1. This can cause undesirable routing
+
+The reference bandwidth  should be changes on all routers:
+```IOS
+router ospf 1 
+auto-cost reference-bandwidth 100000
+```
+
+## Manipulating the OSPF Metric
+
+- OSPF takes the bandwidth in to account when calculating the metric so paths along higher bandwidth links will be preferred. The most desirable path will typically be automatically selected
+- If you want to manipulate the paths,  you can do this by manually changing the bandwidth or OSPF cost on interfaces. It is recommended to use cost because the bandwidth setting can affect many other features other than OSPF
+
+```IOS
+interface {interface}
+ip ospf cost 50
+```
+
+```IOS
+show ip ospf interface {interface}
+```
+## References

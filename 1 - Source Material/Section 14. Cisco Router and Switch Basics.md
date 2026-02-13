@@ -116,8 +116,8 @@ If the interface is reporting an excessive amount of errors it could be a Layer 
 
 ## Speed and Duplex Mismatches
 
-Incorrect speed settings can cause the interface to operate below its maximum speed. Speed mismatches will typically bring the interface down
-The interface will typically stay up with duplex mismatches but will have bad performance because of collision
-`show interface` will report high number of errors in this case
+- Incorrect speed settings can cause the interface to operate below its maximum speed. Speed mismatches will typically bring the interface down
+- The interface will typically stay up with duplex mismatches but will have bad performance because of collision
+- `show interface` will report high number of errors in this case
 
 ## References

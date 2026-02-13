@@ -53,6 +53,7 @@ The configuration register can be used to change the way the router boots. Use t
 
 - Load into rommon
 - Enter `confreg 0x2142`
+- `restart`
 - `enable`
 - `copy start run`
 - change enable secret using `enable secret {secret}`

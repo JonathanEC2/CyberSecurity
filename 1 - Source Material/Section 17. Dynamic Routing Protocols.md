@@ -156,7 +156,8 @@ in `sh ip route` the first number in the administrative distance. The second num
 ## Floating Static Routes
 
 - If the best path to a destination is lost, it will be removed from the routing table and replaced with the next best route. 
-- We might want to configure a static route as a backup for the route learned via a routing protocol. The issue with that is static routes default to an AD distance of 1 which will always be preferred over routes learned via an IGP
+- We might want to configure a static route as a backup for the route learned via a routing protocol. For example, maybe we are worried the entire routing protocol will go down 
+- The issue with that is static routes default to an AD distance of 1 which will always be preferred over routes learned via an IGP
 
 ### Floating Static Routes - OSPF
 

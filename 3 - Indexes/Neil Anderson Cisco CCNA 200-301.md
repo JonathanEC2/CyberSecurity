@@ -17,3 +17,6 @@
 [[../1 - Source Material/Section 18. Connectivity Troubleshooting|Section 18. Connectivity Troubleshooting]]
 [[../1 - Source Material/Section 19. IGP Fundamentals|Section 19. IGP Fundamentals]]
 [[../1 - Source Material/Section 20. Open Shortest Path First|Section 20. Open Shortest Path First]]
+[[../1 - Source Material/Section 21. Virtual Local Area Network (VLAN)|Section 21. Virtual Local Area Network (VLAN)]]
+[[../1 - Source Material/Section 22. Inter-VLAN Routing|Section 22. Inter-VLAN Routing]]
+[[../1 - Source Material/Section 23. Dynamic Host Configuration Protocol (DHCP)|Section 23. Dynamic Host Configuration Protocol (DHCP)]]

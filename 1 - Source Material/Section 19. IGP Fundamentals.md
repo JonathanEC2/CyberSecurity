@@ -12,7 +12,7 @@ Tags: [[]]
 
 ## RIPv2 vs RIPv1
 
-- RIPv2 does not support VLSM
+- RIPv1 does not support VLSM
 - RIPv1 updates are sent every 30 seconds via broadcast address. RIPv2 uses multicast address 224.0.0.9
 - RIPv2 supports authentication, RIPv1 does not. With authentication, we can put a password on both sides of the link so they will not form an adjacency unless the passwords match
 

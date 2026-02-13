@@ -4,107 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "4353e920218822f5",
+        "id": "02811bbcffd75189",
         "type": "tabs",
         "children": [
           {
-            "id": "806f1850d21d1bb4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1 - Source Material/Section 17. Dynamic Routing Protocols.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Section 17. Dynamic Routing Protocols"
-            }
-          },
-          {
-            "id": "bac85cd07b5fe62c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1 - Source Material/Section 19. IGP Fundamentals.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Section 19. IGP Fundamentals"
-            }
-          },
-          {
-            "id": "40d1a0800c38d555",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1 - Source Material/Section 18. Connectivity Troubleshooting.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Section 18. Connectivity Troubleshooting"
-            }
-          },
-          {
-            "id": "7a6f12416b3a2d5c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1 - Source Material/Section 17. Dynamic Routing Protocols.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Section 17. Dynamic Routing Protocols"
-            }
-          },
-          {
-            "id": "7f32579af9089666",
+            "id": "2f7fc46a4b028d3b",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -126,9 +30,57 @@
               "icon": "lucide-file",
               "title": "Section 20. Open Shortest Path First"
             }
+          },
+          {
+            "id": "d5db78090369b0a8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1 - Source Material/Section 22. Inter-VLAN Routing.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Section 22. Inter-VLAN Routing"
+            }
+          },
+          {
+            "id": "de2f6d8609a0e1fc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Section 24. Hot Standby Router Protocol.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Section 24. Hot Standby Router Protocol"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -160,7 +112,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "preamble",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -201,13 +153,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1 - Source Material/Section 20. Open Shortest Path First.md",
+                "file": "1 - Source Material/Section 22. Inter-VLAN Routing.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Section 20. Open Shortest Path First"
+              "title": "Outline of Section 22. Inter-VLAN Routing"
             }
           },
           {
@@ -276,47 +228,47 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7f32579af9089666",
+  "active": "d5db78090369b0a8",
   "lastOpenFiles": [
+    "Section 24. Hot Standby Router Protocol.md",
+    "1 - Source Material/Section 22. Inter-VLAN Routing.md",
     "3 - Indexes/Neil Anderson Cisco CCNA 200-301.md",
+    "1 - Source Material/Section 21. Virtual Local Area Network (VLAN).md",
     "1 - Source Material/Section 17. Dynamic Routing Protocols.md",
+    "1 - Source Material/Section 20. Open Shortest Path First.md",
+    "1 - Source Material/Section 23. Dynamic Host Configuration Protocol (DHCP).md",
     "1 - Source Material/Section 18. Connectivity Troubleshooting.md",
-    "1 - Source Material/Section 19. IGP Fundamentals.md",
     "1 - Source Material/Section 16. Routing Fundamentals.md",
+    "1 - Source Material/Section 19. IGP Fundamentals.md",
     "1 - Source Material/Section 15. Cisco Device Management.md",
     "1 - Source Material/Section 14. Cisco Router and Switch Basics.md",
     "1 - Source Material/Section 13. The Cisco Troubleshooting Methodology.md",
+    "1 - Source Material/Section 10. OSI Layer 1 - The Physical Layer.md",
+    "1 - Source Material/Section 9. OSI Layer 2 - The Data Link Layer.md",
+    "1 - Source Material/Section 6. OSI Layer 3 - The Network Layer.md",
+    "1 - Source Material/Section 12. Life of a Packet.md",
+    "attachments/Layer 3 Switch.png",
+    "attachments/Router on a Stick.png",
+    "attachments/Router with Separate Interface.png",
+    "Untitled.base",
+    "Untitled 1.md",
+    "Untitled 2.base",
+    "attachments/Unicast Traffic on Switch.png",
+    "attachments/Broadcast Traffic on Switch.png",
+    "attachments/Primary and Foreign Keys.png",
+    "attachments/Pasted image 20251213214326.png",
+    "attachments/Spine Lead Network Design.png",
+    "attachments/Tradition Campus Design.png",
     "1 - Source Material/Section 11. Cisco Device Function.md",
-    "1 - Source Material/Section 20. Open Shortest Path First.md",
     "1 - Source Material/Section 7. IP Address Classes.md",
     "1 - Source Material/Network Fundamentals.md",
     "2 - Tags/OSI.md",
-    "1 - Source Material/Section 9. OSI Layer 2 - The Data Link Layer.md",
-    "1 - Source Material/Section 12. Life of a Packet.md",
     "attachments/Default Administrative Distance.png",
-    "Untitled.md",
-    "Untitled 2.base",
     "4 - Templates/{{Title}}.md",
     "1 - Source Material/Section 4. The Cisco IOS Operating System.md",
     "1 - Source Material/Section 3. Host to Host Communications.md",
     "1 - Source Material/Networking Concepts.md",
-    "3 - Indexes/THM.md",
-    "1 - Source Material/Section 10. OSI Layer 1 - The Physical Layer.md",
-    "1 - Source Material/Section 6. OSI Layer 3 - The Network Layer.md",
-    "1 - Source Material/Section 5. OSI Layer 4  - The Transport Layer.md",
-    "1 - Source Material/Section 8. Subnetting.md",
-    "attachments/Subnet Cheatsheet.webp",
-    "attachments/Pasted image 20251213214326.png",
-    "attachments/Pasted image 20251204181131.png",
-    "attachments/Pasted image 20251204153725.png",
-    "attachments/Pasted image 20251204153708.png",
-    "2 - Tags/Exploitation.md",
-    "attachments/Pasted image 20251202161954.png",
-    "attachments/Pasted image 20251122195144.png",
-    "attachments/Pasted image 20251118193907.png",
-    "attachments/Pasted image 20251112151421.png",
     "Untitled",
-    "Untitled.base",
     "Untitled.canvas",
     "Untitled 1.base",
     "Production",

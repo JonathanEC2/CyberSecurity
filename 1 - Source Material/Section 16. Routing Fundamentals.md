@@ -7,7 +7,7 @@ A router has two main functions:
 - Determining the best path to available networks
 - Forwarding traffic to those routers
 
-- The best available path(s) to a destination are listed in the  routers routing table and will be used for forwarding traffic. Only the best path(s) are stored
+- The best available path(s) to a destination are listed in the routers routing table and will be used for forwarding traffic. Only the best path(s) are stored
 - A routing table consists of directly connected networks and routes configured statistically by the admin or dynamically learned through a routing protocol
 
 
@@ -38,6 +38,8 @@ When there are overlapping routes, the longest prefix will be selected; the more
 ## Load Balancing
 
 When multiple equal lengths are added for the same destination, the router will add them all to the routing table and load balance them
+
+<span style="color:rgb(255, 0, 0)">Load balancing has to be done both ways</span>
 
 ## Default Route (Gateway of Last Resort)
 

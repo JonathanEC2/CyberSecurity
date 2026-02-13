@@ -23,15 +23,12 @@ Wires in an RJ-45 connector can be either straight through or crossover
 
 ## Fiber Cables
 
-Fiber cables support longer distances or higher bandwidth requirements
-
-Plugged into a transceiver that then plugs into a router or switch
+- Fiber cables support longer distances or higher bandwidth requirements
+- Plugged into a transceiver that then plugs into a router or switch
 
 ### Single Mode vs Multi Mode
 
-Single mode supports higher bandwidth and longer distances but is more expensive
-
-Multi mode only supports a few hundred meters 
-
-PoE (power over ethernet) switch sends power over Ethernet, don't need a separate power supply for IP phone
+- Single mode supports higher bandwidth and longer distances but is more expensive
+- Multi mode only supports a few hundred meters 
+- PoE (power over ethernet) switch sends power over Ethernet, don't need a separate power supply for IP phone
 ## References

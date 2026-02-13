@@ -8,6 +8,7 @@ Link state protocol
 It supports large networks and has a very fast converge time
 Messages are sent using multicast 
 Open standard protocol
+Uses Dijkstra’s Shortest Path First algorithm to determine the best path to learned networks.
 
 ## OSPF vs EIGRP vs RIP
 
@@ -107,6 +108,7 @@ passive-interface {interface}
 If more of your interfaces are passive rather than active, you can set passive as the default:
 `passive-interface default`
 
+<span style="color:rgb(255, 0, 0)">Add loopback interface to routing table</span>
 ## Default Route Injection
 
 When you have a default static route for all traffic going out to the Internet, you don't want to manually configure a default static route on every router. What we do is configure a default static route on the final outbound router which is connected to the Internet, advertise it, and inject it into RIP so all internal routers learn about it automatically
@@ -222,7 +224,7 @@ Our redistributed routes show up as external route. External route literally mea
 
 ## OSPF Link States
 
-In a multiple area OSPF network, ABRs know the info for each area they are connected to. When multiple areas are in use, each router had individual routes for each IP in its own area and summary routes to areas which go via ABR
+In a multiple area OSPF network, ABRs know the info for each area they are connected to. When multiple areas are in use, each router has individual routes for each IP in its own area and summary routes to areas which go via ABR
 
 ## Shortest Path First (SPF) Algorithm
 
@@ -259,4 +261,103 @@ ip ospf cost 50
 ```IOS
 show ip ospf interface {interface}
 ```
-## References
+
+# OSPF Adjacencies
+
+## OSPF Packet Types
+
+[[Section 20. Open Shortest Path First#OSPF Characteristics#OSPF Packet Types|OSPF Packet Types]]
+
+## OSPF Protocol
+6 TCP
+17 UDP
+89 OSPF
+
+## OSPF Packet
+
+**Version**: OSPFv2 or OSPFv3
+**Type:** 1- Hello, 2-  Database Descriptor (DBD), 3- LSR Link State Request, 4- LSU Link State Update, 5- Link State Acknowledgment (LSA Link State Advertisements are inside LSUs)
+**Router ID**, and **Area ID**: Of the advertising router, and interface
+**Authentication Type**: 0- No Password, 1- Plain-text password, 2- MD5
+authentication
+
+### Hello Packets
+
+- OSPF routers discover each other and form adjacencies via Hello packets. They send Hello packets out each interface where OSPF is enables (except passive interfaces)
+- Multicast to 224.0.0.5 (all OSPF routers), sent every 10 seconds by default
+
+**Router ID**: 32 bit number that identifies each OSPF router
+**Hello Interval**: How often routers send Hello packets, default 10 seconds
+**Dead Interval**: How long a router waits to hear from neighbor before declaring it out of service. Default 4x Hello interval
+**Neighbors**: list of adjacent OSPF routers that the router has received a Hello packet from
+**Area ID**: Area configures to that interface
+**Router Priority**: 8 bit number used to select DR of BDR
+**DR and BDR IPv4 address**: If known
+**Authentication Flags**: Authentication details if configured
+**Stub Area Flag**: If the area is a stub area. Stub areas have a default route to their ABR rather than learning routes outside the area
+
+These settings must match for a pair of OSPF routers to form an adjacency:
+- Must be in each others neighbor list
+- Hello and Dead Intervals
+- Area ID
+- IP subnet
+- Authentication Flag
+- Stub Area Flag
+
+## MTU Mismatches
+
+
+- If there is an MTU (Maximum Transmission Unit) setting mismatch then OSPF routers can become neighbors but will not exchange routes with each other
+- MTU is configured at the interface level (default 1500 bytes)
+- You can set interface MTU (all packets) or interface IP MTU (affects only IP packets), <span style="color:rgb(255, 0, 0)">Check both</span>:
+
+`show interface {interface}`
+`show ip interface {interface}`
+## Lab 
+
+```IOS
+debug ip ospf neighbor
+```
+
+```IOS
+debug ip ospf adjacency
+```
+
+# OSPF Designated Routers (DR) and Backup Designated Routers (BDR) 
+
+## OSPF Multiaccess Segments
+
+- On point-to-point links, OSPF routes form FULL adjacency
+- On multiaccess segments (such as Ethernet) where there can be multiple routers, it is inefficient for all routers to form full OSPF adjacencies with each other
+
+## DR and BDR
+
+- Function at the interface level
+- A DR and BDR are are elected. The router with the highest priority becomes the DR and the router with the second highest priority becomes the BDR
+- Default priority is 1, the higher the better (0/255). Highest router ID is used in case of a tie
+
+
+## Setting OSPF Priority
+
+```IOS
+interface {interface}
+ip ospf priority {number}
+```
+
+As long as you set this more than 1, it will be the DR as 1 is the default. To set a BDR, set the number to a lower number than the DR. Setting the number to zero specifies that a router will never be a DR or a BDR
+
+Restart OSPF on interface to take effect
+## Multiaccess Segments
+
+- On multiaccess segments (such as Ethernet), routers elect the DR and BDR at the 2-Way stage. There is no election on point to point links
+- The DR and BDR establish FULL neighbor state with all routers on the network segment. The neighbor states of other neighbors remain 2-Way and do not directly exchange routes with each other
+- When a link state changes on a router connected to a multiaccess segment, it sends a multicast LSU packet to 224.0.0.6 (all designated routers)
+- The DR multicasts the update to 224.0.0.5 (all OSPF routers
+
+## Lab
+
+```
+show ip ospf interface {interface}
+```
+# References
+

@@ -20,3 +20,6 @@
 [[../1 - Source Material/Section 21. Virtual Local Area Network (VLAN)|Section 21. Virtual Local Area Network (VLAN)]]
 [[../1 - Source Material/Section 22. Inter-VLAN Routing|Section 22. Inter-VLAN Routing]]
 [[../1 - Source Material/Section 23. Dynamic Host Configuration Protocol (DHCP)|Section 23. Dynamic Host Configuration Protocol (DHCP)]]
+[[../1 - Source Material/Section 24. Hot Standby Router Protocol|Section 24. Hot Standby Router Protocol]]
+[[../1 - Source Material/Section 25. Spanning Tree Protocol (STP)|Section 25. Spanning Tree Protocol (STP)]]
+

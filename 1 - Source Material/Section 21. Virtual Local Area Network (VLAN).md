@@ -112,6 +112,7 @@ When the switch forwards traffic to another switch, it tags the Layer 2 .1Q head
 
 ## Trunk Port Configuration
 
+SW1:
 ```IOS
 interface {interface}
 description {}
@@ -120,7 +121,11 @@ switchport mode trunk
 
 ```
 
+Older switches support both ISL and Dot1Q. Older switches require  `switchport trunk encapsulation dot1q` because they'll default to ISL
 ## Voice VLAN Configuration
+
+VoIP uses the same LAN cable for voice and data. We need to separate voice traffic from data traffic because voice traffic is very sensitive to delay and for security purposes as well. 
+The cable running from the switch to the IP phone will be configured as a trunk port which will be carrying voice and data VLAN traffic
 
 ```IOS
 interface {interface}
@@ -130,6 +135,7 @@ switchport access vlan {vlan}
 switchport voice vlan {vlan}
 ```
 
+Even though we specified switchport mode access , it will still act as a trunk port  
 ## The Native VLAN
 
 - The switch needs to know which VLAN to assign traffic which comes in untagged on a trunk port. The Native VLAN is used for this. 

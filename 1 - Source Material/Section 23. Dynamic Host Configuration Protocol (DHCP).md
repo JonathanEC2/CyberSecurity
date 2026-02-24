@@ -65,5 +65,5 @@ no shutdown
 ```
 
 `dhcp lease`
-Show up dhcp binding
+Show ip dhcp binding
 ## References

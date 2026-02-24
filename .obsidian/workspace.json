@@ -8,31 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2f7fc46a4b028d3b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1 - Source Material/Section 20. Open Shortest Path First.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Section 20. Open Shortest Path First"
-            }
-          },
-          {
-            "id": "d5db78090369b0a8",
+            "id": "dcbfe69308905993",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -61,7 +37,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Section 24. Hot Standby Router Protocol.md",
+                "file": "1 - Source Material/Section 23. Dynamic Host Configuration Protocol (DHCP).md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Section 23. Dynamic Host Configuration Protocol (DHCP)"
+            }
+          },
+          {
+            "id": "f667298bbf1eec63",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1 - Source Material/Section 24. Hot Standby Router Protocol.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -78,9 +78,33 @@
               "icon": "lucide-file",
               "title": "Section 24. Hot Standby Router Protocol"
             }
+          },
+          {
+            "id": "12fb01f2a6d30468",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1 - Source Material/Section 25. Spanning Tree Protocol (STP).md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Section 25. Spanning Tree Protocol (STP)"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -112,7 +136,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "preamble",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -153,13 +177,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1 - Source Material/Section 22. Inter-VLAN Routing.md",
+                "file": "1 - Source Material/Section 25. Spanning Tree Protocol (STP).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Section 22. Inter-VLAN Routing"
+              "title": "Outline of Section 25. Spanning Tree Protocol (STP)"
             }
           },
           {
@@ -228,16 +252,25 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d5db78090369b0a8",
+  "active": "12fb01f2a6d30468",
   "lastOpenFiles": [
-    "Section 24. Hot Standby Router Protocol.md",
-    "1 - Source Material/Section 22. Inter-VLAN Routing.md",
-    "3 - Indexes/Neil Anderson Cisco CCNA 200-301.md",
-    "1 - Source Material/Section 21. Virtual Local Area Network (VLAN).md",
-    "1 - Source Material/Section 17. Dynamic Routing Protocols.md",
-    "1 - Source Material/Section 20. Open Shortest Path First.md",
     "1 - Source Material/Section 23. Dynamic Host Configuration Protocol (DHCP).md",
+    "1 - Source Material/Section 22. Inter-VLAN Routing.md",
+    "1 - Source Material/Section 25. Spanning Tree Protocol (STP).md",
+    "1 - Source Material/Section 24. Hot Standby Router Protocol.md",
+    "3 - Indexes/Neil Anderson Cisco CCNA 200-301.md",
+    "1 - Source Material/Section 20. Open Shortest Path First.md",
+    "attachments/Pasted image 20260220173948.png",
+    "attachments/Pasted image 20260220171803.png",
+    "attachments/Pasted image 20260220171440.png",
+    "attachments/Spanning Tree Cost.png",
+    "1 - Source Material/Section 11. Cisco Device Function.md",
+    "CCNA Thing to Remember.md",
+    "1 - Source Material/Section 21. Virtual Local Area Network (VLAN).md",
+    "attachments/HSRP Multi Subnet.png",
+    "attachments/HSRP Two Groups.png",
     "1 - Source Material/Section 18. Connectivity Troubleshooting.md",
+    "1 - Source Material/Section 17. Dynamic Routing Protocols.md",
     "1 - Source Material/Section 16. Routing Fundamentals.md",
     "1 - Source Material/Section 19. IGP Fundamentals.md",
     "1 - Source Material/Section 15. Cisco Device Management.md",
@@ -254,20 +287,10 @@
     "Untitled 1.md",
     "Untitled 2.base",
     "attachments/Unicast Traffic on Switch.png",
-    "attachments/Broadcast Traffic on Switch.png",
-    "attachments/Primary and Foreign Keys.png",
-    "attachments/Pasted image 20251213214326.png",
-    "attachments/Spine Lead Network Design.png",
-    "attachments/Tradition Campus Design.png",
-    "1 - Source Material/Section 11. Cisco Device Function.md",
     "1 - Source Material/Section 7. IP Address Classes.md",
     "1 - Source Material/Network Fundamentals.md",
     "2 - Tags/OSI.md",
-    "attachments/Default Administrative Distance.png",
     "4 - Templates/{{Title}}.md",
-    "1 - Source Material/Section 4. The Cisco IOS Operating System.md",
-    "1 - Source Material/Section 3. Host to Host Communications.md",
-    "1 - Source Material/Networking Concepts.md",
     "Untitled",
     "Untitled.canvas",
     "Untitled 1.base",

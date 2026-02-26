@@ -1,3 +1,4 @@
+
 2026-02-18 20:45
 Tags: [[]]
 
@@ -428,7 +429,7 @@ RSTP Sync rapid convergence is only supported on full duplex point-to-point
 ## Redundant Link With Hub Between Switches
 
 - RSTP Backup ports are standbys of the Designated port on a shared segment (ie with a hub)
-- They do not support immediate failover. Rapid convergence is only supported on full duplex point-to-point l;inks
+- They do not support immediate failover. Rapid convergence is only supported on full duplex point-to-point links
 - Hubs are no longer used in modern networks so you are very unlikely to see a backup port
 
 BDPU Filter and RPVST+ and Hub sections are not used real world but may be covered on the test

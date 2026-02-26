@@ -62,7 +62,7 @@ speed {speed}
 
 ## CDP Cisco Discovery Protocol
 
-- Cisco Discovery Protocol is a Cisco Proprietary Layer 2 protocol. It is used to share information with other directly connected Cisco equipment such as OS version and IP address. This aids in troubleshooting by allowing administrators too map out how Cisco devices are connected to each other
+- Cisco Discovery Protocol is a Cisco Proprietary Layer 2 protocol. It is used to share information with other directly connected Cisco equipment such as OS version and IP address. This aids in troubleshooting by allowing administrators to map out how Cisco devices are connected to each other
 - Enabled on most devices by default
 - Operates at Layer 2 so no IP address is needed
 

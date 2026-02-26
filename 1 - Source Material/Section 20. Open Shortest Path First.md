@@ -230,7 +230,7 @@ In a multiple area OSPF network, ABRs know the info for each area they are conne
 
 - SPF calculates the overall cost for each available path to each destination network and then selects the lowest cost path
 - The overall cost = cumulative cost of all outgoing interfaces
-- Ensure the cost is set the same on the interfaces on both sides of a link or you can get asymmetric routing
+- <span style="color:rgb(255, 0, 0)">Ensure the cost is set the same on the interfaces on both sides of a link or you can get asymmetric routing</span>
 
 ## Reference Bandwidth
 
@@ -251,7 +251,7 @@ auto-cost reference-bandwidth 100000
 ## Manipulating the OSPF Metric
 
 - OSPF takes the bandwidth in to account when calculating the metric so paths along higher bandwidth links will be preferred. The most desirable path will typically be automatically selected
-- If you want to manipulate the paths,  you can do this by manually changing the bandwidth or OSPF cost on interfaces. It is recommended to use cost because the bandwidth setting can affect many other features other than OSPF
+- If you want to manipulate the paths,  you can do this by manually changing the bandwidth or OSPF cost on interfaces. <span style="color:rgb(255, 0, 0)">It is recommended to use cost because the bandwidth setting can affect many other features other than OSPF</span>
 
 ```IOS
 interface {interface}

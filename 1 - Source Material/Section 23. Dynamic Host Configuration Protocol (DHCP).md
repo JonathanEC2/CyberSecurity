@@ -35,7 +35,7 @@ Typically you will have IP addresses that you will want to be fixed such as prin
 ```IOS
 ip dhcp excluded-address {address range}
 ip dhcp pool {name}
-network {network} {subnet mask }
+network {network} {subnet mask}
 default-router {router ip}
 dns-server {dns server ip}
 ```

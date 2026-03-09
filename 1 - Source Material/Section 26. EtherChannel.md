@@ -1,3 +1,5 @@
+2026-24-02 18:21
+Tags: [[]]
 
 # Why we have EtherChannel
 
@@ -124,3 +126,47 @@ switchport mode trunk
 ## Verification - `show etherchannel summary`
 
 `show etherchannel summary`
+
+# Stackwise, VSS, vPC
+
+- Matching EtherChannel settings have to be configured on the switches on both sides of the link
+- You can configure separate port channels from a switch to redundant upstream switches
+- Spanning tree will see the port channel as two separate interfaces and block one path if a loop is formed
+
+![[../attachments/Pasted image 20260228220219.png]]
+
+## Multi-chassis EtherChannel
+
+- Cisco supports mult-chassis EtherChannel technologies on some switches. These switches support a shared EtherChannel from different switches
+- These switches must be configured with matching settings
+- Spanning Tree is still enabled but it does not detect any loops
+- This supports full load balancing and redundancy across all interfaces3
+
+![[../attachments/Pasted image 20260228220237.png]]
+
+## Stackwise, VSS, vPC
+
+- Multi-chassis EtherChannel is supported on these technologies
+- Stackwise on select Catalyst platforms such as the Catalyst 3750, 3850, 9000. When you  configure a StackWise stack, the separate physical switches all operate as if they are one switch and they are configured as if they're one switch as well
+- Virtual Switching System (VSS) on select Catalyst Systems such as 4500, 6500. Functions similar to Stackwise
+- Virtual Port Channel (vPC) on the Nexus family. Configured as two separate switches with matching configuration
+
+# Layer 3 EtherChannel
+
+```IOS
+interface range {}
+no switchport
+channel-group 1 mode | active | auto | desirable | on | passive
+
+interface port-channel {}
+ip address {}
+no shutdown
+
+```
+
+
+Spanning Tree is a necessary evil, it prevents loops but also shuts down half of our links
+The benefit you get from using Layer 3 switches everywhere is that it negates the need for spanning tree
+In an environment where you have all Layer 3 switches, the default gateway will be on the Access Layer switches
+
+## References

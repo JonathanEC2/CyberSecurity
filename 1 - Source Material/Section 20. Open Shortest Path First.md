@@ -298,7 +298,7 @@ authentication
 
 These settings must match for a pair of OSPF routers to form an adjacency:
 - Must be in each others neighbor list
-- Hello and Dead Intervals
+- **Hello and Dead Intervals**
 - Area ID
 - IP subnet
 - Authentication Flag
@@ -352,7 +352,7 @@ Restart OSPF on interface to take effect
 - On multiaccess segments (such as Ethernet), routers elect the DR and BDR at the 2-Way stage. There is no election on point to point links
 - The DR and BDR establish FULL neighbor state with all routers on the network segment. The neighbor states of other neighbors remain 2-Way and do not directly exchange routes with each other
 - When a link state changes on a router connected to a multiaccess segment, it sends a multicast LSU packet to 224.0.0.6 (all designated routers)
-- The DR multicasts the update to 224.0.0.5 (all OSPF routers
+- The DR multicasts the update to 224.0.0.5 (all OSPF routers)
 
 ## Lab
 

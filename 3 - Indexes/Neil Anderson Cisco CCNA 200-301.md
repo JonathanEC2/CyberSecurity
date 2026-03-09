@@ -22,4 +22,8 @@
 [[../1 - Source Material/Section 23. Dynamic Host Configuration Protocol (DHCP)|Section 23. Dynamic Host Configuration Protocol (DHCP)]]
 [[../1 - Source Material/Section 24. Hot Standby Router Protocol|Section 24. Hot Standby Router Protocol]]
 [[../1 - Source Material/Section 25. Spanning Tree Protocol (STP)|Section 25. Spanning Tree Protocol (STP)]]
-
+[[../1 - Source Material/Section 26. EtherChannel|Section 26. EtherChannel]]
+[[../1 - Source Material/Section 27.  DHCP Snooping|Section 27.  DHCP Snooping]]
+[[../1 - Source Material/Section 28. Access Control List (ACL)|Section 28. Access Control List (ACL)]]
+[[../1 - Source Material/Section 29. Network Address Translation|Section 29. Network Address Translation]]
+[[../1 - Source Material/Section 30. IPv6 Addressing and Routing|Section 30. IPv6 Addressing and Routing]]

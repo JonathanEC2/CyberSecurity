@@ -85,6 +85,8 @@ OSPF uses Cost as the metric which is automatically derived from the interface b
 
 IS-IS also uses cost but it is not automatically derived from interface bandwidth. All links have equal cost by default. You can manually configure the cost of the links if you want to manipulate the path. If you do not set the link costs then the path with the lowest hop count will be used
 
+Default cost of 10
+
 ## EIGRP Metric
 
 - EIGRP uses the bandwidth and delay of the links to calculate the metric (Load and reliability can also be considered but are ignores by default)

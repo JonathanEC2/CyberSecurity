@@ -273,7 +273,7 @@ Once the issue is corrected and superior BPDUs stop coming in, the port will tra
 
 ```
 interface {}
-spanningl-tree root guard
+spanning-tree guard root 
 ```
 
 <span style="color:rgb(255, 0, 0)">Enable this on interfaces that are pointing to the switch(s) that  you do not want to become root (downstream traffic from root and backup root)

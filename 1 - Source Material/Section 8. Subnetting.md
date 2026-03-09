@@ -175,6 +175,9 @@ In this example, we are allocated Class A **60.0.0.0/8**
 # Private IP Addresses
 
 The Internet Engineering Task Force (IETF) documents standards with RFC's (Request For Comments). RFC 1918 specifies private IP address ranges which are not routable on the pubic internet
+If an organization has a part of their network where the hosts need to communicate with each other over IP but do not need Internet connection, they can assign private IP addresses
+Private IP addresses cost money
+
 
 Class A 10.0.0.0/8
 Class B 172.16.0.0/12
@@ -185,10 +188,11 @@ Class C 192.168.0.0/16
 - IPv6 uses a 128 bit address 
 - There is not a seamless migration path from IPv4  to IPv6. NAT (Network Address Translation) was implemented as a temporary workaround to mitigate the lack of IPv4 addresses until orgs had time to migrate to IPv6.
 - An org can use private IP addresses on their inside network but still grant their hosts Internet access by translation them to their outside public IP address. Many outside hosts can share a few or a single public IP address
+- Provides more than 7.9x10^28 as many addresses as IPv4
 
 ## Todays Networks
 
-- Most enterprises today use RFC 1918 IPv4 addresses with NAT. RFC 1918 has the security benefit  of hiding inside (private) hosts by default (They don't have a publicly routable IP address)
+- Most enterprises today use RFC 1918 IPv4 addresses with NAT. RFC 1918 has the security benefit of hiding inside (private) hosts by default (They don't have a publicly routable IP address)
 - IPv6 is mostly found in service provider networks, mobile services, and large countries
 - Because they have their entire private IP address space to work with, it's common to see /24 subnets being used for end hosts, /30 for point to point links, and /32 for loopbacks
 - Complex VLSM is more common in enterprises which use public IP addresses on their inside network and need too maximize their use

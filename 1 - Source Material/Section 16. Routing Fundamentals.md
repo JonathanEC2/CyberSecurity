@@ -43,7 +43,7 @@ When multiple equal lengths are added for the same destination, the router will 
 
 ## Default Route (Gateway of Last Resort)
 
-To add a route that we don't have a specific route for, we will use `0.0.0.0 0.0.0.0 {next hop}`. This is used as a catch all for any traffic that doesn't match one of our more specific routes. 
+To add a route that we don't have a specific route for, we will use `0.0.0.0 0.0.0.0 {next hop}`. This is used as a catch all for any traffic that doesn't match one of our more specific routes. <span style="color:rgb(255, 0, 0)">When a router receives a packet with a destination address not found in its routing table, it will use the default route to forward the packet. </span>
 
 # Lab Info
 

@@ -14,4 +14,5 @@ Error detection and correction for the Physical Layer can be provided here
 - The first 24 bits in the OUI (Organizationally Unique Identifier) which uniquely identifies the manufacturer of the Ethernet port. It is assigned by the IEEE. The last 24 bits are vendor assigned. 
 - The burned in MAC address on every NIC port in the world is globally unique
 
+The EtherType field is used to indicate the protocol being encapsulated in the payload. It uniquely identifies upper layer protocols
 ## References

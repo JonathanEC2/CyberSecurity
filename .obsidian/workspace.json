@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "eba941afb8f67250",
+            "id": "1e4554b751686917",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -30,8 +30,105 @@
               "icon": "lucide-file",
               "title": "Section 20. Open Shortest Path First"
             }
+          },
+          {
+            "id": "eba941afb8f67250",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1 - Source Material/Section 27.  DHCP Snooping.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Section 27.  DHCP Snooping"
+            }
+          },
+          {
+            "id": "c939e6e27321c8a0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Section 29. Network Address Translation.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Section 29. Network Address Translation"
+            }
+          },
+          {
+            "id": "a2d3fc01e5f54a01",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1 - Source Material/Section 29. Network Address Translation.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Section 29. Network Address Translation"
+            }
+          },
+          {
+            "id": "98b73ae34289f610",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Section 31. Wide Area Network WAN.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Section 31. Wide Area Network WAN"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -104,13 +201,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1 - Source Material/Section 20. Open Shortest Path First.md",
+                "file": "Section 31. Wide Area Network WAN.md",
                 "followCursor": false,
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Section 20. Open Shortest Path First"
+              "title": "Outline of Section 31. Wide Area Network WAN"
             }
           },
           {
@@ -179,46 +276,46 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "eba941afb8f67250",
+  "active": "98b73ae34289f610",
   "lastOpenFiles": [
+    "Section 31. Wide Area Network WAN.md",
+    "1 - Source Material/Section 29. Network Address Translation.md",
     "3 - Indexes/Neil Anderson Cisco CCNA 200-301.md",
-    "1 - Source Material/Section 19. IGP Fundamentals.md",
+    "1 - Source Material/Section 30. IPv6 Addressing and Routing.md",
     "1 - Source Material/Section 17. Dynamic Routing Protocols.md",
-    "1 - Source Material/Section 18. Connectivity Troubleshooting.md",
+    "1 - Source Material/Section 23. Dynamic Host Configuration Protocol (DHCP).md",
+    "1 - Source Material/Section 27.  DHCP Snooping.md",
+    "1 - Source Material/Section 20. Open Shortest Path First.md",
+    "1 - Source Material/Section 19. IGP Fundamentals.md",
+    "attachments/EUI-64.png",
+    "CCNA Thing to Remember.md",
+    "1 - Source Material/Section 8. Subnetting.md",
+    "1 - Source Material/Section 9. OSI Layer 2 - The Data Link Layer.md",
+    "1 - Source Material/Section 10. OSI Layer 1 - The Physical Layer.md",
+    "1 - Source Material/Section 12. Life of a Packet.md",
     "1 - Source Material/Section 16. Routing Fundamentals.md",
-    "1 - Source Material/Section 15. Cisco Device Management.md",
     "1 - Source Material/Section 14. Cisco Router and Switch Basics.md",
+    "attachments/Pasted image 20260305203018.png",
+    "1 - Source Material/Section 28. Access Control List (ACL).md",
+    "1 - Source Material/Section 26. EtherChannel.md",
+    "1 - Source Material/Section 25. Spanning Tree Protocol (STP).md",
+    "1 - Source Material/Section 22. Inter-VLAN Routing.md",
+    "1 - Source Material/Section 21. Virtual Local Area Network (VLAN).md",
+    "attachments/Pasted image 20260228220237.png",
+    "attachments/Pasted image 20260228220219.png",
+    "1 - Source Material/Section 18. Connectivity Troubleshooting.md",
+    "1 - Source Material/Section 15. Cisco Device Management.md",
     "1 - Source Material/Section 13. The Cisco Troubleshooting Methodology.md",
     "1 - Source Material/Section 11. Cisco Device Function.md",
-    "1 - Source Material/Section 10. OSI Layer 1 - The Physical Layer.md",
-    "1 - Source Material/Section 9. OSI Layer 2 - The Data Link Layer.md",
     "1 - Source Material/Section 6. OSI Layer 3 - The Network Layer.md",
-    "1 - Source Material/Section 4. The Cisco IOS Operating System.md",
-    "Section 26. EtherChannel.md",
-    "1 - Source Material/Section 5. OSI Layer 4  - The Transport Layer.md",
-    "1 - Source Material/Section 22. Inter-VLAN Routing.md",
-    "1 - Source Material/Section 24. Hot Standby Router Protocol.md",
-    "1 - Source Material/Section 23. Dynamic Host Configuration Protocol (DHCP).md",
-    "1 - Source Material/Section 25. Spanning Tree Protocol (STP).md",
-    "1 - Source Material/Section 20. Open Shortest Path First.md",
-    "1 - Source Material/Section 21. Virtual Local Area Network (VLAN).md",
     "attachments/Pasted image 20260220173948.png",
     "attachments/Pasted image 20260220171803.png",
     "attachments/Pasted image 20260220171440.png",
     "attachments/Spanning Tree Cost.png",
-    "CCNA Thing to Remember.md",
     "attachments/HSRP Multi Subnet.png",
     "attachments/HSRP Two Groups.png",
-    "1 - Source Material/Section 12. Life of a Packet.md",
-    "attachments/Layer 3 Switch.png",
-    "attachments/Router on a Stick.png",
-    "attachments/Router with Separate Interface.png",
     "Untitled.base",
-    "Untitled 1.md",
     "Untitled 2.base",
-    "attachments/Unicast Traffic on Switch.png",
-    "1 - Source Material/Section 7. IP Address Classes.md",
-    "1 - Source Material/Network Fundamentals.md",
     "Untitled",
     "Untitled.canvas",
     "Untitled 1.base",

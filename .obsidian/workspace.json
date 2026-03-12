@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1e4554b751686917",
+            "id": "e241914faf7165a9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1 - Source Material/Section 20. Open Shortest Path First.md",
+                "file": "1 - Source Material/Section 33. Cisco Device Security.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,16 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Section 20. Open Shortest Path First"
+              "title": "Section 33. Cisco Device Security"
             }
           },
           {
-            "id": "eba941afb8f67250",
+            "id": "47acd259e2009597",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1 - Source Material/Section 27.  DHCP Snooping.md",
+                "file": "1 - Source Material/Section 33. Cisco Device Security.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,16 +52,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Section 27.  DHCP Snooping"
+              "title": "Section 33. Cisco Device Security"
             }
           },
           {
-            "id": "c939e6e27321c8a0",
+            "id": "5ac308fee9df9677",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Section 29. Network Address Translation.md",
+                "file": "Syslog.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -76,59 +76,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Section 29. Network Address Translation"
-            }
-          },
-          {
-            "id": "a2d3fc01e5f54a01",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1 - Source Material/Section 29. Network Address Translation.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Section 29. Network Address Translation"
-            }
-          },
-          {
-            "id": "98b73ae34289f610",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Section 31. Wide Area Network WAN.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Section 31. Wide Area Network WAN"
+              "title": "Syslog"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -201,13 +153,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Section 31. Wide Area Network WAN.md",
+                "file": "Syslog.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Section 31. Wide Area Network WAN"
+              "title": "Outline of Syslog"
             }
           },
           {
@@ -276,19 +228,36 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "98b73ae34289f610",
+  "active": "5ac308fee9df9677",
   "lastOpenFiles": [
-    "Section 31. Wide Area Network WAN.md",
-    "1 - Source Material/Section 29. Network Address Translation.md",
+    "attachments/Pasted image 20260312142557.png",
+    "Syslog.md",
+    "1 - Source Material/Section 33. Cisco Device Security.md",
+    "1 - Source Material/Section 34. Network Device Management.md",
+    "CCNA Thing to Remember.md",
+    "1 - Source Material/Section 21. Virtual Local Area Network (VLAN).md",
     "3 - Indexes/Neil Anderson Cisco CCNA 200-301.md",
+    "1 - Source Material/Section 32. The Security Threat Landscape.md",
+    "1 - Source Material/Section 29. Network Address Translation.md",
+    "1 - Source Material/Section 28. Access Control List (ACL).md",
     "1 - Source Material/Section 30. IPv6 Addressing and Routing.md",
-    "1 - Source Material/Section 17. Dynamic Routing Protocols.md",
+    "1 - Source Material/Section 31. Wide Area Network WAN.md",
+    "attachments/Pasted image 20260309210002.png",
     "1 - Source Material/Section 23. Dynamic Host Configuration Protocol (DHCP).md",
     "1 - Source Material/Section 27.  DHCP Snooping.md",
+    "1 - Source Material/Section 26. EtherChannel.md",
+    "attachments/Pasted image 20260309194309.png",
+    "attachments/Pasted image 20260309194130.png",
+    "attachments/Pasted image 20260309193949.png",
+    "attachments/Pasted image 20260309193806.png",
+    "attachments/Pasted image 20260309193618.png",
+    "attachments/Pasted image 20260309191101.png",
+    "1 - Source Material/Section 22. Inter-VLAN Routing.md",
+    "attachments/Pasted image 20260308225701.png",
+    "1 - Source Material/Section 17. Dynamic Routing Protocols.md",
     "1 - Source Material/Section 20. Open Shortest Path First.md",
     "1 - Source Material/Section 19. IGP Fundamentals.md",
     "attachments/EUI-64.png",
-    "CCNA Thing to Remember.md",
     "1 - Source Material/Section 8. Subnetting.md",
     "1 - Source Material/Section 9. OSI Layer 2 - The Data Link Layer.md",
     "1 - Source Material/Section 10. OSI Layer 1 - The Physical Layer.md",
@@ -296,24 +265,7 @@
     "1 - Source Material/Section 16. Routing Fundamentals.md",
     "1 - Source Material/Section 14. Cisco Router and Switch Basics.md",
     "attachments/Pasted image 20260305203018.png",
-    "1 - Source Material/Section 28. Access Control List (ACL).md",
-    "1 - Source Material/Section 26. EtherChannel.md",
     "1 - Source Material/Section 25. Spanning Tree Protocol (STP).md",
-    "1 - Source Material/Section 22. Inter-VLAN Routing.md",
-    "1 - Source Material/Section 21. Virtual Local Area Network (VLAN).md",
-    "attachments/Pasted image 20260228220237.png",
-    "attachments/Pasted image 20260228220219.png",
-    "1 - Source Material/Section 18. Connectivity Troubleshooting.md",
-    "1 - Source Material/Section 15. Cisco Device Management.md",
-    "1 - Source Material/Section 13. The Cisco Troubleshooting Methodology.md",
-    "1 - Source Material/Section 11. Cisco Device Function.md",
-    "1 - Source Material/Section 6. OSI Layer 3 - The Network Layer.md",
-    "attachments/Pasted image 20260220173948.png",
-    "attachments/Pasted image 20260220171803.png",
-    "attachments/Pasted image 20260220171440.png",
-    "attachments/Spanning Tree Cost.png",
-    "attachments/HSRP Multi Subnet.png",
-    "attachments/HSRP Two Groups.png",
     "Untitled.base",
     "Untitled 2.base",
     "Untitled",

@@ -46,7 +46,7 @@ Each X is a 16 bit hexadecimal field (0-9,A-F)
 ## Broadcast and Multicast
 
 - IPv6 does not support support broadcast traffic
-- It does however support multicast to all hosts on the local subnet (ff02::1) which is functionally equivalent
+- It does however support multicast to all hosts on the local subnet (**ff02::1**) which is functionally equivalent
 - Many services which use broadcast to 255.255.255.255 in IPv4 use more specific multicast addresses in IPv6 (ex ff02::1:3 for DHCP)
 
 ## Global Unicast Address Configuration

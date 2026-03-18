@@ -171,6 +171,12 @@ You can still configure IPv6 addresses on a router without IPv6 unicast routing 
 
 Functions the same as IPv4 except you use slash notation on target IP address instead of dotted decimal
 
+- A fully specified static route is an IPv6 static route in which the destination network, outbound interface, and next-hop IPv6 address are all configured directly:
+	`ipv6 route 2001:db8:a::/32fastethernet0/12001:db8:b::1`
+
+- A directly attached static route specifies the destination IPv6 network and the outbound interface
+	` ipv6 route 2001:db8:a::/32 fastethernet 0/1` command
+
 ## IPv6 Summary and Default Route
 
 Default Route:

@@ -237,7 +237,7 @@ spanning-tree portfast trunk
 
 ## Spanning Tree BPDU Guard
 
-- It is best practices to enable portfast for end hosts which will not form a loop'
+- It is best practices to enable portfast for end hosts which will not form a loop
 - Spanning Tree still runs when portfast is enabled
 - If a loop is created on a portfast port, it can take Spanning Tree time to detect this and block the port. A broadcast storm can occur in this time and crash the switches
 

@@ -69,8 +69,6 @@ Unused optical fiber
 - Ethernet is often used for WAN connections today
 - Other WAN interfaces are modular and fit into spare slots on the router. Different cards are compatible with different router platforms so be careful when selecting your card
 
-
-
 # Leased Lines
 
 - A leased line is a dedicated physical connection between two locations

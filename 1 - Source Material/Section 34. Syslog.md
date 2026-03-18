@@ -68,7 +68,7 @@ Syslog messages will insert themselves into the middle of your command making it
 
 ## Management Information Base 
 
-Data variables on SNMP managed systems are organized in a Management Information Base (MIB)
+Data variables on SNMP managed systems are organized in a **Management Information Base (MIB)**
 The SNMP Manager and Agent need to share the MIB so they know which variables can be reported on
 
 ## SNMP Versions
@@ -118,7 +118,7 @@ AuthPriv - Password authentication is used, communication between the agent and 
 
 ### Group 
 
-`snmp-server group {name} v3 auth | no auth | priv {optional}`
+`snmp-server group {name} v3 (auth | no auth | priv) {optional}`
 
 **Access** can be used to reference an access-list which limits the device to communicating with the IP address of the NMS server only
 **Context** are used on switches to specify which VLANs are accessible via SNMP

@@ -229,7 +229,7 @@ aaa group server radius {}
 server name Server1
 server name Server2
 
-aaa authentication login default group FB-RB local (first login choice will be the group, second login choice will be local is aaa server is down)
+aaa authentication login default group FB-RB local (first login choice will be the group, second login choice will be local if aaa server is down)
 ```
 
 ## TACACS+

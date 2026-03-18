@@ -171,7 +171,7 @@ Cryptography provides these services:
 
 For symmetric encryption, both sides need to know the shared key. This leads to a key distribution problem because it is not secure too send the shared key over the same channel as the data you want encrypted
 
-## Public Key Infrastructure
+## Public Key Infrastructure (PKI)
 
 - Solves distribution problem
 - It uses a trusted introducer (Certificate Authority) for the two parties who need secure communication

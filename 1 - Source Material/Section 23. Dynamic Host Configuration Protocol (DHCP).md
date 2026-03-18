@@ -30,7 +30,7 @@ DHCP minimizes configuration errors caused by manual IP address configuration su
 
 Most likely used in a small network where you don't want the expense of putting in a dedicated server to act as a DHCP server. Instead you can just use a Cisco router
 
-Typically you will have IP addresses that you will want to be fixed such as printers, routers, or infrastructure devices. Therefore you will not give out every single IP address. You'll usually have the reserved addresses either at the start of the scope or at the end of the scope,
+**Typically you will have IP addresses that you will want to be fixed such as printers, routers, or infrastructure devices**. Therefore you will not give out every single IP address. You'll usually have the reserved addresses either at the start of the scope or at the end of the scope,
 
 ```IOS
 ip dhcp excluded-address {address range}

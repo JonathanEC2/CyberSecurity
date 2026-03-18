@@ -18,7 +18,7 @@ When you have redundant gateways, configuring half your PC's to use one gateway 
 ### Types of FHRP
 
 - Hot Standby Router Protocol (HSRP): Cisco proprietary. Deployed in active/standby pair
-- Virtual Router Redundancy Protocol: Open standard, deployed in active/standby pair very similar to HSRP
+- Virtual Router Redundancy Protocol: Open standard, Internet Engineering Task Force (IETF) standard that can use object tracking and preemption to provide Layer 3 failover. F
 - Gateway Load Balancing Protocol: Cisco proprietary, supports active/active load balancing across multiple routers
 # Hot Standby Router Protocol
 

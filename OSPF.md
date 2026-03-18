@@ -1,0 +1,131 @@
+OSPF is a link state protocol that supports large networks and has a very fast converge time. It is an open standard protocol that uses Uses Dijkstra’s Shortest Path First algorithm to determine the best path to learned networks.
+
+The process ID is locally significant. It does not have to match on the neighbor router to form an adjacency. However, routers with different process IDs will not learn each others routes
+
+# OSPF Areas
+
+Each router maintains full information about its own area, but only summary information about other areas
+
+## Area Border Routers
+
+Ideally each ABR should connect to two areas only, the backbone and another area
+ABRs have the following characteristics:
+- Separates LSA flooding zones
+- Becomes the primary point for area address summarization
+- Functions regularly as the source for default routes
+- Maintains the LSDB for each area with which it is connected
+
+## Autonomous System Boundary Routers (ASBRs) 
+
+The router is running OSPF and redistributing from another source into OSPF. An example would be if we are running EIGRP on the router as well, those routes will be redistributed into OSPF so they will also be advertised through our OSPF neighbors
+Our redistributed routes show up as external route. External route literally means it was redistributed into OSPF 
+
+# Cost
+
+Routes will be selected based on lowest cost to get to the destination
+- For destinations in its own area, a router looks at all available links to get there, and chooses the path with the lowest overall cost
+- For destinations in another area, a router looks at all available links to get to the ABR and chooses the path with the lowest cost to the ABR. Its then up to the ABR to choose the best path from there
+
+# OSPF Packet
+
+**Version**: OSPFv2 or OSPFv3
+**Type:** 1- Hello, 2-  Database Descriptor (DBD), 3- LSR Link State Request, 4- LSU Link State Update, 5- Link State Acknowledgment (LSA Link State Advertisements are inside LSUs)
+**Router ID**, and **Area ID**: Of the advertising router, and interface
+**Authentication Type**: 0- No Password, 1- Plain-text password, 2- MD5
+authentication
+
+### Hello Packets
+
+- OSPF routers discover each other and form adjacencies via Hello packets. They send Hello packets out each interface where OSPF is enables (except passive interfaces)
+- Multicast to 224.0.0.5 (all OSPF routers), sent every 10 seconds by default
+
+**Router ID**: 32 bit number that identifies each OSPF router
+**Hello Interval**: How often routers send Hello packets, default 10 seconds
+**Dead Interval**: How long a router waits to hear from neighbor before declaring it out of service. Default 4x Hello interval
+**Neighbors**: list of adjacent OSPF routers that the router has received a Hello packet from
+**Area ID**: Area configures to that interface
+**Router Priority**: 8 bit number used to select DR of BDR
+**DR and BDR IPv4 address**: If known
+**Authentication Flags**: Authentication details if configured
+**Stub Area Flag**: If the area is a stub area. Stub areas have a default route to their ABR rather than learning routes outside the area
+
+These settings must match for a pair of OSPF routers to form an adjacency:
+- Must be in each others neighbor list
+- **Hello and Dead Intervals**
+- Area ID
+- IP subnet
+- Authentication Flag
+- Stub Area Flag
+
+# DR and BDR
+
+On point-to-point links, OSPF routes form FULL adjacency
+On multiaccess segments (such as Ethernet) where there can be multiple routers, it is inefficient for all routers to form full OSPF adjacencies with each other
+
+- DR and BDR Function at the interface level. A DR and BDR are are elected.
+- The router with the highest priority becomes the DR and the router with the second highest priority becomes the BDR. Highest router ID is used in case of a tie, then by the highest loopback IP address, and then by the highest physical IP address.
+- Default priority is 1, the higher the better (0/255).
+
+
+ - The DR and BDR establish FULL neighbor state with all routers on the network segment. The neighbor states of other neighbors remain 2-Way and do not directly exchange routes with each other
+- When a link state changes on a router connected to a multiaccess segment, it sends a multicast LSU packet to 224.0.0.6 (all designated routers)
+- The DR multicasts the update to 224.0.0.5 (all OSPF routers)
+
+Things to remember
+
+Put loopback interface in OSPF
+Only configure internet connectivity on the router connected to the internet
+
+# Configurations
+
+Manually configured OSPF Router ID:
+```IOS
+router ospf
+router-id {ip address}
+```
+
+Passive Interface:
+```IOS
+router ospf 1
+passive-interface {loopback}
+passive-interface {interface}
+```
+
+Default Route Injection:
+```IOS
+ip route 0.0.0.0 0.0.0.0 {next hop address}
+router ospf 1
+default-information originate
+```
+
+Network:
+```
+network {network address} {wildcard mask} {area}
+```
+
+Manual Summarization:
+```
+router ospf 1
+network 10.1.0.0 0.0.255.255 area 0
+network 10.0.0.0 0.0.255.255 area 1
+area 0 range 10.1.0.0 255.255.0.0
+area 1 range 10.0.0.0 255.255.0.0
+```
+
+Reference Bandwidth:
+```IOS
+router ospf 1 
+auto-cost reference-bandwidth 100000
+```
+
+Manipulating Cost
+```IOS
+interface {interface}
+ip ospf cost 50
+```
+
+OSPF Priority for BR and BDR:
+```IOS
+interface {interface}
+ip ospf priority {number}
+```

@@ -59,6 +59,11 @@ interf {}
 switchport port-security 
 ```
 
+Default port security behavior
+
+- Sticky address learning is disabled.
+- A maximum of one MAC address will be allowed on the port.
+- The Shutdown violation mode is enabled.
 ## Port Security Default Behavior 
 
 If you configure Port Security with no additional parameters, only one MAC address is allowed to transmit on the port. **The current MAC address can be disconnected and replaced, the port is not locked down to a particular MAC address**
@@ -70,7 +75,7 @@ If a shared device is connected and multiple hosts try to transmit the port will
 
 ## Security Violation Actions
 
-**Shutdown** (Default): interface is errdisabled, blocks all traffic
+**Shutdown** (Default): interface is errdisabled, blocks all traffic on that interface
 **Protect**: unauthorized traffic is dropped, traffic from allowed addresses is forwarded
 **Restrict**: Traffic from unauthorized addresses is dropped, logged, and the violation counter incremented. Traffic from allowed addresses is forwarded
 **Aging**: automatically removes now invalid secure MAC addresses from the CAM table after a specific period of time

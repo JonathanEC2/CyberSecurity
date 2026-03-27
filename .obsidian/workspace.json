@@ -4,88 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "82993f1db6b173b5",
+        "id": "96466a96a0c505e4",
         "type": "tabs",
         "children": [
           {
-            "id": "45335942f9ffbe70",
+            "id": "ada6b1689991e540",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1 - Source Material/Section 30. IPv6 Addressing and Routing.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Section 30. IPv6 Addressing and Routing"
-            }
-          },
-          {
-            "id": "9bdb9c8aebf624ad",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1 - Source Material/Section 23. Dynamic Host Configuration Protocol (DHCP).md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Section 23. Dynamic Host Configuration Protocol (DHCP)"
-            }
-          },
-          {
-            "id": "2653883295e60d68",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1 - Source Material/Section 24. Hot Standby Router Protocol.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Section 24. Hot Standby Router Protocol"
-            }
-          },
-          {
-            "id": "64e79f75fc394013",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OSPF.md",
+                "file": "5 - Main Notes/OSPF.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -102,9 +30,32 @@
               "icon": "lucide-file",
               "title": "OSPF"
             }
+          },
+          {
+            "id": "f9bf814d8313d452",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1 - Source Material/Section 20. Open Shortest Path First.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Section 20. Open Shortest Path First"
+            }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -172,54 +123,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b15bf0c5a3a68968",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "OSPF.md",
-                "followCursor": false,
-                "showSearch": true,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Outline of OSPF"
-            }
-          },
-          {
-            "id": "72c5b2fa61f8f86d",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "1 - Source Material/Section 17. Dynamic Routing Protocols.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks for Section 17. Dynamic Routing Protocols"
-            }
-          },
-          {
-            "id": "7a6695499937bd79",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "1 - Source Material/Section 17. Dynamic Routing Protocols.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "Outgoing links from Section 17. Dynamic Routing Protocols"
-            }
-          },
-          {
             "id": "0152e592743c7830",
             "type": "leaf",
             "state": {
@@ -233,8 +136,57 @@
               "icon": "lucide-tags",
               "title": "Tags"
             }
+          },
+          {
+            "id": "a611ce58322377d1",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "5 - Main Notes/OSPF.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of OSPF"
+            }
+          },
+          {
+            "id": "addecc98e9777f5b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "1 - Source Material/Section 21. Virtual Local Area Network (VLAN).md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Section 21. Virtual Local Area Network (VLAN)"
+            }
+          },
+          {
+            "id": "aabd0a7e47432518",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "1 - Source Material/Section 21. Virtual Local Area Network (VLAN).md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Section 21. Virtual Local Area Network (VLAN)"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -252,45 +204,45 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "64e79f75fc394013",
+  "active": "ada6b1689991e540",
   "lastOpenFiles": [
-    "3 - Indexes/Neil Anderson Cisco CCNA 200-301.md",
-    "1 - Source Material/Section 24. Hot Standby Router Protocol.md",
-    "1 - Source Material/Section 23. Dynamic Host Configuration Protocol (DHCP).md",
-    "1 - Source Material/Section 30. IPv6 Addressing and Routing.md",
-    "3 - Indexes/THM.md",
-    "OSPF.md",
     "1 - Source Material/Section 20. Open Shortest Path First.md",
-    "Untitled.md",
-    "1 - Source Material/Section 38. Network Automation and Programmability.md",
-    "1 - Source Material/Section 37. Wireless Network Fundamentals.md",
-    "1 - Source Material/Section 39. AI Artificial Intelligence and Machine Learning.md",
-    "1 - Source Material/Section 16. Routing Fundamentals.md",
-    "1 - Source Material/Section 15. Cisco Device Management.md",
-    "1 - Source Material/Section 14. Cisco Router and Switch Basics.md",
-    "1 - Source Material/Section 13. The Cisco Troubleshooting Methodology.md",
-    "1 - Source Material/Section 12. Life of a Packet.md",
-    "1 - Source Material/Section 11. Cisco Device Function.md",
-    "attachments/Pasted image 20260317181315.png",
-    "1 - Source Material/Section 29. Network Address Translation.md",
-    "1 - Source Material/Section 35. QoS.md",
+    "5 - Main Notes/OSPF.md",
+    "3 - Indexes/Neil Anderson Cisco CCNA 200-301.md",
+    "1 - Source Material/Section 36. Cloud Computing.md",
     "1 - Source Material/Section 31. Wide Area Network WAN.md",
-    "1 - Source Material/Section 22. Inter-VLAN Routing.md",
-    "attachments/Pasted image 20260316221339.png",
-    "1 - Source Material/Section 25. Spanning Tree Protocol (STP).md",
-    "1 - Source Material/Section 28. Access Control List (ACL).md",
-    "1 - Source Material/Section 33. Cisco Device Security.md",
+    "5 - Main Notes/IPv6.md",
+    "1 - Source Material/Section 30. IPv6 Addressing and Routing.md",
+    "attachments/Pasted image 20260326214027.png",
+    "attachments/Pasted image 20260326213645.png",
+    "Untitled 1.md",
+    "1 - Source Material/Section 37. Wireless Network Fundamentals.md",
     "1 - Source Material/Section 34. Syslog.md",
-    "attachments/Pasted image 20260316194830.png",
-    "1 - Source Material/Section 19. IGP Fundamentals.md",
-    "attachments/Pasted image 20260315183126.png",
-    "attachments/Pasted image 20260315182819.png",
-    "attachments/Pasted image 20260315181923.png",
-    "attachments/Pasted image 20260315181658.png",
-    "attachments/Pasted image 20260315174211.png",
-    "attachments/Pasted image 20260315111422.png",
-    "attachments/Pasted image 20260315110837.png",
+    "1 - Source Material/Section 35. QoS.md",
+    "Untitled.md",
+    "NAT.md",
+    "1 - Source Material/Section 29. Network Address Translation.md",
+    "5 - Main Notes/DNS and ARP.md",
+    "1 - Source Material/Section 33. Cisco Device Security.md",
+    "1 - Source Material/Section 32. The Security Threat Landscape.md",
+    "5 - Main Notes/Access Control Lists.md",
+    "1 - Source Material/Section 28. Access Control List (ACL).md",
+    "1 - Source Material/Section 27.  DHCP Snooping.md",
+    "1 - Source Material/Section 25. Spanning Tree Protocol (STP).md",
+    "5 - Main Notes/Spanning Tree Protocol.md",
+    "1 - Source Material/Section 26. EtherChannel.md",
+    "5 - Main Notes/VLANs.md",
+    "FHRP.md",
+    "1 - Source Material/Section 24. Hot Standby Router Protocol.md",
+    "attachments/Pasted image 20260326202713.png",
+    "attachments/Pasted image 20260326183904.png",
+    "attachments/Pasted image 20260325215719.png",
+    "attachments/Pasted image 20260325215416.png",
+    "attachments/Pasted image 20260325215400.png",
+    "attachments/Pasted image 20260325175041.png",
     "Untitled.base",
+    "attachments/Pasted image 20260317181315.png",
+    "attachments/Pasted image 20260316221339.png",
     "Untitled 2.base",
     "Untitled",
     "Untitled.canvas",

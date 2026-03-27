@@ -91,6 +91,8 @@ Differences:
 `show lldp neighbors`  brief summary view of neighbors
 `show lldp neighbors detail` detailed view
 
+
+
 # Basic Layer 1 and 2 Troubleshooting
 
 ## Layer 1 Troubleshooting

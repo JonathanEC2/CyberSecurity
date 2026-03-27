@@ -361,3 +361,4 @@ show ip ospf interface {interface}
 ```
 # References
 
+`ip ospf network non-broadcast`

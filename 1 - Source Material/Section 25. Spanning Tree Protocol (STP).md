@@ -20,7 +20,7 @@ Tags: [[]]
 
 - Spanning Tree blocks ports to prevent loops. This means the access layer switches can only use half of their physically cabled uplink bandwidth
 - Spanning tree automated failover as well as performing loop prevention
-- Legacy Spanning Tree can take up to  50 seconds to converge
+- Legacy Spanning Tree can take up to 50 seconds to converge
 
 # Spanning Tree Terminology - The Bridge 
 
@@ -95,6 +95,7 @@ The switches build a loop free forwarding path Tree leading back to the Root Bri
 - Spanning Tree only blocks ports on one side of the blocked link
 - BPDUs continue to be sent over the link from the Designated Port (but not from the Blocked Port)
 - Other traffic cannot use the link
+- PORTS ON ROOT BRIDGE ARE NEVER BLOCKED
 
 ![[../attachments/Pasted image 20260220171440.png]]
 

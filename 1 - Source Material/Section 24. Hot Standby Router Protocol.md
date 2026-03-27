@@ -17,9 +17,9 @@ When you have redundant gateways, configuring half your PC's to use one gateway 
 
 ### Types of FHRP
 
-- Hot Standby Router Protocol (HSRP): Cisco proprietary. Deployed in active/standby pair
-- Virtual Router Redundancy Protocol: Open standard, Internet Engineering Task Force (IETF) standard that can use object tracking and preemption to provide Layer 3 failover. F
-- Gateway Load Balancing Protocol: Cisco proprietary, supports active/active load balancing across multiple routers
+- **Hot Standby Router Protocol (HSRP)**: Cisco proprietary. Deployed in active/standby pair
+- **Virtual Router Redundancy Protocol (VRRP)**: Open standard, Internet Engineering Task Force (IETF) standard that can use object tracking and preemption to provide Layer 3 failover. Has one master router and multiple backup routers
+- **Gateway Load Balancing Protocol**: Cisco proprietary, supports active/active load balancing across multiple routers; Elects an Active Virtual Gateway (AVG) with multiple Active Virtual Forwarders (AVFs)
 # Hot Standby Router Protocol
 
 HSRP uses a Virtual IP (VIP) and MAC address to allow for automated failover
@@ -50,7 +50,6 @@ interface {}
 ip address {physical interface}
 no shutdown
 standby 1 ip {}
-
 ```
 
 `sh standby`

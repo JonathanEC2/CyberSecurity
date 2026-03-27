@@ -174,16 +174,18 @@ Post, Put, and Patch requests include body data
 
 ### REST Response Codes
 
-| 1xx: Informational | 2xxx: Success                                              | 3xxx: Redirectional | 4xxx: Client Error                                                                                  | 5xx Server Error           |
-| ------------------ | ---------------------------------------------------------- | ------------------- | --------------------------------------------------------------------------------------------------- | -------------------------- |
-|                    | - 200: OK<br>- 201: Created<br>- 204: No Content (deleted) |                     | - 400 Bad request / malformed syntax<br>- 401: Unauthorized<br>- 403: Forbidden<br>- 404: Not found | 500: Internal server error |
- 
+| 1xx: Informational | 2xxx: Success                                              | 3xxx: Redirectional                                    | 4xxx: Client Error                                                                                                                                      | 5xx Server Error           |
+| ------------------ | ---------------------------------------------------------- | ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- |
+|                    | - 200: OK<br>- 201: Created<br>- 204: No Content (deleted) |  - 301: permanently moved<br> - 302: temporarily moved | - 400 Bad request / malformed syntax<br>- 401: Unauthorized (identity not known)<br>- 403: Forbidden (identity known but no rights)<br>- 404: Not found | 500: Internal server error |
 
-# Model Driven Programability
+
+
+# Model Driven Programmability
 
 ## Data Models 
 
-A data model is a well understood and agreed upon method to describe something
+A data model is a well understood and agreed upon method to describe something.
+They are formalized and defined by a centralized controller
 
 ## Yet Another Next Generation (YANG)
 
@@ -371,7 +373,7 @@ Designed to manage data center environments with Nexus switches
 - IBN builds on software defined networking to move away from a network of individual devices which are manually managed one by one to a controller-lead network that is managed as an integrated whole
 - It captures business intent and translates it into policies that can be automated and applied consistently across the network 
 - It continuously  monitors and adjusts network performance to help assure desired business outcomes
-## Cisco Software Defines Architecture
+## Cisco Software Defined Architecture
 
 - Catalyst Center
 - SD-Access

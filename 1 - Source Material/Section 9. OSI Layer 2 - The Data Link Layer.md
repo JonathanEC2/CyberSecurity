@@ -15,4 +15,7 @@ Error detection and correction for the Physical Layer can be provided here
 - The burned in MAC address on every NIC port in the world is globally unique
 
 The EtherType field is used to indicate the protocol being encapsulated in the payload. It uniquely identifies upper layer protocols
+The Ethernet frame check sequence (FCS) field contains a 4-byte cyclic redundancy check (CRC) value.
+
+The Content Addressable Memory (CAM) table is used by a switch to discover the relationship between the Open Systems Interconnection (OSI) Layer 2 address of a device and the physical port used to reach the device. Switches make forwarding decisions based on the destination MAC address
 ## References

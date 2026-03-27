@@ -8,6 +8,7 @@ Tags: [[]]
 - DNS resolves a FQDN such as www.cisco.com to an IP address
 - Enterprises will typically have an internal DNS server which can resolve the IP address of internal hosts. Hosts will send their DNS queries to this server. If the internal DNS server cannot resolve said query, it will forward the request out to the public DNS server on the Internet
 - UDP port 53 (can fail over to TCP)
+- Normal DNS does not form a TCP connection
 
 ## Router DNS Commands
 

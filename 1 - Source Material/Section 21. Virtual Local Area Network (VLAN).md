@@ -118,14 +118,17 @@ interface {interface}
 description {}
 switchport trunk encapsulation dot1q
 switchport mode trunk
-
 ```
 
 Older switches support both ISL and Dot1Q. Older switches require  `switchport trunk encapsulation dot1q` because they'll default to ISL
 ## Voice VLAN Configuration
 
 VoIP uses the same LAN cable for voice and data. We need to separate voice traffic from data traffic because voice traffic is very sensitive to delay and for security purposes as well. 
-The cable running from the switch to the IP phone will be configured as a trunk port which will be carrying voice and data VLAN traffic
+The cable running from the switch to the IP phone will be configured as a trunk port which will be carrying voice and data VLAN traffic.
+
+The voice VLAN is disabled by default, and 802.1x authentication is supported on a voice VLAN
+
+When a voice virtual local area network (VLAN) is configured, PortFast is automatically enabled; however, PortFast is not automatically disabled when that same voice VLAN is disabled.
 
 ```IOS
 interface {interface}
@@ -193,6 +196,7 @@ Must manually configure on a transparent mode switch because it does not learn a
 
 ```IOS
 vtp domain {name}
+vtp password {}
 vtp mode {server} {client} {transparent}
 
 ```

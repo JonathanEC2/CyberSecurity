@@ -26,7 +26,9 @@ Covers a large area such as a city
 - Ad-hoc  - Two or more wireless station communicate directly with each other; Independent Basic Service Set
 - Infrastructure - Stations communicate via Wireless Access Point (WAP).  This can provide access to a wired network. Multiple APs can be deployed to provide the required coverage
 
-Wireless stations work in either Ad-Hoc or Infrastructure Mode, They can not operate in both at the same time## WIFI Direct 
+Wireless stations work in either Ad-Hoc or Infrastructure Mode, They can not operate in both at the same time using 
+
+## WIFI Direct 
 
 Allows devices to connect to an Access Point and also be part of a peer to peer wireless network
 It does not support Ad-Hoc IBSS mode, it is an extension to Infrastructure Mode
@@ -67,33 +69,40 @@ Can be disabled to prevent people from discovering network
 ## Extended Service Set
 
 The same SSID can be supported across multiple APs to give larger coverage area
-
 Roaming - Wireless client stations can roam across WAPs supporting the same WLAN
 
 # Wireless LAN Configurations and CAPWAP
 
 ## Wireless LAN Controllers (WLC)
 
-Configuring  a large amount of APs one by one becomes unmanageable
+Configuring a large amount of APs one by one becomes unmanageable
 WLC can be used as a central point of management
 
+## WLC Interfaces
+
+| Interface        | Primary Function                                                                                                                                                     |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Management**   | Used for in-band management (GUI/SSH) and for Layer 2 LWAPP communications.                                                                                          |
+| **AP-Manager**   | Controls all **Layer 3 communications** between the WLC and lightweight APs once they have joined the controller.                                                    |
+| **Virtual**      | Supports mobility management, DHCP relay, and guest web authentication. It is not a physical port.                                                                   |
+| **Service Port** | Used for **out-of-band management** and system recovery; it is the only interface available during the boot process. Default gateway cannot be assigned through DHCP |
 ## Autonomous vs Lightweight APs
 
-Standalone APs are know as autonomous APs
-Access Points with A WLC are known as Lightweight APs
-The installed software image determines whether an AP is Autonomous or Lightweight
+- Standalone APs are know as autonomous APs
+- Access Points with A WLC are known as Lightweight APs
+- The installed software image determines whether an AP is Autonomous or Lightweight
 
 ## Zero Touch Provisioning
 
 Lightweight APs support Zero Touch Provisioning
 They discover the Wireless LAN controller via:
 - DHCP - option 43 gives the IP address of the WLC
-- DNS - cisco-capwap-controller resolves the IP address oof the WLC
+- DNS - cisco-capwap-controller resolves the IP address of the WLC
 - Local subnet broadcast; if you're wireless LAN controller is on the same IP subnet and VLAN as a wireless access point, the wireless access point can find it by doing a broadcast.
 
 ## Roaming with WLC
 
-- If you are roaming with APs the require encryption but do not use a WLC, there will be a break in service because authentication is handled separately on each device
+- If you are roaming with APs that require encryption but do not use a WLC, there will be a break in service because authentication is handled separately on each device
 - Using a WLC, authentication is offloaded from the AP to the WLC
 ## WAPs
 
@@ -111,13 +120,13 @@ They discover the Wireless LAN controller via:
 
 ## Split MAC
 
-Work is moved form the APs the WLC which is why they are called Lightweight APs
+Work is moved form the APs to the WLC which is why they are called Lightweight APs
 Real-time traffic is still handles by the AP in order to provide suitable performance, the rest is handled by the WLC
 This is known as Split MAC
 
 ### Split MAC - AP operations 
 
-- Client  handshake 
+- Client handshake 
 - Beacons
 - Performance Monitoring
 - Encryption and decryption
@@ -135,7 +144,7 @@ This is known as Split MAC
 ## FlexConnect
 
 Traffic is forwarded locally when FlexConnect is configured
-Packet will not go over CAPWAP tunnel if traffic is in the same are
+Packet will not go over CAPWAP tunnel if traffic is in the same area
 Useful for small branch offices without a WLC
 
 # Switch Configuration
@@ -259,12 +268,14 @@ Strong authentication and encryption techniques should be used
 
 - WPA Personal uses pre-shared keys
 - WPA Enterprise uses an AAA server
+
+Cisco Centralized Key Management (CCKM) enables a wireless client to roam from one access point to another without intervention from the WLC
 # LAB
 
 <b><u>Switch Configuration</u></b>
 Configure VLAN
 Configure DHCP (excluded addresses, pool, default router, DNS)
-Option 43 for WCL `optoin 43 ip {}`
+Option 43 for WCL `option 43 ip {}`
 You can configure DHCP on WCL so you don't need to do it for Management VLAN
 Configure trunk port to WLC (allowed VLANs)
 Spanning Tree portfast

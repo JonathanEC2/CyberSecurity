@@ -28,6 +28,7 @@ IPsec is typically used for encryption
 - FlexVPN: Newer version of DMVPN
 - **Group Encrypted Transport VPN** (GETVPN): Scalable centralized policy for VPN over nonpublic infrastructure (ex. MPLS)
 
+Tunnel is often used in networks with private IP addresses, encrypts both the header and payload
 ## Remote Access VPN
 
 These connections are between router or firewall in the office and VPN software installed on an individual user's device

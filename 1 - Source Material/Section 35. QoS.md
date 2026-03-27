@@ -34,6 +34,7 @@ Use QoS techniques to give better service to the traffic which needs it
 
 ## Effects of QoS Queuing
 
+- 
 - Original driver of QoS was VoIP but it can also be used to give better service to data applications
 - If you're giving one type of traffic better service on the same link you started with, other types of traffic types must get worse service. The point is to give each type of traffic the service it requires
 - QoS is meant to mitigate temporary periods of congestions. If a link is permanently congested the bandwidth should be increased

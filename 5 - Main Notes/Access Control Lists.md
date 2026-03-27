@@ -1,5 +1,6 @@
-fas2026-03-03 20:09
+2026-03-25 13:54
 Tags: [[]]
+
 
 # Access Control List Overview
 
@@ -13,7 +14,7 @@ ACLs are also used in other software policies when traffic has to be identified 
 
 ## Access Control Entries (ACE)
 
-Access Control Lists are made up of Access Control Entries which are a series of permit and deny rules. Each ACE is written on a different line
+Access Control Lists are made up of Access Control Entries which are a series of permit and deny rules.
 
 ```
 access-list 100 deny tcp 10.10.30.0 0.0.0.255 gt 49151 10.10.20.1 0.0.0.0 eq 23
@@ -52,37 +53,6 @@ deny 10.10.10.10 0.0.0.0
 permit 10.10.10.0 0.0.0.255
 ```
 
-# ACL Syntax
-
-```
-access-list {Number} {Action} {Protocol} | {IP} {Wildcard} {Qual.} {Port} | {IP} {Wildcard} {Qual} {Port}
-```
-
-Good idea to leave remarks for ACLs
-
- <b><font size= 5px >Protocol</font></b>
-
-- Use TCP or UDP if you want the ACE to apply to traffic for a particular application between a source and destination address
-- Use IP if you want the ACE to apply to all traffic between source and destination address
-
- <b><font size= 5px >Wildcard</font></b>
-
-Saves you from typing out wildcard mask:
-- any
-- host
-
- <b><font size= 5px >Port Number</font></b>
-
-This is optional, defaults to any port
-
- <b><font size= 5px >Final Options</font></b>
- 
-Additional options are available after entering the destination address such as destination port, TCP flags and logging
-
-## Verification `show access-lists`
-
-log keyword is not required to log hit counts. It is used to log to the console or an external monitoring server
-
 # ACL Operations
 
 ## Access Groups
@@ -90,7 +60,7 @@ log keyword is not required to log hit counts. It is used to log to the console 
 - ACLs are applied at the interface level with the `access-group` command. When you are configuring ACLs, don't forget to apply them with the `access-group` command.
 - ACLs can be applied in the inbound or outbound direction
 - You can have a maximum of one ACL per interface per direction. You can have both an inbound and an outbound ACL on the same interface, but not 2 inbound or outbound ACL
-- An interface can have no ACL applied, an inbound ACL only, outbound ACL only, or ACLs in both directions
+- When multiple ACLs that use the same protocol are applied to an interface, only the last ACL applied to the interface will affect traffic on the interface. The last ACL that is applied to interface
 
 ## Access-Group Configuration
 
@@ -99,9 +69,6 @@ interface {}
 ip access-group 100 out
 ip access-group 101 in
 ```
-
-`sh running-config` for verification
-
 ## Access Control Entry
 
 - The ACL is read by the router from top to bottom
@@ -121,7 +88,6 @@ ip access-list extended 110
 ## Implicit Deny All
 
 There is an implicit 'deny any any' rule at the bottom of ACLs
-If an ACL is not applied to an interface, all traffic is allowed. If an ACL is applied, all traffic is denied except for what is explicitly allowed
 
 ## Explicit Deny All
 
@@ -133,7 +99,6 @@ access-list 1 deny any log
 
 ## Explicit Permit All
 
-If an ACL is applied, all traffic is denied except for what is explicitly allowed
 If you want to reverse this so that all traffic is permitted except for what is explicitly denied, add a permit all statement to the end of the ACL
 
 ```
@@ -144,37 +109,13 @@ access-list 1 permit any
 
 ACLs applied to an interface do not apply to traffic which originates from the router itself
 
-# Numbered ACL Lab
-
-This would configure an access list and apply it to the specified interface for outbound traffic
-
-```
-access-list 1 deny 10.0.2.0 0.0.0.255
-access-list permit 10.0.1.0 0.0.0.255
-int {}
-ip access-group {number} {direction}
-```
-
-Secure as close to the source as you can 
-
-# Named ACL Lab
-
-```
-ip access-list {type} {name}
-```
-
-You would apply the ACL to the interface by name instead of by number
-
-```
-interface {}
-ip access-group {name} {direction}
-```
-
-`sh access-list`
-
+# IPv4 and IPv6 Filter Types
 
 - **access-class**: Restricts access to the console port using an IPv4 ACL.
 - **ipv6 access-class**: Restricts access to the console port using an IPv6 ACL.
 - **ip access-group**: Applies an IPv4 ACL to a specific network interface to filter traffic.
 - **ipv6 traffic-filter**: Applies an IPv6 ACL to a specific network interface to filter traffic.
+
+
+The access-class command applies an ACL to a virtual terminal (vty) line.
 ## References

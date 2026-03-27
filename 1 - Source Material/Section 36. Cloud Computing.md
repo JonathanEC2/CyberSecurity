@@ -108,6 +108,7 @@ Similar to virtual machines but they virtualize software layers above the OS lev
 
 - Lightweight
 - Fast to provision
+- **Does not require Hypervisor**
 - Highly portable across different machines and environments
 - Docker is the most well known container engine
 

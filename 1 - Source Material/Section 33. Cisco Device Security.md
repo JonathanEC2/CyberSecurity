@@ -82,8 +82,9 @@ access-class 1 in
 
 ## Enable Secret
 
-- Enable secret is always shown in an encrypted format in the running config
+- Enable secret is always shown in an encrypted format in the running config. This is a Type 5 password
 - If both enable password and enable secret are set, enable secret supersedes the enable password. Best practice is to use only enable secret
+- MD5 hash
 
 ```
 enable secret {}
@@ -91,12 +92,14 @@ enable secret {}
 
 ## Encrypting Passwords
 
-Line level passwords can also be viewed in plain text in the running config by default
-The `service password-encryption` command encrypts all passwords in the running config
-It is best practice to enable this
+- Line level passwords can also be viewed in plain text in the running config by default
+- The `service password-encryption` command encrypts all passwords in the running config. When you issue the `service password-encryption` command on a Cisco device, all current and future Type 0, or clear-text, passwords are encrypted as Type 7 passwords in the device's running configuration.
+- It is best practice to enable this
+
 
 `service password-encryption`
 
+Type 9 passwords use `enable algorithm-type scrypt`
 ### Lab
 
 Make sure you set line password and enable secret
@@ -128,7 +131,7 @@ By default, three levels of privilege are used:
 - Privilege level (level 15) provides complete control over the router. Gets enable prompt immediately upon login
 
 ```
-uesrname admin2 privilege 15 secret {}
+username admin2 privilege 15 secret {}
 ```
 
 ## Configure Command Privilege Levels
@@ -160,8 +163,10 @@ You then need to generate a certificate
 A digital certificate with a key length of 768 bits must be generated to enable SSH encryption
 
 ```
+hostname
 ip domain-name {}
 crypto key generate rsa
+transport input ssh
 ```
 
 ## Disable Telnet 
@@ -225,7 +230,7 @@ radius Server2
 address ipv4 {}
 key {}
 
-aaa group server radius {}
+aaa group server radius FB-RB
 server name Server1
 server name Server2
 
@@ -286,8 +291,10 @@ no cdp run
 
 ```
 clock timezone {}
-ntp server {} (configures router as client)
+ntp server {} (configures router as static client)
 ntp master (configures router as server)
+ntp broadcast client (can receive time from any ntp server)
+ntp peer (enables NTP symmetric active mode)
 
 show clock
 ```

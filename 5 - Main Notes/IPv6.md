@@ -1,27 +1,20 @@
-2026-03-08 15:00
+2026-03-24 18:53
 Tags: [[]]
 
 # Why We Need IPv6
-
-## Problems with NAT
-
-NAT breaks the end to end model which can cause issues with security and can break the application. Applications that use embedded IP addresses or port numbers in the higher OSI layers will break using NAT.
 
 ## IPv6 Enhancements
 
 IPv6 was designed to support built in security and host mobility
 
 ## Dual Stack
- 
-- IPv4 and IPv6 does not have to be an 'either or' decision. In dual stack implementation, a network interface can have both an IPv4 and an IPv6 address at the same time. It can communicate using either protocol
-- Dual stack can be enabled long term to support both IPv4 and IPv6 applications or as an IPv4 to IPv6 transition strategy
 
+ In dual stack implementation, a network interface can have both an IPv4 and an IPv6 address at the same time. It can communicate using either protocol
 
 # The IPv6 Address Format
 
 128 bit address 
 Written as X:X:X:X:X:X:X:X (each portion is called a hextet or a piece)
-Each X is a 16 bit hexadecimal field (0-9,A-F)
 
 ## Address Shortening
 
@@ -31,36 +24,29 @@ Each X is a 16 bit hexadecimal field (0-9,A-F)
 
 # IPv6 Global Unicast Addresses
 
+## Global Unicast Address Configuration
+
 - Similar to IPv4 public addresses. They are assigned to an individual host and have global reachability
 - They are assigned the range 2000::/3
 - Internet authorities assign blocks from the overall 2000::/3 range to organizations. A common assignment for a company is a /48 block (ex. 2001:10:10::/48)
-- A smaller or larger block can be assigned depending on the size of the company
 
-- IPv6 standards state that addresses assigned to individual hosts should use a /64 mask which splits the network in half for the network and host portion of the address
-- If a company is assigned a /48 address by the Internet authorities and uses a /64 host address, that leave 16 bits the company can assign to its internal subnet
-
-| X:X:X:  | X:     | X:X:X:X |
-| ------- | ------ | ------- |
-| Company | Subnet | Host    |
-
-## Broadcast and Multicast
-
-- IPv6 does not support support broadcast traffic
-- It does however support multicast to all hosts on the local subnet (**ff02::1**) which is functionally equivalent
-- Many services which use broadcast to 255.255.255.255 in IPv4 use more specific multicast addresses in IPv6 (ex ff02::1:3 for DHCP)
-
-## Global Unicast Address Configuration
-
-enable IPv6 routing first
 
 ```
-ipv6 unicast-routing
+ipv6 unicast-routing (enables IPv6 routing first)
 int {}
 ipv6 add {} / {subnetmask}
 no shut
 ```
 
-`sh ipv6 interface brief`
+## Broadcast, Multicast, and Anycast
+
+- IPv6 does not support support broadcast traffic
+- It does however support multicast to all hosts on the local subnet (**ff02::1**) which is functionally equivalent
+- The Internet Protocol version 6 (IPv6) prefix FF00::/8 is used for multicast addresses
+- Many services which use broadcast to 255.255.255.255 in IPv4 use more specific multicast addresses in IPv6
+- Anycast addresses are used to send packets to the closest device that is configured with the nearest anycast address
+
+![[../attachments/Pasted image 20260326214027.png]]
 
 # EUI-64 Address
 
@@ -68,7 +54,6 @@ no shut
 - The host portion of the address is derived from the interfaces MAC address which is guaranteed to be globally unique
 - A MAC address is a /48 address compared to the host portion of the IPv6 address. FF:FE is injected in the middle of the /48 MAC address to bring it up to 64 bits. Also, the 7th bit is inverted
 - The router will borrow the MAC address from the first Ethernet port for non-ethernet port interfaces such as Serial ports
-- **It is not recommended to use EUI-64 on router interfaces. It is better to use a memorable address**
 
 ```
 int {}
@@ -76,48 +61,23 @@ ipv6 address {}/64 eui-64
 no shut
 ```
 
-![[attachments/EUI-64.png]]
+![[../attachments/Pasted image 20260326213645.png]]
+
 
 # Unique Local and Link Local Addresses 
 
 ## Unique Local Addresses
-
-- Unique Local Addresses are similar to IPv4 RFC 1918 private addresses. They are not publicly reachable
+- Unicast site-local (USL) addresses are used for Unique Local Addressing (ULA). They are similar to IPv4 RFC 1918 private addresses. They are not publicly reachable
 - The are assigned from the range FC00::/7 (The first 7 bits are always 1111110)
 - Hosts should be assigned /64 addresses
-
 ## Link Local Addresses 
 
-- Link local addresses are valid for communication on that link only. Will not get routed outside of interface on the other side of the router
+- Link local addresses are valid for communication on that link only. <span style="color:rgb(255, 0, 0)">Will not get routed outside of interface on the other side of the router</span>
 - They are assigned from the range FE80::/10 - FEB0::/10
 - Hosts should be assigned /64 addresses
 - Link local addresses can be used for communication that should not go beyond the local link, like routing protocol hello packets and updates. They are mandatory on IPv6 enabled Cisco routers
 - Link Local addresses area automatically generated with EUI-64 addresses on IPv6 enabled Cisco router interfaces. The EUI address can be overridden with manual configuration
-
-## Link Local Address Auto Generation
-
-Configure a global unicast address to enable IPv6 on the interface
-**EUI-64 link local addresses will be automatically generated by applying a global unicast address**
-
-## Manual Link Local Configuration
-
-DO NOT SPECIFY THE SUBNET MASK
-
-```
-int {}
-ipv6 add fe80::{} link-local
-```
-
-## Multiple IPv6 addresses
-
-for IPv4 you have to use secondary command
-IPv6 supports multiple IP addresses on an interface
-
-## IPv6 Address Summary
-
-Link local is mandatory, Global unicast and Unique local addresses are optional
-You can have multiple addresses on the same interface
-One link local for routing protocol traffic and one global unicast address for normal routing is typical
+- <span style="color:rgb(255, 0, 0)">Link local is mandatory</span>, Global unicast and Unique local addresses are optional
 
 # Stateless Address AutoConfiguration (SLACC)
 
@@ -130,7 +90,6 @@ DHCP servers track their MAC address to IP address to IP assignments so this is 
 - The router does not track which hosts have which IP address so this is 'stateless' addressing
 - As well as telling the host which subnet to generate their IP address on, the router tells the hosts to use itself as their default gateway
 - A DHCP server is still required to give out information such as DNS server
-- If the IP address is assigned by SLACC and the DNS server is assigned by DHCP this results in a stateless configuration where the DHCP server does not retain info about the hosts. This is because the DHCP host is only assigned to give out DNS information and not IP addresses
 
 ## SLACC - Router Advertisements 
 
@@ -154,14 +113,7 @@ DHCP servers track their MAC address to IP address to IP assignments so this is 
 
 - IPv6 routing works the same way as IPv4 routing, but the processes are separate, and there are separate IPv4 and IPv6 routing tables
 - The routing tables are built the same way, through static routes or dynamic routing protocols
-- The configuration and operation is very similar for IPv6 as for IPv4
-- Updated versions of the existing IPv4 routing protocols were released to support IPv6:
-	- RIPng
-	- EIGRP for IPv6
-	- OSPFv3
-	- IS-IS
-	- MP-BGP4
-
+- 
 ## IPv6 Routing
 
 Enter `ipv6 unicast-routing` to enable IPv6 routing

@@ -31,4 +31,9 @@ Wires in an RJ-45 connector can be either straight through or crossover
 - Single mode supports higher bandwidth and longer distances but is more expensive
 - Multi mode only supports a few hundred meters 
 - PoE (power over ethernet) switch sends power over Ethernet, don't need a separate power supply for IP phone
+
+- **1000BaseZX**: A standard for long-reach transmission over single-mode fiber, extending up to 70-100 km.
+- **1000BaseCX**: An early standard for short-distance transmission using balanced shielded copper cabling.
+- **1000BaseLX**: A standard for long-wavelength transmission over single-mode and multi-mode fiber, commonly used in campuses.
+- **1000BaseSX**: A standard for short-wavelength transmission over multi-mode fiber, typically used for backbone connections within buildings.
 ## References

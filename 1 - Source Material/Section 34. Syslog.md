@@ -39,7 +39,7 @@ logging buffered debugging (level 7 and higher will be logged to buffer)
 Set verbose logging to provide detailed troubleshooting information
 
 ```
-logging
+logging {ip address}
 logging trap debugging
 ```
 

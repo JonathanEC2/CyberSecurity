@@ -80,6 +80,7 @@ It is recommended to set both sides as Active so you don't have to think about w
 This creates the port channel:
 ```IOS
 interface range {}
+channel-protocol lacp
 channel-group 1 mode active
 ```
 
@@ -100,6 +101,7 @@ PAgP interfaces can be set as either **Desirable** or **Auto**:
 This creates the port channel:
 ```IOS
 interface range {}
+channel-protocol desirable
 channel-group 1 mode desirable
 ```
 

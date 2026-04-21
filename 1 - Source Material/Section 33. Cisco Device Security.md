@@ -28,7 +28,7 @@ login
 
 ## Basic Telnet Security
 
-- IOS devices do not accept incoming Telnet sessions by default
+- **IOS devices do not accept incoming Telnet sessions by default**
 - An IP address and virtual terminal VTY line access must be configured
 - Multiple admins can connect at the same time (usually 16) , lines are allocated first come first serve
 - If all configured lines are in use then additional admins will not be able to login
@@ -267,7 +267,7 @@ Messages can be displayed in the CLI before and/or after an admin logs in to a C
 `banner login " `
 `banner exec "`
 
-Disable Unused Services
+## Disable Unused Services
 
 This reduces the attack surface and also the load on the device
 HTTPS is sometimes used by GUI admin tools but HTTP should be disabled

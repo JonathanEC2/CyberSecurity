@@ -43,6 +43,10 @@ When 802.1x is enabled, only authentication traffic (sending username and passwo
 - Access switch is the authenticator. Needs to be configured on the switch
 - Authentication server (Identity Service Engine)  is typically  integrated  with an Active Directory domain controller where the user database is
 
+Lightweight EAP - uses username and password; weak
+EAP-Fast - authentication credentials are protected by passing a Protected Access Credential (PAC) between the Authentication Server and the supplicant 
+PEAP - Authentication server presents a digital certificate to authenticate itself with the supplicant in the outer authentication. Client authenticates using MSCHAPv2 or General Token Card
+EAP-TLS both Authentication Server and Supplicant use certificate, need PKI
 # Port Security
 
 ## Shutdown Unused Interfaces

@@ -88,7 +88,7 @@ Variation Auto Encoder (VAEs)
 - GANs and VAEs typically work with visual data
 - They are not mutually exclusive
 - Unimodal models take instruction from the same input type as their output  (Creating text from a text prompt)
-- Multimodal models can take input from different sources and generate output in various forms (Creating and image from a text caption)\
+- Multimodal models can take input from different sources and generate output in various forms (Creating and image from a text caption)
 
 ## Transformer Models
 
@@ -123,7 +123,7 @@ GPT uses a decoder to generate text from a prompt
 
 ## Generative Adversarial Networks
 
-- With GANs two deep learning models compete against each other, the generator and discriminator
+- With GANs, two deep learning models compete against each other, the generator and discriminator
 - The generator learns to create new data such as text, images, audio, or video the resembles the training data set
 - The discriminator learns to distinguish between the generated data and the real data
 - Discriminator will typically easily identify early efforts as fake and tell the generator to retry
@@ -133,7 +133,6 @@ GPT uses a decoder to generate text from a prompt
 ### GANs in Network Operations
 
 - GAN models can generate network traffic simulations
-- Generator creates network traffic simulations
 - With training the generator learns to create more realistic simulations and the discriminator learns to detect if the traffic patterns are fake
 - GANs are good at creating network diagrams
 ## Variable Auto Encoders

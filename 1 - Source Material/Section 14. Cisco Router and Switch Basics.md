@@ -51,6 +51,7 @@ Virtual terminal password is used for incoming telnet or SSH session
 
 - Interface speed and duplex are set to auto by default. Both sides should auto negotiate to full duplex and the fastest speed available
 - Best practice is to set the speed and duplex on ports which are connected to another network infrastructure device or server. It is very important to set matching speeds and duplex settings on both sides of the link (manual on both sides or auto on both sides)
+- **Duplex mismatches can cause collisions and late collisions**
 
 ```IOS
 interface {interface name}

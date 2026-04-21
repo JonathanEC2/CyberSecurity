@@ -373,9 +373,9 @@ Designed to manage data center environments with Nexus switches
 - IBN builds on software defined networking to move away from a network of individual devices which are manually managed one by one to a controller-lead network that is managed as an integrated whole
 - It captures business intent and translates it into policies that can be automated and applied consistently across the network 
 - It continuously  monitors and adjusts network performance to help assure desired business outcomes
-## Cisco Software Defined Architecture
+## Cisco Software Defined Architecture (SDA)
 
-- Catalyst Center
+- Catalyst Center (Rebranded from Cisco Digital Network Architecture)
 - SD-Access
 - SD-WAN
 ## Catalyst Center
@@ -498,7 +498,7 @@ Traffic flow is application aware
 - Utilized on first boot of WAN Edge router only
 - Directs WAN Edge to SD-WAN Validator to orchestrate joining it to the network
 
-## BF VPN Tunnel Monitoring
+## BFD VPN Tunnel Monitoring
 
 Bidirectional Forwarding Detection packets are sent over all VPN tunnels
 This detects if a tunnel goes down and also provides latency, jitter, and loss statistics
@@ -513,7 +513,7 @@ Application Aware Routing
 
 ## Application Aware Routing
 
-- BFD monitors latency, jitter, and loss across the VPN
+- Bidirectional Forwarding Detection  monitors latency, jitter, and loss across the VPN
 - Can set minimum requirements for an application wit SLA Classes
 - SD-WAN ensures the application is sent over a link which meets its SLA requirements
 

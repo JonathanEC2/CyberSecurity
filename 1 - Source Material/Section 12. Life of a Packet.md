@@ -14,6 +14,7 @@ Tags: [[]]
 
 `ip domain-lookup` allows a router to be able to resolve hostnames
 `ip name-sever` configures a router or device to use specific DNS servers for resolving hostnames to IP addresses
+`ip dns server` Enables DNS server
 
 **DNS Server:**
 ```IOS

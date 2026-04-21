@@ -2,10 +2,29 @@ OSPF is a link state protocol that supports large networks and has a very fast c
 
 The process ID is locally significant. It does not have to match on the neighbor router to form an adjacency. However, routers with different process IDs will not learn each others routes
 
+
+## LSA Flooding 
+
+- Routers create LSAs to tell neighbors about the networks on its interface 
+- LSA is then flooded through the network until all routers have received it 
+- This results in all the routers in the same area sharing the same Link State Data Base (LSDB)
+- LSDBs contain all LSAs router has learned 
+- LSA has managing timer of 30 seconds 
+
+### Info in LSA
+- Router ID
+- IP address 
+- Cost
+ 
 # OSPF Areas
 
+An area is a set of routers that share the same LSDB
 Each router maintains full information about its own area, but only summary information about other areas
 
+## Backbone Routers
+
+- Routers which have all their OSPF interfaces in Area 0 are Backbone Routers. Routers maintain a full LSDB of other routers and links in their own area
+- All OSPF areas must have at least one ABR connected to the backbone area
 ## Area Border Routers
 
 Ideally each ABR should connect to two areas only, the backbone and another area
@@ -19,14 +38,63 @@ After manually configuring a router ID, you should restart the OSPF process on t
 
 ## Autonomous System Boundary Routers (ASBRs) 
 
-The router is running OSPF and redistributing from another source into OSPF. An example would be if we are running EIGRP on the router as well, those routes will be redistributed into OSPF so they will also be advertised through our OSPF neighbors
-Our redistributed routes show up as external route. External route literally means it was redistributed into OSPF 
+- ASBR is an OSPF router that connects OSPF network to the Internet
+- The router is running OSPF and redistributing from another source into OSPF. An example would be if we are running EIGRP on the router as well, those routes will be redistributed into OSPF so they will also be advertised through our OSPF neighbors
+- Our redistributed routes show up as external route. External route literally means it was redistributed into OSPF 
+- Using `default-information originate ` make a router ASBR
 
 # Cost
 
 Routes will be selected based on lowest cost to get to the destination
 - For destinations in its own area, a router looks at all available links to get there, and chooses the path with the lowest overall cost
 - For destinations in another area, a router looks at all available links to get to the ABR and chooses the path with the lowest cost to the ABR. Its then up to the ABR to choose the best path from there
+
+# OSPF Advanced Topics
+
+## Router ID
+
+- OSPF routers identify themselves using Router ID which is in the form of an IP address
+- This will default to being the highest IP address of any loopback interfaces configured on the router, or the highest other IP address if a loopback does not exist
+- Loopback interfaces never go down so the Router ID will not change. You can also specify the Router ID
+- Interfaces that are down are not eligible to become the Router-ID
+- START DR ROUTER FIRST
+- If no adjacencies have been formed and a change has been made to the router-id,  you do not need to clear the process or restart the router
+
+
+Manually configured OSPF Router ID:
+```IOS
+router ospf
+router-id {ip address}
+```
+
+Loopback interfaces are configured to operate on their own subnets and are not directly connected to each other. Therefore, the OSPF processes will not form adjacencies if they are the only routes being broadcast
+## Passive Interface Configuration
+
+Passive interfaces will be advertised in OSPF so other routers can learn how to get to that network, but the interface itself will not try to form any adjacencies and will not give out any internal information
+Make passive interface on connections to neighbors that aren't running OSPF
+
+# OSPF Adjacency
+
+## OSPF Packet Types
+
+- **Hello**: router will send and listen out for hello packets when OSPF is enabled on an interface and form adjacencies with other OSPF routers on the link 
+- **DataBase Description (DBD)**: Adjacent routers will tell each other about the networks they know about with the DBD packet
+- **Link State Request (LSR)**: If a router is missing information about any of the networks in the received DBD, it will send neighbors an LSR
+- **Link State Advertisement (LSA)**: a routing update
+- **Link State Update (LSU)**: Contains a list of LSAs which should be updated
+- **LSAck**: receiving routers acknowledge LSAs
+
+
+## OSPF Neighbor States
+
+**Down** - no OSPF neighbor packets have been received
+**Init** - Hello packet has been received but the routers ID is not in the Hello packet it received
+**2-way** Routers enter each others RID into neighbor table. They are now able to share LSAs to build common  LSDBs
+**Exstart** - routers choose which will be master and slave router through DBDs, router with highest ID will become master
+**Exchange** - Routers exchange DBDs which contains basic LSA info
+**Loading** - Routers send LSR messages to request LSAs they don't have, LSAs are sent is LSUs, They then send LSAck
+**Full** - routers have a full OSPF adjacency and identical LSDBs
+
 
 # OSPF Packet
 
@@ -59,6 +127,8 @@ These settings must match for a pair of OSPF routers to form an adjacency:
 - Authentication Flag
 - Stub Area Flag
 
+<span style="color:rgb(255, 0, 0)">The broadcast and point-to-point Open Shortest Path First (OSPF) network types have a default hello timer of 10 seconds and a default dead timer of 40 seconds. The non-broadcast, point-to-multipoint, and point-to-multipoint non-broadcast OSPF network types have a default hello timer of 30 seconds and a dead timer of 120 seconds.</span>
+
 ## LSA Types
 
 Type 1: Router LSA (All Routers): Generated by every router, it lists its neighbors and link states within a single area.
@@ -80,6 +150,10 @@ On multiaccess segments (such as Ethernet) where there can be multiple routers, 
 - The DR and BDR establish FULL neighbor state with all routers on the network segment. The neighbor states of other neighbors remain 2-Way and do not directly exchange routes with each other
 - When a link state changes on a router connected to a multiaccess segment, it sends a multicast LSU packet to 224.0.0.6 (all designated routers)
 - The DR multicasts the update to 224.0.0.5 (all OSPF routers)
+- **Only DR and BDRs send out LSAs**
+- When a router is neither the DR nor the BDR but is still allowed to participate in the election, the OSPF neighbor state will be reported as DROTHER.
+
+<span style="color:rgb(255, 0, 0)">Set OSPF priority before enabling OSPF </span>
 
 Things to remember
 
@@ -95,6 +169,8 @@ router-id {ip address}
 ```
 
 Passive Interface:
+
+Tells router to stop sending out OSPF 'hello' messages
 ```IOS
 router ospf 1
 passive-interface {loopback}

@@ -23,7 +23,7 @@ ICMP and IPsec also operate at Layer 3
 
 ## IP Header
 
-![[attachments/Pasted image 20260325215719.png]]
+![[../attachments/Pasted image 20251118193907.png]]
 
 ## Subnet Mask
 
@@ -33,7 +33,7 @@ Defines the host portion and the network portion of an address
 
 Frames are encoded and decoded into bits at Layer 2. Error detection and correction are performed at this layer as well
 
-The Content Addressable Memory table is used by a switch to discover the relationship between the OSI Layer 2 address of a device and the physical port used to reach the device. Switches make forwarding decisions based on destination MAC address
+The Content Addressable Memory (CAM) table is used by a switch to discover the relationship between the OSI Layer 2 address of a device and the physical port used to reach the device. Switches make forwarding decisions based on destination MAC address
 ## MAC Address
 
 - Uses a 48-bit (8 byte) hexadecimal MAC address

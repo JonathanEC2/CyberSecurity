@@ -196,7 +196,7 @@ Through PKI, your web browser trusts the CA and has a copy of their public key t
 You still are not sure at this point if you are communicating with the website yet because other people that have accessed that website also have been sent the certificate. You know the certificate is valid but don't know it is the actual website you are talking with.
 
 **Verification**:
-PC generated random data and it will send it over to the website. To prove that it is the real website, PC tells the website to encrypt the data with its private key and send it back. PC decrypts it with public key and if data comes back the same, communication has been verified.
+PC generates random data and it will send it over to the website. To prove that it is the real website, PC tells the website to encrypt the data with its private key and send it back. PC decrypts it with public key and if data comes back the same, communication has been verified.
 
 Asymmetric encryption is slow and should not be used for bulk data exchange like web browsing
 Symmetric encryption should be used but you and the website do not have a shared key

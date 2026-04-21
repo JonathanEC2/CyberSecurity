@@ -43,6 +43,7 @@ All leaf switches connect to spine switches. Leaves never connect to leaves
 - VLAN Access Ports are configured on switch interfaces where end hosts are plugged in
 - <span style="color:rgb(255, 0, 0)">Access ports are configured with one specific VLAN</span>
 - Switches only allow traffic in the same VLAN
+- VLANs be created on the switch after you issue the **end** command
 
 ## Access Port Configuration
 
@@ -75,6 +76,7 @@ switchport trunk encapsulation dot1q
 switchport mode trunk
 ```
 
+`sh int status` 
 ## Voice VLAN Configuration
 
 - VoIP uses the same LAN cable for voice and data. We need to separate voice traffic from data traffic because voice traffic is very sensitive to delay and for security purposes as well. 

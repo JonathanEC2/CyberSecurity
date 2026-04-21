@@ -39,7 +39,7 @@ In the case of a tie, the switch with the lowest MAC address will win
 
 - Each switch's exit interface on the lowest cost path to the Root Bride is selected as its Root Port
 - Each switch only has one Root Port in the Spanning Tree
-- - If a switch has multiple equal cost paths to the Root Bridge, it will select the neighbor switch with the lowest Bridge ID
+-  If a switch has multiple equal cost paths to the Root Bridge, it will select the neighbor switch with the lowest Bridge ID
 - If a switch has multiple equal cost paths via the same neighbor switch towards the Root Bridge, it will select the port with the lowest Port ID (f0/1) on the neighbor switch
 
 ## Designated Ports

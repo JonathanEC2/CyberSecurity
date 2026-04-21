@@ -1,6 +1,7 @@
 2026-03-25 17:41
 Tags: [[]]
 
+<span style="color:rgb(255, 0, 0)">Devices cannot communicate with other devices if they are not directly connected in the same subnet and do not have a route to each other</span>
 # Static Routes
 
 If a router receives traffic for a network that it **isn't directly connected** to, it needs to know how to get the traffic there in order to forward the traffic
@@ -28,6 +29,13 @@ For static routes, summary routes lessen administrative overhead and memory usag
 ## Longest Prefix Match
 
 When there are overlapping routes, the longest prefix will be selected; the more specific route will be selected (255.255.255.0 is a longer prefix than 255.255.0.0)
+
+## Router Preference
+
+Routers decide where to forward packets based on the routes it has learned. The best route for a packet decision is based on:
+- Longest prefix (most specific route)
+- Administrative Distance (AD)
+- Metric
 
 ## Load Balancing
 

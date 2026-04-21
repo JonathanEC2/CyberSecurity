@@ -111,8 +111,8 @@ ACLs applied to an interface do not apply to traffic which originates from the r
 
 # IPv4 and IPv6 Filter Types
 
-- **access-class**: Restricts access to the console port using an IPv4 ACL.
-- **ipv6 access-class**: Restricts access to the console port using an IPv6 ACL.
+- **access-class**: Restricts inbound or outbound remote access sessions
+- **ipv6 access-class**: Restricts inbound or outbound remote access sessions using an IPv6 ACL.
 - **ip access-group**: Applies an IPv4 ACL to a specific network interface to filter traffic.
 - **ipv6 traffic-filter**: Applies an IPv6 ACL to a specific network interface to filter traffic.
 

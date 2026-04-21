@@ -29,6 +29,7 @@ Multiple APs can be configured using WLCs. Wireless LAN controllers have multipl
 | **AP-Manager**   | Controls all **Layer 3 communications** between the WLC and lightweight APs once they have joined the controller.                                                    |
 | **Virtual**      | Supports mobility management, DHCP relay, and guest web authentication. It is not a physical port.                                                                   |
 | **Service Port** | Used for **out-of-band management** and system recovery; it is the only interface available during the boot process. Default gateway cannot be assigned through DHCP |
+
 **Lightweight AP** - APs that are provisioned through a WLC
 **Autonomous AP** - Standalone APs
 **Embedded AP** - connects APs to a WLC that is housed in a switch stack
@@ -56,10 +57,10 @@ Real-time traffic is still handles by the AP in order to provide suitable perfor
 
 ## FlexConnect
 
-Traffic is forwarded locally when FlexConnect is configured
-Packet will not go over CAPWAP tunnel if traffic is in the same area
-A lightweight AP functioning in FlexConnect mode can connect over a WAN link to a WLC that is located in a different location. This enables admins to manage the AP from a central location without having to deploy WLCs in each remote offic
-Lightweight APs using FlexConnect can provide client connectivity even if the connection to the remote WLC is lost
+- Traffic is forwarded locally when FlexConnect is configured
+- Packet will not go over CAPWAP tunnel if traffic is in the same area
+- A lightweight AP functioning in FlexConnect mode can connect over a WAN link to a WLC that is located in a different location. This enables admins to manage the AP from a central location without having to deploy WLCs in each remote offic
+- Lightweight APs using FlexConnect can provide client connectivity even if the connection to the remote WLC is lost
 
 # Wireless Channel Radio Frequencies
 

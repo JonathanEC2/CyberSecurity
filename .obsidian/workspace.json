@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "96466a96a0c505e4",
+        "id": "6bfa899c23dd3295",
         "type": "tabs",
         "children": [
           {
-            "id": "ada6b1689991e540",
+            "id": "c6aba27e0f578ae5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5 - Main Notes/OSPF.md",
+                "file": "1 - Source Material/Section 17. Dynamic Routing Protocols.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,11 +28,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "OSPF"
+              "title": "Section 17. Dynamic Routing Protocols"
             }
           },
           {
-            "id": "f9bf814d8313d452",
+            "id": "7683f8ede6d28748",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -54,8 +54,129 @@
               "icon": "lucide-file",
               "title": "Section 20. Open Shortest Path First"
             }
+          },
+          {
+            "id": "4366b29fe24c3128",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "5 - Main Notes/Wireless Networks.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Wireless Networks"
+            }
+          },
+          {
+            "id": "91a95f2442e72956",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3 - Indexes/Neil Anderson Cisco CCNA 200-301.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Neil Anderson Cisco CCNA 200-301"
+            }
+          },
+          {
+            "id": "4464046d6b7b06e8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "5 - Main Notes/OSI Layers 1-4.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "OSI Layers 1-4"
+            }
+          },
+          {
+            "id": "0a8e9da318e5970f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled 2.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Untitled 2"
+            }
+          },
+          {
+            "id": "e3156c31c842ca99",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "5 - Main Notes/Automation.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Automation"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -143,13 +264,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "5 - Main Notes/OSPF.md",
+                "file": "Untitled 2.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of OSPF"
+              "title": "Outline of Untitled 2"
             }
           },
           {
@@ -204,36 +325,36 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ada6b1689991e540",
+  "active": "42e5c341715af5ac",
   "lastOpenFiles": [
-    "1 - Source Material/Section 20. Open Shortest Path First.md",
-    "5 - Main Notes/OSPF.md",
-    "3 - Indexes/Neil Anderson Cisco CCNA 200-301.md",
-    "1 - Source Material/Section 36. Cloud Computing.md",
-    "1 - Source Material/Section 31. Wide Area Network WAN.md",
-    "5 - Main Notes/IPv6.md",
-    "1 - Source Material/Section 30. IPv6 Addressing and Routing.md",
+    "5 - Main Notes/2. Network Exploitation Basics.md",
+    "5 - Main Notes/3. Web Hacking Fundamentals.md",
+    "5 - Main Notes/Intro to XXS.md",
+    "5 - Main Notes/Network and System Security.md",
+    "5 - Main Notes/Network Security.md",
+    "5 - Main Notes/Network Fundamentals.md",
+    "5 - Main Notes/Threats and Risks.md",
+    "5 - Main Notes/SQL Fundamentals.md",
+    "5 - Main Notes/File Inclusion.md",
+    "5 - Main Notes/6. Shell and Privilege Escalation.md",
+    "5 - Main Notes/Introduction to Security Engineering.md",
+    "5 - Main Notes/HTTP In Detail.md",
+    "5 - Main Notes/SQL Injection.md",
+    "5 - Main Notes/Web Application Basics.md",
+    "5 - Main Notes/John the Ripper The Basics.md",
+    "5 - Main Notes/Public Key Cryptography Basics.md",
+    "5 - Main Notes/5. Windows Exploitation Basics.md",
+    "5 - Main Notes/Metasploit Introduction.md",
+    "5 - Main Notes/Windows PowerShell.md",
+    "5 - Main Notes/Gobuster The Basics.md",
+    "5 - Main Notes/4. Cryptography.md",
+    "5 - Main Notes/IDS Fundamentals.md",
+    "5 - Main Notes/Command Injection.md",
+    "5 - Main Notes/Wireshark The Basics.md",
+    "5 - Main Notes/Introduction to SIEM.md",
+    "5 - Main Notes/Windows Fundamentals 2.md",
     "attachments/Pasted image 20260326214027.png",
     "attachments/Pasted image 20260326213645.png",
-    "Untitled 1.md",
-    "1 - Source Material/Section 37. Wireless Network Fundamentals.md",
-    "1 - Source Material/Section 34. Syslog.md",
-    "1 - Source Material/Section 35. QoS.md",
-    "Untitled.md",
-    "NAT.md",
-    "1 - Source Material/Section 29. Network Address Translation.md",
-    "5 - Main Notes/DNS and ARP.md",
-    "1 - Source Material/Section 33. Cisco Device Security.md",
-    "1 - Source Material/Section 32. The Security Threat Landscape.md",
-    "5 - Main Notes/Access Control Lists.md",
-    "1 - Source Material/Section 28. Access Control List (ACL).md",
-    "1 - Source Material/Section 27.  DHCP Snooping.md",
-    "1 - Source Material/Section 25. Spanning Tree Protocol (STP).md",
-    "5 - Main Notes/Spanning Tree Protocol.md",
-    "1 - Source Material/Section 26. EtherChannel.md",
-    "5 - Main Notes/VLANs.md",
-    "FHRP.md",
-    "1 - Source Material/Section 24. Hot Standby Router Protocol.md",
     "attachments/Pasted image 20260326202713.png",
     "attachments/Pasted image 20260326183904.png",
     "attachments/Pasted image 20260325215719.png",

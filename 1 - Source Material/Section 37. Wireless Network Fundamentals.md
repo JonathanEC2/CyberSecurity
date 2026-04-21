@@ -86,6 +86,7 @@ WLC can be used as a central point of management
 | **AP-Manager**   | Controls all **Layer 3 communications** between the WLC and lightweight APs once they have joined the controller.                                                    |
 | **Virtual**      | Supports mobility management, DHCP relay, and guest web authentication. It is not a physical port.                                                                   |
 | **Service Port** | Used for **out-of-band management** and system recovery; it is the only interface available during the boot process. Default gateway cannot be assigned through DHCP |
+| **Dynamic**      | User defined and typically used for client data                                                                                                                      |
 ## Autonomous vs Lightweight APs
 
 - Standalone APs are know as autonomous APs
@@ -181,9 +182,9 @@ vlan 22
 vlan name Guest
 ```
 
-Because we are using a WLC, we need to configure VLAN for management as well
-VLAN 11 WLC-Management is for the administrator to manage the wireless LAN controller
-VLAN 10 is for traffic between the access points and the wireless LAN controller (CAPWAP traffic)
+- Because we are using a WLC, we need to configure VLAN for management as well
+- VLAN 11 WLC-Management is for the administrator to manage the wireless LAN controller
+- VLAN 10 is for traffic between the access points and the wireless LAN controller (CAPWAP traffic)
 ```
 vlan 10
 name WLC-Management

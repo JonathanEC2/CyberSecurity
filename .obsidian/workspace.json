@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "6bfa899c23dd3295",
+        "id": "1599e9883402f4f7",
         "type": "tabs",
         "children": [
           {
-            "id": "c6aba27e0f578ae5",
+            "id": "a2ec3b6a40e9a020",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1 - Source Material/Section 17. Dynamic Routing Protocols.md",
+                "file": "Linux.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,16 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Section 17. Dynamic Routing Protocols"
+              "title": "Linux"
             }
           },
           {
-            "id": "7683f8ede6d28748",
+            "id": "7b608c19b945b91d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1 - Source Material/Section 20. Open Shortest Path First.md",
+                "file": "1 - Source Material/Linux Fundamentals 2.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,16 +52,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Section 20. Open Shortest Path First"
+              "title": "Linux Fundamentals 2"
             }
           },
           {
-            "id": "4366b29fe24c3128",
+            "id": "abac813a3a36e05d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5 - Main Notes/Wireless Networks.md",
+                "file": "1 - Source Material/Linux Fundamentals 3.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -76,107 +76,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Wireless Networks"
-            }
-          },
-          {
-            "id": "91a95f2442e72956",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3 - Indexes/Neil Anderson Cisco CCNA 200-301.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Neil Anderson Cisco CCNA 200-301"
-            }
-          },
-          {
-            "id": "4464046d6b7b06e8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "5 - Main Notes/OSI Layers 1-4.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "OSI Layers 1-4"
-            }
-          },
-          {
-            "id": "0a8e9da318e5970f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Untitled 2.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Untitled 2"
-            }
-          },
-          {
-            "id": "e3156c31c842ca99",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "5 - Main Notes/Automation.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Automation"
+              "title": "Linux Fundamentals 3"
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -264,13 +167,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled 2.md",
+                "file": "Linux.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Untitled 2"
+              "title": "Outline of Linux"
             }
           },
           {
@@ -325,34 +228,35 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "42e5c341715af5ac",
+  "active": "a2ec3b6a40e9a020",
   "lastOpenFiles": [
-    "5 - Main Notes/2. Network Exploitation Basics.md",
-    "5 - Main Notes/3. Web Hacking Fundamentals.md",
-    "5 - Main Notes/Intro to XXS.md",
-    "5 - Main Notes/Network and System Security.md",
-    "5 - Main Notes/Network Security.md",
-    "5 - Main Notes/Network Fundamentals.md",
-    "5 - Main Notes/Threats and Risks.md",
-    "5 - Main Notes/SQL Fundamentals.md",
-    "5 - Main Notes/File Inclusion.md",
-    "5 - Main Notes/6. Shell and Privilege Escalation.md",
-    "5 - Main Notes/Introduction to Security Engineering.md",
-    "5 - Main Notes/HTTP In Detail.md",
-    "5 - Main Notes/SQL Injection.md",
-    "5 - Main Notes/Web Application Basics.md",
-    "5 - Main Notes/John the Ripper The Basics.md",
-    "5 - Main Notes/Public Key Cryptography Basics.md",
-    "5 - Main Notes/5. Windows Exploitation Basics.md",
-    "5 - Main Notes/Metasploit Introduction.md",
-    "5 - Main Notes/Windows PowerShell.md",
-    "5 - Main Notes/Gobuster The Basics.md",
-    "5 - Main Notes/4. Cryptography.md",
-    "5 - Main Notes/IDS Fundamentals.md",
-    "5 - Main Notes/Command Injection.md",
-    "5 - Main Notes/Wireshark The Basics.md",
-    "5 - Main Notes/Introduction to SIEM.md",
-    "5 - Main Notes/Windows Fundamentals 2.md",
+    "3 - Indexes/Neil Anderson Cisco CCNA 200-301.md",
+    "1 - Source Material/Section 6. OSI Layer 3 - The Network Layer.md",
+    "Linux.md",
+    "1 - Source Material/Linux Fundamentals 3.md",
+    "1 - Source Material/Linux Fundamentals 2.md",
+    "attachments/Pasted image 20260508230548.png",
+    "1 - Source Material/Section 24. Hot Standby Router Protocol.md",
+    "3 - Indexes/THM.md",
+    "1 - Source Material/Linux Fundamentals 1.md",
+    "1 - Source Material/Section 33. Cisco Device Security.md",
+    "1 - Source Material/Section 23. Dynamic Host Configuration Protocol (DHCP).md",
+    "1 - Source Material/Section 34. Syslog.md",
+    "1 - Source Material/Section 25. Spanning Tree Protocol (STP).md",
+    "Untitled.md",
+    "Untitled 1.md",
+    "Untitled 2.md",
+    "5 - Main Notes/OSPF.md",
+    "1 - Source Material/Section 27.  DHCP Snooping.md",
+    "1 - Source Material/Section 21. Virtual Local Area Network (VLAN).md",
+    "1 - Source Material/Section 22. Inter-VLAN Routing.md",
+    "1 - Source Material/Section 12. Life of a Packet.md",
+    "1 - Source Material/Section 11. Cisco Device Function.md",
+    "1 - Source Material/Section 14. Cisco Router and Switch Basics.md",
+    "1 - Source Material/Section 13. The Cisco Troubleshooting Methodology.md",
+    "5 - Main Notes/Automation.md",
+    "5 - Main Notes/OSI Layers 1-4.md",
+    "5 - Main Notes/Wireless Networks.md",
     "attachments/Pasted image 20260326214027.png",
     "attachments/Pasted image 20260326213645.png",
     "attachments/Pasted image 20260326202713.png",
@@ -363,7 +267,6 @@
     "attachments/Pasted image 20260325175041.png",
     "Untitled.base",
     "attachments/Pasted image 20260317181315.png",
-    "attachments/Pasted image 20260316221339.png",
     "Untitled 2.base",
     "Untitled",
     "Untitled.canvas",

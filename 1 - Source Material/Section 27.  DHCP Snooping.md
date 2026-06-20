@@ -15,8 +15,8 @@ int f0/1
 ip dhcp snooping trust
 ```
 
-Enable DHCP snooping on global and vlan
-Configure trusted interface
+- Enable DHCP snooping on global and vlan
+- Configure trusted interface
 
 # DAI Dynamic ARP Inspection
 

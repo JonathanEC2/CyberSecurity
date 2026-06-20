@@ -7,9 +7,9 @@
 [[../5 - Main Notes/HTTP In Detail|HTTP In Detail]]
 [[../5 - Main Notes/How Websites Work|How Websites Work]]
 ## Linux Fundamentals
-[[../5 - Main Notes/Linux Fundamentals 1|Linux Fundamentals 1]]
-[[../5 - Main Notes/Linux Fundamentals 2|Linux Fundamentals 2]]
-[[../5 - Main Notes/Linux Fundamentals 3|Linux Fundamentals 3]]
+[[../1 - Source Material/Linux Fundamentals 1|Linux Fundamentals 1]]
+[[../1 - Source Material/Linux Fundamentals 2|Linux Fundamentals 2]]
+[[../1 - Source Material/Linux Fundamentals 3|Linux Fundamentals 3]]
 
 ## Windows Fundamentals
 [[../5 - Main Notes/Windows Fundamentals 1|Windows Fundamentals 1]]

@@ -153,7 +153,7 @@ On multiaccess segments (such as Ethernet) where there can be multiple routers, 
 - **Only DR and BDRs send out LSAs**
 - When a router is neither the DR nor the BDR but is still allowed to participate in the election, the OSPF neighbor state will be reported as DROTHER.
 
-<span style="color:rgb(255, 0, 0)">Set OSPF priority before enabling OSPF </span>
+<span style="color:rgb(255, 0, 0)">Set OSPF priority before enabling OSPF and forming adjacencies </span>
 
 Things to remember
 

@@ -43,12 +43,14 @@ dns-server {dns server ip}
 `show ip dhcp binding` to see what address were give out and who they were given to
 # External DHCP Server
 
-- Routers do not forward broadcast traffic by default. A client that sends our a DHCP request will hit the router, but the router will drop the packet. Therefore if the DHCP server is on another subnet, the request will never reach the DHCP server
+- Routers do not forward broadcast traffic by default. A client that sends out a DHCP request will hit the router, but the router will drop the packet. Therefore if the DHCP server is on another subnet, the request will never reach the DHCP server
 - You will need to configure the router to forward DHCP requests. You will configure it on the interface which will be receiving the DHCP request
 ```IOS
 interface {interface}
 ip helper-address {dhcp server}
 ```
+
+<span style="color:rgb(255, 0, 0)">for Ros, put helper address on each subinterface</span>
 # Windows, Mac, and  Linux Client IP Settings
 
 

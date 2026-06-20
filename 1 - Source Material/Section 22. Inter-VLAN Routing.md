@@ -18,7 +18,7 @@ R1:
 interface FastEthernet 0/1
 ip address 10.10.10.1 255.255.255.0
 interface FastEthernet 0/2
-ip address 10.10.10.1 255.255.255.0
+ip address 10.10.20.1 255.255.255.0
 ip route 0.0.0.0 0.0.0.0 203.0.113.2
 ```
 

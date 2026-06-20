@@ -41,7 +41,6 @@ interface {}
 ip address {physical interface}
 no shutdown
 standby 1 ip {}
-
 ```
 
 R2:

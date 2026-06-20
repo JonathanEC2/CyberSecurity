@@ -1,5 +1,6 @@
 [
   "colored-text",
   "highlightr-plugin",
-  "obsidian-git"
+  "obsidian-git",
+  "code-styler"
 ]
